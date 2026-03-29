@@ -5,6 +5,7 @@ import MCQOptionRow from "./MCQOptionRow";
 import QuestionNavigator from "./QuestionNavigator";
 import ReviewList from "./ReviewList";
 import TopBar from "./TopBar";
+import { fetchApi } from "../lib/api";
 
 function shuffle(items) {
   const clone = [...items];
@@ -153,7 +154,7 @@ export default function MultipleChoiceMode({
     submitStartedRef.current = false;
 
     try {
-      const response = await fetch(`/api/quiz?limit=${mode.questionLimit}`, {
+      const response = await fetchApi(`/api/quiz?limit=${mode.questionLimit}`, {
         headers: requestHeaders,
       });
 
@@ -196,7 +197,7 @@ export default function MultipleChoiceMode({
     setErrorMessage("");
 
     try {
-      const response = await fetch("/api/quiz/submit", {
+      const response = await fetchApi("/api/quiz/submit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

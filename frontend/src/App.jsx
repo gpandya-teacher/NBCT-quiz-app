@@ -7,6 +7,7 @@ import HomeScreen from "./components/HomeScreen";
 import MultipleChoiceMode from "./components/MultipleChoiceMode";
 import PaywallPage from "./components/PaywallPage";
 import WrittenPromptMode from "./components/WrittenPromptMode";
+import { fetchApi } from "./lib/api";
 
 const AUTH_TOKEN_KEY = "nbct-auth-token";
 const ANON_ID_KEY = "nbct-anon-id";
@@ -118,7 +119,7 @@ export default function App() {
       message: "Verifying your email...",
     });
 
-    const response = await fetch("/api/auth/verify-email", {
+    const response = await fetchApi("/api/auth/verify-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -153,7 +154,7 @@ export default function App() {
       return;
     }
 
-    const response = await fetch("/api/auth/me", {
+    const response = await fetchApi("/api/auth/me", {
       headers: {
         "x-anon-id": anonId,
         ...(authToken ? { Authorization: `Bearer ${authToken}` } : {}),
@@ -170,7 +171,7 @@ export default function App() {
       return;
     }
 
-    const response = await fetch("/api/admin/users", {
+    const response = await fetchApi("/api/admin/users", {
       headers: requestHeaders,
     });
 
@@ -201,7 +202,7 @@ export default function App() {
             password: formState.password,
           };
 
-    const response = await fetch(`/api/auth/${mode}`, {
+    const response = await fetchApi(`/api/auth/${mode}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -242,7 +243,7 @@ export default function App() {
   }
 
   async function handleLogout() {
-    await fetch("/api/auth/logout", {
+    await fetchApi("/api/auth/logout", {
       method: "POST",
       headers: requestHeaders,
     });
@@ -267,7 +268,7 @@ export default function App() {
       return;
     }
 
-    const response = await fetch("/api/billing/upgrade-request", {
+    const response = await fetchApi("/api/billing/upgrade-request", {
       method: "POST",
       headers: requestHeaders,
     });
@@ -308,7 +309,7 @@ export default function App() {
   }
 
   async function handleUpdateUserStatus(userId, status) {
-    const response = await fetch(`/api/admin/users/${userId}/status`, {
+    const response = await fetchApi(`/api/admin/users/${userId}/status`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -324,7 +325,7 @@ export default function App() {
 
   async function handleUpdateUpgradeRequest(requestId, status) {
     const notes = window.prompt("Optional admin note:", "") ?? "";
-    const response = await fetch(`/api/admin/upgrades/${requestId}`, {
+    const response = await fetchApi(`/api/admin/upgrades/${requestId}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -343,7 +344,7 @@ export default function App() {
       return;
     }
 
-    const response = await fetch("/api/auth/resend-verification", {
+    const response = await fetchApi("/api/auth/resend-verification", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

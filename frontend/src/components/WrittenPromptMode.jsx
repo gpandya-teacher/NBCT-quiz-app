@@ -4,6 +4,7 @@ import ExamShell from "./ExamShell";
 import PromptPanel from "./PromptPanel";
 import TopBar from "./TopBar";
 import WritingPanel from "./WritingPanel";
+import { fetchApi } from "../lib/api";
 
 const LOCAL_DRAFT_PREFIX = "nbct-written-draft";
 
@@ -118,7 +119,7 @@ export default function WrittenPromptMode({ onBack, requestHeaders, onBlocked })
     setIsLoading(true);
 
     try {
-      const response = await fetch("/api/written-prompts/session", {
+      const response = await fetchApi("/api/written-prompts/session", {
         headers: requestHeaders,
       });
 
@@ -154,7 +155,7 @@ export default function WrittenPromptMode({ onBack, requestHeaders, onBlocked })
     window.localStorage.setItem(getDraftKey(session.prompt.id), nextText);
 
     try {
-      const response = await fetch("/api/written-prompts/autosave", {
+      const response = await fetchApi("/api/written-prompts/autosave", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -190,7 +191,7 @@ export default function WrittenPromptMode({ onBack, requestHeaders, onBlocked })
     try {
       await saveDraft(submissionText);
 
-      const response = await fetch("/api/written-prompts/submit", {
+      const response = await fetchApi("/api/written-prompts/submit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
