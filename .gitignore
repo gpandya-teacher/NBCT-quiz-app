@@ -23,3 +23,9 @@ data/
 
 # OS
 .DS_Store
+# allow required dataset files for deployment
+backend/data/*
+!backend/data/nbct_question_bank_405_v2_cleaned.json
+!backend/data/nbpts_prompts_production.json
+!backend/data/nbct_component1_dataset.jsonl
+!backend/data/nbct_component1_prompts_30.jsonl

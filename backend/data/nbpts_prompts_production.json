@@ -1,0 +1,3062 @@
+[
+  {
+    "id": 1,
+    "domain": "Knowledge of Students & Curriculum",
+    "domain_focus": "Cognitive profiles, Medical impacts, and Curricular alignment",
+    "category": "medical_access",
+    "difficulty": "medium",
+    "prompt_text": "A student with Fetal Alcohol Syndrome struggles with cause-and-effect in a science lab. How do you adapt the lesson?",
+    "sentence_starter": "To address this student’s strengths, needs, and access barriers, I would first...",
+    "ideal_structure": [
+      "Identify the student’s strengths, disability-related needs, and access barrier.",
+      "State the grade-level standard or lesson objective that remains the target.",
+      "Describe specific accommodations, modifications, SDI, or assistive technology.",
+      "Explain how engagement, communication, and independence will be supported.",
+      "State how success will be monitored during and after the lesson."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "SDI",
+      "access",
+      "curriculum",
+      "accommodation",
+      "medical_access"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 2,
+    "domain": "Knowledge of Students & Curriculum",
+    "domain_focus": "Cognitive profiles, Medical impacts, and Curricular alignment",
+    "category": "aac_writing_access",
+    "difficulty": "hard",
+    "prompt_text": "How do you modify a 5th-grade \"Argumentative Writing\" unit for a student who is non-verbal and uses an eye-gaze communication system?",
+    "sentence_starter": "To address this student’s strengths, needs, and access barriers, I would first...",
+    "ideal_structure": [
+      "Identify the student’s strengths, disability-related needs, and access barrier.",
+      "State the grade-level standard or lesson objective that remains the target.",
+      "Describe specific accommodations, modifications, SDI, or assistive technology.",
+      "Explain how engagement, communication, and independence will be supported.",
+      "State how success will be monitored during and after the lesson."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "SDI",
+      "access",
+      "curriculum",
+      "accommodation",
+      "aac_writing_access"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 3,
+    "domain": "Knowledge of Students & Curriculum",
+    "domain_focus": "Cognitive profiles, Medical impacts, and Curricular alignment",
+    "category": "math_access",
+    "difficulty": "hard",
+    "prompt_text": "A student with Dyscalculia can do math logic but cannot memorize basic facts. What \"Low-Tech\" and \"High-Tech\" tools do you provide?",
+    "sentence_starter": "To address this student’s strengths, needs, and access barriers, I would first...",
+    "ideal_structure": [
+      "Identify the student’s strengths, disability-related needs, and access barrier.",
+      "State the grade-level standard or lesson objective that remains the target.",
+      "Describe specific accommodations, modifications, SDI, or assistive technology.",
+      "Explain how engagement, communication, and independence will be supported.",
+      "State how success will be monitored during and after the lesson."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "SDI",
+      "access",
+      "curriculum",
+      "accommodation",
+      "math_access"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 4,
+    "domain": "Knowledge of Students & Curriculum",
+    "domain_focus": "Cognitive profiles, Medical impacts, and Curricular alignment",
+    "category": "trauma_support",
+    "difficulty": "hard",
+    "prompt_text": "A military-connected student has PTSD triggered by loud school bells. What transition supports do you implement?",
+    "sentence_starter": "To address this student’s strengths, needs, and access barriers, I would first...",
+    "ideal_structure": [
+      "Identify the student’s strengths, disability-related needs, and access barrier.",
+      "State the grade-level standard or lesson objective that remains the target.",
+      "Describe specific accommodations, modifications, SDI, or assistive technology.",
+      "Explain how engagement, communication, and independence will be supported.",
+      "State how success will be monitored during and after the lesson."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "SDI",
+      "access",
+      "curriculum",
+      "accommodation",
+      "trauma_support"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 5,
+    "domain": "Knowledge of Students & Curriculum",
+    "domain_focus": "Cognitive profiles, Medical impacts, and Curricular alignment",
+    "category": "standards_alignment",
+    "difficulty": "hard",
+    "prompt_text": "How do you align a \"Life Skills\" sorting task to a 4th-grade Common Core geometry standard?",
+    "sentence_starter": "To address this student’s strengths, needs, and access barriers, I would first...",
+    "ideal_structure": [
+      "Identify the student’s strengths, disability-related needs, and access barrier.",
+      "State the grade-level standard or lesson objective that remains the target.",
+      "Describe specific accommodations, modifications, SDI, or assistive technology.",
+      "Explain how engagement, communication, and independence will be supported.",
+      "State how success will be monitored during and after the lesson."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "SDI",
+      "access",
+      "curriculum",
+      "accommodation",
+      "standards_alignment"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 6,
+    "domain": "Knowledge of Students & Curriculum",
+    "domain_focus": "Cognitive profiles, Medical impacts, and Curricular alignment",
+    "category": "participation_support",
+    "difficulty": "hard",
+    "prompt_text": "A student with Selective Mutism needs to participate in a \"Socratic Seminar.\" How do you ensure their voice is heard?",
+    "sentence_starter": "To address this student’s strengths, needs, and access barriers, I would first...",
+    "ideal_structure": [
+      "Identify the student’s strengths, disability-related needs, and access barrier.",
+      "State the grade-level standard or lesson objective that remains the target.",
+      "Describe specific accommodations, modifications, SDI, or assistive technology.",
+      "Explain how engagement, communication, and independence will be supported.",
+      "State how success will be monitored during and after the lesson."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "SDI",
+      "access",
+      "curriculum",
+      "accommodation",
+      "participation_support"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 7,
+    "domain": "Knowledge of Students & Curriculum",
+    "domain_focus": "Cognitive profiles, Medical impacts, and Curricular alignment",
+    "category": "task_analysis",
+    "difficulty": "medium",
+    "prompt_text": "Describe how you use Task Analysis to teach a 5th grader how to use an online library database.",
+    "sentence_starter": "To address this student’s strengths, needs, and access barriers, I would first...",
+    "ideal_structure": [
+      "Identify the student’s strengths, disability-related needs, and access barrier.",
+      "State the grade-level standard or lesson objective that remains the target.",
+      "Describe specific accommodations, modifications, SDI, or assistive technology.",
+      "Explain how engagement, communication, and independence will be supported.",
+      "State how success will be monitored during and after the lesson."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "SDI",
+      "access",
+      "curriculum",
+      "accommodation",
+      "task_analysis"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 8,
+    "domain": "Knowledge of Students & Curriculum",
+    "domain_focus": "Cognitive profiles, Medical impacts, and Curricular alignment",
+    "category": "writing_access",
+    "difficulty": "hard",
+    "prompt_text": "A student with Dysgraphia has high-level ideas but cannot physically write. What is the SDI for \"Writing Process\"?",
+    "sentence_starter": "To address this student’s strengths, needs, and access barriers, I would first...",
+    "ideal_structure": [
+      "Identify the student’s strengths, disability-related needs, and access barrier.",
+      "State the grade-level standard or lesson objective that remains the target.",
+      "Describe specific accommodations, modifications, SDI, or assistive technology.",
+      "Explain how engagement, communication, and independence will be supported.",
+      "State how success will be monitored during and after the lesson."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "SDI",
+      "access",
+      "curriculum",
+      "accommodation",
+      "writing_access"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 9,
+    "domain": "Knowledge of Students & Curriculum",
+    "domain_focus": "Cognitive profiles, Medical impacts, and Curricular alignment",
+    "category": "sel_literacy",
+    "difficulty": "hard",
+    "prompt_text": "How do you incorporate Social-Emotional Learning (SEL) into a small-group reading lesson on \"Character Traits\"?",
+    "sentence_starter": "To address this student’s strengths, needs, and access barriers, I would first...",
+    "ideal_structure": [
+      "Identify the student’s strengths, disability-related needs, and access barrier.",
+      "State the grade-level standard or lesson objective that remains the target.",
+      "Describe specific accommodations, modifications, SDI, or assistive technology.",
+      "Explain how engagement, communication, and independence will be supported.",
+      "State how success will be monitored during and after the lesson."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "SDI",
+      "access",
+      "curriculum",
+      "accommodation",
+      "sel_literacy"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 10,
+    "domain": "Knowledge of Students & Curriculum",
+    "domain_focus": "Cognitive profiles, Medical impacts, and Curricular alignment",
+    "category": "sensory_access",
+    "difficulty": "medium",
+    "prompt_text": "A student with a Hearing Impairment is struggling with phonemic awareness (rhyming). How do you use visual cues?",
+    "sentence_starter": "To address this student’s strengths, needs, and access barriers, I would first...",
+    "ideal_structure": [
+      "Identify the student’s strengths, disability-related needs, and access barrier.",
+      "State the grade-level standard or lesson objective that remains the target.",
+      "Describe specific accommodations, modifications, SDI, or assistive technology.",
+      "Explain how engagement, communication, and independence will be supported.",
+      "State how success will be monitored during and after the lesson."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "SDI",
+      "access",
+      "curriculum",
+      "accommodation",
+      "sensory_access"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 11,
+    "domain": "Knowledge of Students & Curriculum",
+    "domain_focus": "Cognitive profiles, Medical impacts, and Curricular alignment",
+    "category": "functional_academics",
+    "difficulty": "medium",
+    "prompt_text": "How do you adapt a \"Financial Literacy\" lesson (counting money) for a student with a moderate Intellectual Disability?",
+    "sentence_starter": "To address this student’s strengths, needs, and access barriers, I would first...",
+    "ideal_structure": [
+      "Identify the student’s strengths, disability-related needs, and access barrier.",
+      "State the grade-level standard or lesson objective that remains the target.",
+      "Describe specific accommodations, modifications, SDI, or assistive technology.",
+      "Explain how engagement, communication, and independence will be supported.",
+      "State how success will be monitored during and after the lesson."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "SDI",
+      "access",
+      "curriculum",
+      "accommodation",
+      "functional_academics"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 12,
+    "domain": "Knowledge of Students & Curriculum",
+    "domain_focus": "Cognitive profiles, Medical impacts, and Curricular alignment",
+    "category": "twice_exceptional",
+    "difficulty": "hard",
+    "prompt_text": "A student with ADHD is also \"Twice Exceptional\" (Gifted). How do you prevent boredom while supporting their focus?",
+    "sentence_starter": "To address this student’s strengths, needs, and access barriers, I would first...",
+    "ideal_structure": [
+      "Identify the student’s strengths, disability-related needs, and access barrier.",
+      "State the grade-level standard or lesson objective that remains the target.",
+      "Describe specific accommodations, modifications, SDI, or assistive technology.",
+      "Explain how engagement, communication, and independence will be supported.",
+      "State how success will be monitored during and after the lesson."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "SDI",
+      "access",
+      "curriculum",
+      "accommodation",
+      "twice_exceptional"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 13,
+    "domain": "Knowledge of Students & Curriculum",
+    "domain_focus": "Cognitive profiles, Medical impacts, and Curricular alignment",
+    "category": "memory_strategy",
+    "difficulty": "medium",
+    "prompt_text": "Describe a Mnemonic Strategy you would teach a student to remember the steps of the \"Water Cycle.\"",
+    "sentence_starter": "To address this student’s strengths, needs, and access barriers, I would first...",
+    "ideal_structure": [
+      "Identify the student’s strengths, disability-related needs, and access barrier.",
+      "State the grade-level standard or lesson objective that remains the target.",
+      "Describe specific accommodations, modifications, SDI, or assistive technology.",
+      "Explain how engagement, communication, and independence will be supported.",
+      "State how success will be monitored during and after the lesson."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "SDI",
+      "access",
+      "curriculum",
+      "accommodation",
+      "memory_strategy"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 14,
+    "domain": "Knowledge of Students & Curriculum",
+    "domain_focus": "Cognitive profiles, Medical impacts, and Curricular alignment",
+    "category": "autism_exec_function",
+    "difficulty": "hard",
+    "prompt_text": "A student with Autism has a \"Splinter Skill\" in history but cannot follow a 3-step direction. How do you bridge this?",
+    "sentence_starter": "To address this student’s strengths, needs, and access barriers, I would first...",
+    "ideal_structure": [
+      "Identify the student’s strengths, disability-related needs, and access barrier.",
+      "State the grade-level standard or lesson objective that remains the target.",
+      "Describe specific accommodations, modifications, SDI, or assistive technology.",
+      "Explain how engagement, communication, and independence will be supported.",
+      "State how success will be monitored during and after the lesson."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "SDI",
+      "access",
+      "curriculum",
+      "accommodation",
+      "autism_exec_function"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 15,
+    "domain": "Knowledge of Students & Curriculum",
+    "domain_focus": "Cognitive profiles, Medical impacts, and Curricular alignment",
+    "category": "auditory_processing",
+    "difficulty": "medium",
+    "prompt_text": "How do you teach \"Active Listening\" to a student with an Auditory Processing Disorder?",
+    "sentence_starter": "To address this student’s strengths, needs, and access barriers, I would first...",
+    "ideal_structure": [
+      "Identify the student’s strengths, disability-related needs, and access barrier.",
+      "State the grade-level standard or lesson objective that remains the target.",
+      "Describe specific accommodations, modifications, SDI, or assistive technology.",
+      "Explain how engagement, communication, and independence will be supported.",
+      "State how success will be monitored during and after the lesson."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "SDI",
+      "access",
+      "curriculum",
+      "accommodation",
+      "auditory_processing"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 16,
+    "domain": "Knowledge of Students & Curriculum",
+    "domain_focus": "Cognitive profiles, Medical impacts, and Curricular alignment",
+    "category": "assessment_access",
+    "difficulty": "hard",
+    "prompt_text": "A student has an Orthopedic Impairment and tires easily. How do you modify a 30-minute high-stakes reading assessment?",
+    "sentence_starter": "To address this student’s strengths, needs, and access barriers, I would first...",
+    "ideal_structure": [
+      "Identify the student’s strengths, disability-related needs, and access barrier.",
+      "State the grade-level standard or lesson objective that remains the target.",
+      "Describe specific accommodations, modifications, SDI, or assistive technology.",
+      "Explain how engagement, communication, and independence will be supported.",
+      "State how success will be monitored during and after the lesson."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "SDI",
+      "access",
+      "curriculum",
+      "accommodation",
+      "assessment_access"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 17,
+    "domain": "Knowledge of Students & Curriculum",
+    "domain_focus": "Cognitive profiles, Medical impacts, and Curricular alignment",
+    "category": "culturally_responsive_instruction",
+    "difficulty": "medium",
+    "prompt_text": "How do you use \"Culturally Responsive materials\" to teach a student with an SLD about different family structures?",
+    "sentence_starter": "To address this student’s strengths, needs, and access barriers, I would first...",
+    "ideal_structure": [
+      "Identify the student’s strengths, disability-related needs, and access barrier.",
+      "State the grade-level standard or lesson objective that remains the target.",
+      "Describe specific accommodations, modifications, SDI, or assistive technology.",
+      "Explain how engagement, communication, and independence will be supported.",
+      "State how success will be monitored during and after the lesson."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "SDI",
+      "access",
+      "curriculum",
+      "accommodation",
+      "culturally_responsive_instruction"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 18,
+    "domain": "Knowledge of Students & Curriculum",
+    "domain_focus": "Cognitive profiles, Medical impacts, and Curricular alignment",
+    "category": "behavior_choice_voice",
+    "difficulty": "hard",
+    "prompt_text": "A student with Oppositional Defiant Disorder (ODD) refuses to use a graphic organizer. How do you offer \"Choice and Voice\"?",
+    "sentence_starter": "To address this student’s strengths, needs, and access barriers, I would first...",
+    "ideal_structure": [
+      "Identify the student’s strengths, disability-related needs, and access barrier.",
+      "State the grade-level standard or lesson objective that remains the target.",
+      "Describe specific accommodations, modifications, SDI, or assistive technology.",
+      "Explain how engagement, communication, and independence will be supported.",
+      "State how success will be monitored during and after the lesson."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "SDI",
+      "access",
+      "curriculum",
+      "accommodation",
+      "behavior_choice_voice"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 19,
+    "domain": "Knowledge of Students & Curriculum",
+    "domain_focus": "Cognitive profiles, Medical impacts, and Curricular alignment",
+    "category": "peer_support",
+    "difficulty": "medium",
+    "prompt_text": "Describe how you would use Peer Tutoring to support a student with a social communication goal.",
+    "sentence_starter": "To address this student’s strengths, needs, and access barriers, I would first...",
+    "ideal_structure": [
+      "Identify the student’s strengths, disability-related needs, and access barrier.",
+      "State the grade-level standard or lesson objective that remains the target.",
+      "Describe specific accommodations, modifications, SDI, or assistive technology.",
+      "Explain how engagement, communication, and independence will be supported.",
+      "State how success will be monitored during and after the lesson."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "SDI",
+      "access",
+      "curriculum",
+      "accommodation",
+      "peer_support"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 20,
+    "domain": "Knowledge of Students & Curriculum",
+    "domain_focus": "Cognitive profiles, Medical impacts, and Curricular alignment",
+    "category": "instructional_continuity",
+    "difficulty": "hard",
+    "prompt_text": "A student has a \"Health Impairment\" that causes frequent absences. How do you maintain Instructional Continuity?",
+    "sentence_starter": "To address this student’s strengths, needs, and access barriers, I would first...",
+    "ideal_structure": [
+      "Identify the student’s strengths, disability-related needs, and access barrier.",
+      "State the grade-level standard or lesson objective that remains the target.",
+      "Describe specific accommodations, modifications, SDI, or assistive technology.",
+      "Explain how engagement, communication, and independence will be supported.",
+      "State how success will be monitored during and after the lesson."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "SDI",
+      "access",
+      "curriculum",
+      "accommodation",
+      "instructional_continuity"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 21,
+    "domain": "Assessment & Instruction",
+    "domain_focus": "Formative data, Error Analysis, and Legal compliance",
+    "category": "data_review",
+    "difficulty": "hard",
+    "prompt_text": "A student’s AIMSweb or i-Ready data shows a \"negative trend.\" What are the three variables you check first?",
+    "sentence_starter": "To make an instructional decision grounded in data, I would begin by...",
+    "ideal_structure": [
+      "Define the decision or question the data must answer.",
+      "Name the data sources, assessment tools, or observations to review.",
+      "Interpret what the data suggest and rule out common confounds.",
+      "Describe the instructional, behavioral, or placement response.",
+      "Explain how progress will be monitored and communicated."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "data",
+      "assessment",
+      "progress monitoring",
+      "instruction",
+      "data_review"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 22,
+    "domain": "Assessment & Instruction",
+    "domain_focus": "Formative data, Error Analysis, and Legal compliance",
+    "category": "phonics_error_analysis",
+    "difficulty": "hard",
+    "prompt_text": "You are reviewing a student's spelling test. They wrote \"cat\" as \"kat\" and \"ship\" as \"sip.\" What does this Error Analysis tell you?",
+    "sentence_starter": "To make an instructional decision grounded in data, I would begin by...",
+    "ideal_structure": [
+      "Define the decision or question the data must answer.",
+      "Name the data sources, assessment tools, or observations to review.",
+      "Interpret what the data suggest and rule out common confounds.",
+      "Describe the instructional, behavioral, or placement response.",
+      "Explain how progress will be monitored and communicated."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "data",
+      "assessment",
+      "progress monitoring",
+      "instruction",
+      "phonics_error_analysis"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 23,
+    "domain": "Assessment & Instruction",
+    "domain_focus": "Formative data, Error Analysis, and Legal compliance",
+    "category": "ecological_assessment",
+    "difficulty": "hard",
+    "prompt_text": "How do you use Ecological Assessment to determine why a student is successful in your room but not in the cafeteria?",
+    "sentence_starter": "To make an instructional decision grounded in data, I would begin by...",
+    "ideal_structure": [
+      "Define the decision or question the data must answer.",
+      "Name the data sources, assessment tools, or observations to review.",
+      "Interpret what the data suggest and rule out common confounds.",
+      "Describe the instructional, behavioral, or placement response.",
+      "Explain how progress will be monitored and communicated."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "data",
+      "assessment",
+      "progress monitoring",
+      "instruction",
+      "ecological_assessment"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 24,
+    "domain": "Assessment & Instruction",
+    "domain_focus": "Formative data, Error Analysis, and Legal compliance",
+    "category": "cbm",
+    "difficulty": "medium",
+    "prompt_text": "Describe how you would conduct a Curriculum-Based Measurement (CBM) for math calculation.",
+    "sentence_starter": "To make an instructional decision grounded in data, I would begin by...",
+    "ideal_structure": [
+      "Define the decision or question the data must answer.",
+      "Name the data sources, assessment tools, or observations to review.",
+      "Interpret what the data suggest and rule out common confounds.",
+      "Describe the instructional, behavioral, or placement response.",
+      "Explain how progress will be monitored and communicated."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "data",
+      "assessment",
+      "progress monitoring",
+      "instruction",
+      "cbm"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 25,
+    "domain": "Assessment & Instruction",
+    "domain_focus": "Formative data, Error Analysis, and Legal compliance",
+    "category": "placement_decision",
+    "difficulty": "hard",
+    "prompt_text": "A parent wants to move their child from \"Resource\" to \"General Ed Full Time.\" What data points do you bring to the meeting?",
+    "sentence_starter": "To make an instructional decision grounded in data, I would begin by...",
+    "ideal_structure": [
+      "Define the decision or question the data must answer.",
+      "Name the data sources, assessment tools, or observations to review.",
+      "Interpret what the data suggest and rule out common confounds.",
+      "Describe the instructional, behavioral, or placement response.",
+      "Explain how progress will be monitored and communicated."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "data",
+      "assessment",
+      "progress monitoring",
+      "instruction",
+      "placement_decision"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 26,
+    "domain": "Assessment & Instruction",
+    "domain_focus": "Formative data, Error Analysis, and Legal compliance",
+    "category": "skill_vs_performance",
+    "difficulty": "hard",
+    "prompt_text": "How do you differentiate between a \"Skill Deficit\" and a \"Performance Deficit\" (Motivation)?",
+    "sentence_starter": "To make an instructional decision grounded in data, I would begin by...",
+    "ideal_structure": [
+      "Define the decision or question the data must answer.",
+      "Name the data sources, assessment tools, or observations to review.",
+      "Interpret what the data suggest and rule out common confounds.",
+      "Describe the instructional, behavioral, or placement response.",
+      "Explain how progress will be monitored and communicated."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "data",
+      "assessment",
+      "progress monitoring",
+      "instruction",
+      "skill_vs_performance"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 27,
+    "domain": "Assessment & Instruction",
+    "domain_focus": "Formative data, Error Analysis, and Legal compliance",
+    "category": "behavior_assessment",
+    "difficulty": "medium",
+    "prompt_text": "Describe how to use Video Self-Modeling as a behavioral assessment tool.",
+    "sentence_starter": "To make an instructional decision grounded in data, I would begin by...",
+    "ideal_structure": [
+      "Define the decision or question the data must answer.",
+      "Name the data sources, assessment tools, or observations to review.",
+      "Interpret what the data suggest and rule out common confounds.",
+      "Describe the instructional, behavioral, or placement response.",
+      "Explain how progress will be monitored and communicated."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "data",
+      "assessment",
+      "progress monitoring",
+      "instruction",
+      "behavior_assessment"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 28,
+    "domain": "Assessment & Instruction",
+    "domain_focus": "Formative data, Error Analysis, and Legal compliance",
+    "category": "self_regulation_assessment",
+    "difficulty": "hard",
+    "prompt_text": "A student with ASD is \"stimming\" during a test. How do you determine if this is a distraction or a self-regulation tool?",
+    "sentence_starter": "To make an instructional decision grounded in data, I would begin by...",
+    "ideal_structure": [
+      "Define the decision or question the data must answer.",
+      "Name the data sources, assessment tools, or observations to review.",
+      "Interpret what the data suggest and rule out common confounds.",
+      "Describe the instructional, behavioral, or placement response.",
+      "Explain how progress will be monitored and communicated."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "data",
+      "assessment",
+      "progress monitoring",
+      "instruction",
+      "self_regulation_assessment"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 29,
+    "domain": "Assessment & Instruction",
+    "domain_focus": "Formative data, Error Analysis, and Legal compliance",
+    "category": "self_assessment",
+    "difficulty": "medium",
+    "prompt_text": "How do you use Rubrics to help a student with a Learning Disability \"Self-Assess\" their writing?",
+    "sentence_starter": "To make an instructional decision grounded in data, I would begin by...",
+    "ideal_structure": [
+      "Define the decision or question the data must answer.",
+      "Name the data sources, assessment tools, or observations to review.",
+      "Interpret what the data suggest and rule out common confounds.",
+      "Describe the instructional, behavioral, or placement response.",
+      "Explain how progress will be monitored and communicated."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "data",
+      "assessment",
+      "progress monitoring",
+      "instruction",
+      "self_assessment"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 30,
+    "domain": "Assessment & Instruction",
+    "domain_focus": "Formative data, Error Analysis, and Legal compliance",
+    "category": "legal_compliance_mdr",
+    "difficulty": "hard",
+    "prompt_text": "Describe the legal requirements for a Manifestation Determination Review (MDR) if a student is suspended for 11 days.",
+    "sentence_starter": "To make an instructional decision grounded in data, I would begin by...",
+    "ideal_structure": [
+      "Define the decision or question the data must answer.",
+      "Name the data sources, assessment tools, or observations to review.",
+      "Interpret what the data suggest and rule out common confounds.",
+      "Describe the instructional, behavioral, or placement response.",
+      "Explain how progress will be monitored and communicated."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "data",
+      "assessment",
+      "progress monitoring",
+      "instruction",
+      "legal_compliance_mdr"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 31,
+    "domain": "Assessment & Instruction",
+    "domain_focus": "Formative data, Error Analysis, and Legal compliance",
+    "category": "score_interpretation",
+    "difficulty": "hard",
+    "prompt_text": "How do you explain the difference between a \"Standardized Score\" and a \"Grade Level Equivalent\" to a parent?",
+    "sentence_starter": "To make an instructional decision grounded in data, I would begin by...",
+    "ideal_structure": [
+      "Define the decision or question the data must answer.",
+      "Name the data sources, assessment tools, or observations to review.",
+      "Interpret what the data suggest and rule out common confounds.",
+      "Describe the instructional, behavioral, or placement response.",
+      "Explain how progress will be monitored and communicated."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "data",
+      "assessment",
+      "progress monitoring",
+      "instruction",
+      "score_interpretation"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 32,
+    "domain": "Assessment & Instruction",
+    "domain_focus": "Formative data, Error Analysis, and Legal compliance",
+    "category": "assessment_format",
+    "difficulty": "hard",
+    "prompt_text": "A student consistently fails \"Multiple Choice\" tests but passes \"Oral Exams.\" What does this tell you about the assessment format?",
+    "sentence_starter": "To make an instructional decision grounded in data, I would begin by...",
+    "ideal_structure": [
+      "Define the decision or question the data must answer.",
+      "Name the data sources, assessment tools, or observations to review.",
+      "Interpret what the data suggest and rule out common confounds.",
+      "Describe the instructional, behavioral, or placement response.",
+      "Explain how progress will be monitored and communicated."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "data",
+      "assessment",
+      "progress monitoring",
+      "instruction",
+      "assessment_format"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 33,
+    "domain": "Assessment & Instruction",
+    "domain_focus": "Formative data, Error Analysis, and Legal compliance",
+    "category": "progress_monitoring",
+    "difficulty": "medium",
+    "prompt_text": "How do you use Progress Monitoring to justify a change in \"Service Minutes\" on an IEP?",
+    "sentence_starter": "To make an instructional decision grounded in data, I would begin by...",
+    "ideal_structure": [
+      "Define the decision or question the data must answer.",
+      "Name the data sources, assessment tools, or observations to review.",
+      "Interpret what the data suggest and rule out common confounds.",
+      "Describe the instructional, behavioral, or placement response.",
+      "Explain how progress will be monitored and communicated."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "data",
+      "assessment",
+      "progress monitoring",
+      "instruction",
+      "progress_monitoring"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 34,
+    "domain": "Assessment & Instruction",
+    "domain_focus": "Formative data, Error Analysis, and Legal compliance",
+    "category": "generalization_assessment",
+    "difficulty": "hard",
+    "prompt_text": "A student is struggling with \"Generalization.\" How do you assess their skill in three different environments?",
+    "sentence_starter": "To make an instructional decision grounded in data, I would begin by...",
+    "ideal_structure": [
+      "Define the decision or question the data must answer.",
+      "Name the data sources, assessment tools, or observations to review.",
+      "Interpret what the data suggest and rule out common confounds.",
+      "Describe the instructional, behavioral, or placement response.",
+      "Explain how progress will be monitored and communicated."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "data",
+      "assessment",
+      "progress monitoring",
+      "instruction",
+      "generalization_assessment"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 35,
+    "domain": "Assessment & Instruction",
+    "domain_focus": "Formative data, Error Analysis, and Legal compliance",
+    "category": "prompt_dependence",
+    "difficulty": "medium",
+    "prompt_text": "Describe how to use Prompt Fading data to determine if a student is becoming \"Prompt Dependent.\"",
+    "sentence_starter": "To make an instructional decision grounded in data, I would begin by...",
+    "ideal_structure": [
+      "Define the decision or question the data must answer.",
+      "Name the data sources, assessment tools, or observations to review.",
+      "Interpret what the data suggest and rule out common confounds.",
+      "Describe the instructional, behavioral, or placement response.",
+      "Explain how progress will be monitored and communicated."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "data",
+      "assessment",
+      "progress monitoring",
+      "instruction",
+      "prompt_dependence"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 36,
+    "domain": "Assessment & Instruction",
+    "domain_focus": "Formative data, Error Analysis, and Legal compliance",
+    "category": "ell_disability_assessment",
+    "difficulty": "hard",
+    "prompt_text": "How do you assess the \"Reading Level\" of a student who is an English Language Learner (ELL) and may have a disability?",
+    "sentence_starter": "To make an instructional decision grounded in data, I would begin by...",
+    "ideal_structure": [
+      "Define the decision or question the data must answer.",
+      "Name the data sources, assessment tools, or observations to review.",
+      "Interpret what the data suggest and rule out common confounds.",
+      "Describe the instructional, behavioral, or placement response.",
+      "Explain how progress will be monitored and communicated."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "data",
+      "assessment",
+      "progress monitoring",
+      "instruction",
+      "ell_disability_assessment"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 37,
+    "domain": "Assessment & Instruction",
+    "domain_focus": "Formative data, Error Analysis, and Legal compliance",
+    "category": "behavior_data_collection",
+    "difficulty": "hard",
+    "prompt_text": "A student’s BIP requires \"Frequency Counting\" of hitting. How do you train a paraeducator to collect this accurately?",
+    "sentence_starter": "To make an instructional decision grounded in data, I would begin by...",
+    "ideal_structure": [
+      "Define the decision or question the data must answer.",
+      "Name the data sources, assessment tools, or observations to review.",
+      "Interpret what the data suggest and rule out common confounds.",
+      "Describe the instructional, behavioral, or placement response.",
+      "Explain how progress will be monitored and communicated."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "data",
+      "assessment",
+      "progress monitoring",
+      "instruction",
+      "behavior_data_collection"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 38,
+    "domain": "Assessment & Instruction",
+    "domain_focus": "Formative data, Error Analysis, and Legal compliance",
+    "category": "psychometrics",
+    "difficulty": "hard",
+    "prompt_text": "What is the \"Standard Error of Measurement,\" and why does it matter when looking at an IQ score?",
+    "sentence_starter": "To make an instructional decision grounded in data, I would begin by...",
+    "ideal_structure": [
+      "Define the decision or question the data must answer.",
+      "Name the data sources, assessment tools, or observations to review.",
+      "Interpret what the data suggest and rule out common confounds.",
+      "Describe the instructional, behavioral, or placement response.",
+      "Explain how progress will be monitored and communicated."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "data",
+      "assessment",
+      "progress monitoring",
+      "instruction",
+      "psychometrics"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 39,
+    "domain": "Assessment & Instruction",
+    "domain_focus": "Formative data, Error Analysis, and Legal compliance",
+    "category": "portfolio_assessment",
+    "difficulty": "medium",
+    "prompt_text": "How do you use Portfolios to show growth for a student with significant disabilities who doesn't take state tests?",
+    "sentence_starter": "To make an instructional decision grounded in data, I would begin by...",
+    "ideal_structure": [
+      "Define the decision or question the data must answer.",
+      "Name the data sources, assessment tools, or observations to review.",
+      "Interpret what the data suggest and rule out common confounds.",
+      "Describe the instructional, behavioral, or placement response.",
+      "Explain how progress will be monitored and communicated."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "data",
+      "assessment",
+      "progress monitoring",
+      "instruction",
+      "portfolio_assessment"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 40,
+    "domain": "Assessment & Instruction",
+    "domain_focus": "Formative data, Error Analysis, and Legal compliance",
+    "category": "constraint_vs_preference",
+    "difficulty": "hard",
+    "prompt_text": "A student's data shows they are only successful when sitting in a blue chair. Is this a \"Constraint\" or a \"Preference\"?",
+    "sentence_starter": "To make an instructional decision grounded in data, I would begin by...",
+    "ideal_structure": [
+      "Define the decision or question the data must answer.",
+      "Name the data sources, assessment tools, or observations to review.",
+      "Interpret what the data suggest and rule out common confounds.",
+      "Describe the instructional, behavioral, or placement response.",
+      "Explain how progress will be monitored and communicated."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "data",
+      "assessment",
+      "progress monitoring",
+      "instruction",
+      "constraint_vs_preference"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 41,
+    "domain": "Professional Learning & Collaboration",
+    "domain_focus": "Coaching, Family Advocacy, and Systemic Change",
+    "category": "accommodation_compliance",
+    "difficulty": "hard",
+    "prompt_text": "A general education teacher is not providing the accommodations on a student's 504 plan. How do you intervene?",
+    "sentence_starter": "To address this collaboratively and professionally, I would first...",
+    "ideal_structure": [
+      "State the core concern and the student or systems impact.",
+      "Describe the immediate collaborative step and who is involved.",
+      "Reference legal, ethical, or procedural responsibilities where relevant.",
+      "Explain how communication will remain respectful, clear, and solution-focused.",
+      "State the follow-up action and how effectiveness will be checked."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "collaboration",
+      "family",
+      "systems",
+      "professional practice",
+      "accommodation_compliance"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 42,
+    "domain": "Professional Learning & Collaboration",
+    "domain_focus": "Coaching, Family Advocacy, and Systemic Change",
+    "category": "pt_collaboration",
+    "difficulty": "medium",
+    "prompt_text": "How do you collaborate with a Physical Therapist (PT) to ensure a student's \"Positioning\" in the classroom supports learning?",
+    "sentence_starter": "To address this collaboratively and professionally, I would first...",
+    "ideal_structure": [
+      "State the core concern and the student or systems impact.",
+      "Describe the immediate collaborative step and who is involved.",
+      "Reference legal, ethical, or procedural responsibilities where relevant.",
+      "Explain how communication will remain respectful, clear, and solution-focused.",
+      "State the follow-up action and how effectiveness will be checked."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "collaboration",
+      "family",
+      "systems",
+      "professional practice",
+      "pt_collaboration"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 43,
+    "domain": "Professional Learning & Collaboration",
+    "domain_focus": "Coaching, Family Advocacy, and Systemic Change",
+    "category": "staff_support",
+    "difficulty": "hard",
+    "prompt_text": "A paraeducator feels \"burned out\" by a student’s aggressive behavior. How do you support the staff member?",
+    "sentence_starter": "To address this collaboratively and professionally, I would first...",
+    "ideal_structure": [
+      "State the core concern and the student or systems impact.",
+      "Describe the immediate collaborative step and who is involved.",
+      "Reference legal, ethical, or procedural responsibilities where relevant.",
+      "Explain how communication will remain respectful, clear, and solution-focused.",
+      "State the follow-up action and how effectiveness will be checked."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "collaboration",
+      "family",
+      "systems",
+      "professional practice",
+      "staff_support"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 44,
+    "domain": "Professional Learning & Collaboration",
+    "domain_focus": "Coaching, Family Advocacy, and Systemic Change",
+    "category": "staff_training",
+    "difficulty": "medium",
+    "prompt_text": "Describe how you lead a \"Social-Emotional\" training session for your building's lunchroom monitors.",
+    "sentence_starter": "To address this collaboratively and professionally, I would first...",
+    "ideal_structure": [
+      "State the core concern and the student or systems impact.",
+      "Describe the immediate collaborative step and who is involved.",
+      "Reference legal, ethical, or procedural responsibilities where relevant.",
+      "Explain how communication will remain respectful, clear, and solution-focused.",
+      "State the follow-up action and how effectiveness will be checked."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "collaboration",
+      "family",
+      "systems",
+      "professional practice",
+      "staff_training"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 45,
+    "domain": "Professional Learning & Collaboration",
+    "domain_focus": "Coaching, Family Advocacy, and Systemic Change",
+    "category": "iep_meeting_facilitation",
+    "difficulty": "hard",
+    "prompt_text": "How do you handle an IEP meeting where the parent brings a Private Advocate who is very aggressive?",
+    "sentence_starter": "To address this collaboratively and professionally, I would first...",
+    "ideal_structure": [
+      "State the core concern and the student or systems impact.",
+      "Describe the immediate collaborative step and who is involved.",
+      "Reference legal, ethical, or procedural responsibilities where relevant.",
+      "Explain how communication will remain respectful, clear, and solution-focused.",
+      "State the follow-up action and how effectiveness will be checked."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "collaboration",
+      "family",
+      "systems",
+      "professional practice",
+      "iep_meeting_facilitation"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 46,
+    "domain": "Professional Learning & Collaboration",
+    "domain_focus": "Coaching, Family Advocacy, and Systemic Change",
+    "category": "transition_collaboration",
+    "difficulty": "medium",
+    "prompt_text": "A student is transitioning to a Vocational Program. How do you collaborate with the community job coach?",
+    "sentence_starter": "To address this collaboratively and professionally, I would first...",
+    "ideal_structure": [
+      "State the core concern and the student or systems impact.",
+      "Describe the immediate collaborative step and who is involved.",
+      "Reference legal, ethical, or procedural responsibilities where relevant.",
+      "Explain how communication will remain respectful, clear, and solution-focused.",
+      "State the follow-up action and how effectiveness will be checked."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "collaboration",
+      "family",
+      "systems",
+      "professional practice",
+      "transition_collaboration"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 47,
+    "domain": "Professional Learning & Collaboration",
+    "domain_focus": "Coaching, Family Advocacy, and Systemic Change",
+    "category": "team_disagreement",
+    "difficulty": "hard",
+    "prompt_text": "You disagree with a Psychologist's evaluation findings. How do you handle this professionally within the team?",
+    "sentence_starter": "To address this collaboratively and professionally, I would first...",
+    "ideal_structure": [
+      "State the core concern and the student or systems impact.",
+      "Describe the immediate collaborative step and who is involved.",
+      "Reference legal, ethical, or procedural responsibilities where relevant.",
+      "Explain how communication will remain respectful, clear, and solution-focused.",
+      "State the follow-up action and how effectiveness will be checked."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "collaboration",
+      "family",
+      "systems",
+      "professional practice",
+      "team_disagreement"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 48,
+    "domain": "Professional Learning & Collaboration",
+    "domain_focus": "Coaching, Family Advocacy, and Systemic Change",
+    "category": "esy_planning",
+    "difficulty": "hard",
+    "prompt_text": "How do you ensure that ESY (Extended School Year) services are planned based on \"Regression and Recoupment\" data?",
+    "sentence_starter": "To address this collaboratively and professionally, I would first...",
+    "ideal_structure": [
+      "State the core concern and the student or systems impact.",
+      "Describe the immediate collaborative step and who is involved.",
+      "Reference legal, ethical, or procedural responsibilities where relevant.",
+      "Explain how communication will remain respectful, clear, and solution-focused.",
+      "State the follow-up action and how effectiveness will be checked."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "collaboration",
+      "family",
+      "systems",
+      "professional practice",
+      "esy_planning"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 49,
+    "domain": "Professional Learning & Collaboration",
+    "domain_focus": "Coaching, Family Advocacy, and Systemic Change",
+    "category": "records_transition",
+    "difficulty": "hard",
+    "prompt_text": "A military family is moving in two weeks. How do you facilitate the Records Transfer to ensure no loss of services?",
+    "sentence_starter": "To address this collaboratively and professionally, I would first...",
+    "ideal_structure": [
+      "State the core concern and the student or systems impact.",
+      "Describe the immediate collaborative step and who is involved.",
+      "Reference legal, ethical, or procedural responsibilities where relevant.",
+      "Explain how communication will remain respectful, clear, and solution-focused.",
+      "State the follow-up action and how effectiveness will be checked."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "collaboration",
+      "family",
+      "systems",
+      "professional practice",
+      "records_transition"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 50,
+    "domain": "Professional Learning & Collaboration",
+    "domain_focus": "Coaching, Family Advocacy, and Systemic Change",
+    "category": "ethics_confidentiality",
+    "difficulty": "medium",
+    "prompt_text": "Describe your role in mentoring a student-teacher on the \"Ethics of Confidentiality.\"",
+    "sentence_starter": "To address this collaboratively and professionally, I would first...",
+    "ideal_structure": [
+      "State the core concern and the student or systems impact.",
+      "Describe the immediate collaborative step and who is involved.",
+      "Reference legal, ethical, or procedural responsibilities where relevant.",
+      "Explain how communication will remain respectful, clear, and solution-focused.",
+      "State the follow-up action and how effectiveness will be checked."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "collaboration",
+      "family",
+      "systems",
+      "professional practice",
+      "ethics_confidentiality"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 51,
+    "domain": "Professional Learning & Collaboration",
+    "domain_focus": "Coaching, Family Advocacy, and Systemic Change",
+    "category": "co_planning",
+    "difficulty": "medium",
+    "prompt_text": "How do you use Shared Planning Time with a 4th-grade team to \"Front-load\" vocabulary for your resource students?",
+    "sentence_starter": "To address this collaboratively and professionally, I would first...",
+    "ideal_structure": [
+      "State the core concern and the student or systems impact.",
+      "Describe the immediate collaborative step and who is involved.",
+      "Reference legal, ethical, or procedural responsibilities where relevant.",
+      "Explain how communication will remain respectful, clear, and solution-focused.",
+      "State the follow-up action and how effectiveness will be checked."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "collaboration",
+      "family",
+      "systems",
+      "professional practice",
+      "co_planning"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 52,
+    "domain": "Professional Learning & Collaboration",
+    "domain_focus": "Coaching, Family Advocacy, and Systemic Change",
+    "category": "family_training",
+    "difficulty": "hard",
+    "prompt_text": "A student needs a \"Communication Board\" at home. How do you train the parents to use it?",
+    "sentence_starter": "To address this collaboratively and professionally, I would first...",
+    "ideal_structure": [
+      "State the core concern and the student or systems impact.",
+      "Describe the immediate collaborative step and who is involved.",
+      "Reference legal, ethical, or procedural responsibilities where relevant.",
+      "Explain how communication will remain respectful, clear, and solution-focused.",
+      "State the follow-up action and how effectiveness will be checked."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "collaboration",
+      "family",
+      "systems",
+      "professional practice",
+      "family_training"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 53,
+    "domain": "Professional Learning & Collaboration",
+    "domain_focus": "Coaching, Family Advocacy, and Systemic Change",
+    "category": "systems_advocacy",
+    "difficulty": "hard",
+    "prompt_text": "How do you advocate for \"Inclusive Scheduling\" so your students don't miss \"Specials\" (Art/Music) for Resource?",
+    "sentence_starter": "To address this collaboratively and professionally, I would first...",
+    "ideal_structure": [
+      "State the core concern and the student or systems impact.",
+      "Describe the immediate collaborative step and who is involved.",
+      "Reference legal, ethical, or procedural responsibilities where relevant.",
+      "Explain how communication will remain respectful, clear, and solution-focused.",
+      "State the follow-up action and how effectiveness will be checked."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "collaboration",
+      "family",
+      "systems",
+      "professional practice",
+      "systems_advocacy"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 54,
+    "domain": "Professional Learning & Collaboration",
+    "domain_focus": "Coaching, Family Advocacy, and Systemic Change",
+    "category": "mtss_systems_change",
+    "difficulty": "hard",
+    "prompt_text": "Describe how you use your Capstone research to influence your building's MTSS handbook.",
+    "sentence_starter": "To address this collaboratively and professionally, I would first...",
+    "ideal_structure": [
+      "State the core concern and the student or systems impact.",
+      "Describe the immediate collaborative step and who is involved.",
+      "Reference legal, ethical, or procedural responsibilities where relevant.",
+      "Explain how communication will remain respectful, clear, and solution-focused.",
+      "State the follow-up action and how effectiveness will be checked."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "collaboration",
+      "family",
+      "systems",
+      "professional practice",
+      "mtss_systems_change"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 55,
+    "domain": "Professional Learning & Collaboration",
+    "domain_focus": "Coaching, Family Advocacy, and Systemic Change",
+    "category": "family_conflict_resolution",
+    "difficulty": "hard",
+    "prompt_text": "A parent refuses to sign an IEP because they don't like a specific goal. How do you find a \"Middle Ground\"?",
+    "sentence_starter": "To address this collaboratively and professionally, I would first...",
+    "ideal_structure": [
+      "State the core concern and the student or systems impact.",
+      "Describe the immediate collaborative step and who is involved.",
+      "Reference legal, ethical, or procedural responsibilities where relevant.",
+      "Explain how communication will remain respectful, clear, and solution-focused.",
+      "State the follow-up action and how effectiveness will be checked."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "collaboration",
+      "family",
+      "systems",
+      "professional practice",
+      "family_conflict_resolution"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 56,
+    "domain": "Professional Learning & Collaboration",
+    "domain_focus": "Coaching, Family Advocacy, and Systemic Change",
+    "category": "vi_collaboration",
+    "difficulty": "medium",
+    "prompt_text": "How do you collaborate with a Visual Impairment (VI) Specialist to braille a classroom map?",
+    "sentence_starter": "To address this collaboratively and professionally, I would first...",
+    "ideal_structure": [
+      "State the core concern and the student or systems impact.",
+      "Describe the immediate collaborative step and who is involved.",
+      "Reference legal, ethical, or procedural responsibilities where relevant.",
+      "Explain how communication will remain respectful, clear, and solution-focused.",
+      "State the follow-up action and how effectiveness will be checked."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "collaboration",
+      "family",
+      "systems",
+      "professional practice",
+      "vi_collaboration"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 57,
+    "domain": "Professional Learning & Collaboration",
+    "domain_focus": "Coaching, Family Advocacy, and Systemic Change",
+    "category": "peer_buddy_support",
+    "difficulty": "hard",
+    "prompt_text": "A student is struggling with \"Social Skills.\" How do you set up a \"Peer Buddy\" program with the Gen Ed teacher?",
+    "sentence_starter": "To address this collaboratively and professionally, I would first...",
+    "ideal_structure": [
+      "State the core concern and the student or systems impact.",
+      "Describe the immediate collaborative step and who is involved.",
+      "Reference legal, ethical, or procedural responsibilities where relevant.",
+      "Explain how communication will remain respectful, clear, and solution-focused.",
+      "State the follow-up action and how effectiveness will be checked."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "collaboration",
+      "family",
+      "systems",
+      "professional practice",
+      "peer_buddy_support"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 58,
+    "domain": "Professional Learning & Collaboration",
+    "domain_focus": "Coaching, Family Advocacy, and Systemic Change",
+    "category": "resource_advocacy",
+    "difficulty": "medium",
+    "prompt_text": "How do you use your \"Site Council\" role to advocate for sensory room equipment?",
+    "sentence_starter": "To address this collaboratively and professionally, I would first...",
+    "ideal_structure": [
+      "State the core concern and the student or systems impact.",
+      "Describe the immediate collaborative step and who is involved.",
+      "Reference legal, ethical, or procedural responsibilities where relevant.",
+      "Explain how communication will remain respectful, clear, and solution-focused.",
+      "State the follow-up action and how effectiveness will be checked."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "collaboration",
+      "family",
+      "systems",
+      "professional practice",
+      "resource_advocacy"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 59,
+    "domain": "Professional Learning & Collaboration",
+    "domain_focus": "Coaching, Family Advocacy, and Systemic Change",
+    "category": "professional_growth",
+    "difficulty": "medium",
+    "prompt_text": "Describe a time you sought \"Professional Development\" because you didn't know how to support a specific student's rare disability.",
+    "sentence_starter": "To address this collaboratively and professionally, I would first...",
+    "ideal_structure": [
+      "State the core concern and the student or systems impact.",
+      "Describe the immediate collaborative step and who is involved.",
+      "Reference legal, ethical, or procedural responsibilities where relevant.",
+      "Explain how communication will remain respectful, clear, and solution-focused.",
+      "State the follow-up action and how effectiveness will be checked."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "collaboration",
+      "family",
+      "systems",
+      "professional practice",
+      "professional_growth"
+    ],
+    "is_active": true
+  },
+  {
+    "id": 60,
+    "domain": "Professional Learning & Collaboration",
+    "domain_focus": "Coaching, Family Advocacy, and Systemic Change",
+    "category": "family_language_access",
+    "difficulty": "hard",
+    "prompt_text": "How do you ensure that \"Procedural Safeguards\" are explained to a parent in their native language (if not English)?",
+    "sentence_starter": "To address this collaboratively and professionally, I would first...",
+    "ideal_structure": [
+      "State the core concern and the student or systems impact.",
+      "Describe the immediate collaborative step and who is involved.",
+      "Reference legal, ethical, or procedural responsibilities where relevant.",
+      "Explain how communication will remain respectful, clear, and solution-focused.",
+      "State the follow-up action and how effectiveness will be checked."
+    ],
+    "scoring_rubric": [
+      {
+        "criterion": "Student-centered analysis",
+        "points": 2,
+        "description": "Response identifies the learner’s strengths, needs, and relevant contextual factors."
+      },
+      {
+        "criterion": "Evidence-based planning",
+        "points": 2,
+        "description": "Response proposes appropriate strategies, accommodations, or interventions matched to the scenario."
+      },
+      {
+        "criterion": "Standards/legal alignment",
+        "points": 2,
+        "description": "Response maintains curricular, IEP, 504, assessment, or procedural alignment as applicable."
+      },
+      {
+        "criterion": "Implementation clarity",
+        "points": 2,
+        "description": "Response explains concrete steps, roles, tools, and logistics clearly enough to implement."
+      },
+      {
+        "criterion": "Progress monitoring",
+        "points": 2,
+        "description": "Response explains how effectiveness will be monitored or how data will inform next steps."
+      }
+    ],
+    "keywords": [
+      "collaboration",
+      "family",
+      "systems",
+      "professional practice",
+      "family_language_access"
+    ],
+    "is_active": true
+  }
+]
