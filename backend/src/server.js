@@ -4,10 +4,12 @@ import cors from "cors";
 import {
   authenticateUser,
   createAuthToken,
+  createPasswordResetRequest,
   createUser,
   getTokenFromRequest,
   getUserById,
   listUsers,
+  resetPasswordWithToken,
   revokeAuthToken,
   updateAccountStatus,
   verifyUserEmail,
@@ -31,6 +33,7 @@ import {
   notifyAdminOfEmailVerification,
   notifyAdminOfSignup,
   notifyAdminOfUpgradeRequest,
+  notifyUserPasswordResetEmail,
   notifyUserUpgradeUpdate,
   notifyUserVerificationEmail,
   notifyUserVerificationSuccess,
@@ -211,6 +214,67 @@ app.post("/api/auth/resend-verification", async (request, response) => {
   }
 });
 
+app.post("/api/auth/forgot-password", async (request, response) => {
+  const { email } = request.body ?? {};
+
+  if (!email) {
+    return response.status(400).json({
+      message: "Email is required.",
+    });
+  }
+
+  const resetRequest = createPasswordResetRequest(email);
+
+  if (resetRequest) {
+    const resetUrl = `${APP_BASE_URL}/reset-password?token=${resetRequest.rawToken}`;
+    const emailNotification = await notifyUserPasswordResetEmail(
+      resetRequest.user,
+      resetUrl,
+    );
+
+    if (process.env.NODE_ENV !== "production") {
+      console.info("[auth] password reset link", {
+        email: resetRequest.user.email,
+        resetUrl,
+        mode: "development",
+      });
+    }
+
+    if (!emailNotification.email_result?.delivered) {
+      console.info("[auth] password reset link", {
+        email: resetRequest.user.email,
+        resetUrl,
+        deliveryReason: emailNotification.email_result?.reason ?? "not_sent",
+      });
+    }
+  }
+
+  return response.json({
+    message: "If an account exists for that email, a reset link has been sent.",
+  });
+});
+
+app.post("/api/auth/reset-password", (request, response) => {
+  const { token, newPassword } = request.body ?? {};
+
+  if (!token || !newPassword) {
+    return response.status(400).json({
+      message: "Token and new password are required.",
+    });
+  }
+
+  try {
+    resetPasswordWithToken({ token, newPassword });
+    return response.json({
+      message: "Password reset successful. You can now log in.",
+    });
+  } catch (error) {
+    return response.status(400).json({
+      message: error.message,
+    });
+  }
+});
+
 app.post("/api/auth/login", (request, response) => {
   const { email, password } = request.body ?? {};
 
@@ -285,10 +349,31 @@ app.post("/api/billing/upgrade-request", async (request, response) => {
   }
 
   const requestRecord = createUpgradeRequest(access.user);
+  const providerStatus = getMailProviderStatus();
+  console.info("[upgrade-request] saved", {
+    userId: access.user.id,
+    userEmail: access.user.email,
+    requestId: requestRecord.id,
+    adminEmailConfigured: providerStatus.diagnostics.has_admin_email,
+    emailFromConfigured: providerStatus.diagnostics.has_email_from,
+    smtpHostConfigured: providerStatus.diagnostics.has_smtp_host,
+    smtpPortConfigured: providerStatus.diagnostics.has_smtp_port,
+    smtpUserConfigured:
+      providerStatus.diagnostics.has_smtp_user || providerStatus.diagnostics.has_email_user,
+    smtpPassConfigured:
+      providerStatus.diagnostics.has_smtp_pass || providerStatus.diagnostics.has_email_pass,
+    authSource: providerStatus.auth_source,
+  });
   const adminNotification = await notifyAdminOfUpgradeRequest(
     access.user,
     requestRecord,
   );
+
+  console.info("[upgrade-request] admin notification result", {
+    requestId: requestRecord.id,
+    delivered: Boolean(adminNotification.email_result?.delivered),
+    reason: adminNotification.email_result?.reason ?? "unknown",
+  });
 
   return response.status(201).json({
     message: "Your upgrade request is pending admin approval.",

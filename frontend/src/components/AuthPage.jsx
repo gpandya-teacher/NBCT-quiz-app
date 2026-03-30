@@ -6,6 +6,7 @@ export default function AuthPage({
   onBack,
   errorMessage,
   noticeMessage,
+  onForgotPassword,
 }) {
   const [formState, setFormState] = useState({
     fullName: "",
@@ -80,6 +81,18 @@ export default function AuthPage({
               required
             />
           </label>
+
+          {!isSignup ? (
+            <div className="text-right">
+              <button
+                type="button"
+                onClick={onForgotPassword}
+                className="text-[13px] font-semibold text-slate-700 underline underline-offset-2"
+              >
+                Forgot password?
+              </button>
+            </div>
+          ) : null}
 
           {noticeMessage ? (
             <div className="border border-emerald-300 bg-emerald-50 px-3 py-2 text-[14px] text-emerald-800">

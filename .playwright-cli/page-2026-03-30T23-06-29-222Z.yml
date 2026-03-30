@@ -1,0 +1,38 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - paragraph [ref=e8]: Access
+          - paragraph [ref=e9]: Anonymous free access available
+        - generic [ref=e10]:
+          - button "Login" [ref=e11] [cursor=pointer]
+          - button "Sign Up" [ref=e12] [cursor=pointer]
+      - paragraph [ref=e13]: NBCT Component 1 Prep
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - heading "Choose a practice section." [level=1] [ref=e16]
+          - paragraph [ref=e17]: Launch study, exam, or written-response practice from a single simulator workspace. Each mode keeps its own timing, feedback, and controls.
+        - generic [ref=e18]:
+          - paragraph [ref=e19]: Available Sections
+          - paragraph [ref=e20]: Multiple choice study and exam simulation
+          - paragraph [ref=e21]: Written response drafting and feedback
+          - paragraph [ref=e22]: "Free usage today: 0/1"
+          - paragraph [ref=e23]: Upgrade to unlimited access for $1/day.
+          - button "Upgrade" [ref=e24] [cursor=pointer]
+    - generic [ref=e25]:
+      - button "Multiple Choice Study Mode Practice randomized questions with progress tracking, timer support, and a full review screen. Enter Section" [ref=e26] [cursor=pointer]:
+        - paragraph [ref=e27]: Multiple Choice
+        - heading "Study Mode" [level=2] [ref=e28]
+        - paragraph [ref=e29]: Practice randomized questions with progress tracking, timer support, and a full review screen.
+        - generic [ref=e30]: Enter Section
+      - button "Timed Simulation Exam Mode Work through a more restrained exam-style MCQ layout with tighter pacing and less coaching. Enter Section" [ref=e31] [cursor=pointer]:
+        - paragraph [ref=e32]: Timed Simulation
+        - heading "Exam Mode" [level=2] [ref=e33]
+        - paragraph [ref=e34]: Work through a more restrained exam-style MCQ layout with tighter pacing and less coaching.
+        - generic [ref=e35]: Enter Section
+      - button "Component 1 Written Prompt Practice Draft a constructed response in a realistic writing workspace, then review rubric-based feedback. Enter Section" [ref=e36] [cursor=pointer]:
+        - paragraph [ref=e37]: Component 1
+        - heading "Written Prompt Practice" [level=2] [ref=e38]
+        - paragraph [ref=e39]: Draft a constructed response in a realistic writing workspace, then review rubric-based feedback.
+        - generic [ref=e40]: Enter Section

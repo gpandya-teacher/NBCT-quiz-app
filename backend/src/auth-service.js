@@ -1,3 +1,4 @@
+import bcrypt from "bcryptjs";
 import crypto from "node:crypto";
 import "./env-service.js";
 import { readJsonFile, writeJsonFile } from "./storage-service.js";
@@ -28,12 +29,16 @@ function normalizeEmail(email) {
   return String(email ?? "").trim().toLowerCase();
 }
 
-function hashPassword(password, salt = crypto.randomBytes(16).toString("hex")) {
+function hashLegacyPassword(password, salt = crypto.randomBytes(16).toString("hex")) {
   const derivedKey = crypto.scryptSync(password, salt, 64).toString("hex");
   return `${salt}:${derivedKey}`;
 }
 
-function verifyPassword(password, storedHash) {
+function hashPassword(password) {
+  return bcrypt.hashSync(password, 10);
+}
+
+function verifyLegacyPassword(password, storedHash) {
   const [salt, expectedHash] = String(storedHash ?? "").split(":");
 
   if (!salt || !expectedHash) {
@@ -41,10 +46,25 @@ function verifyPassword(password, storedHash) {
   }
 
   const actualHash = crypto.scryptSync(password, salt, 64).toString("hex");
+
   return crypto.timingSafeEqual(
     Buffer.from(expectedHash, "hex"),
     Buffer.from(actualHash, "hex"),
   );
+}
+
+function verifyPassword(password, storedHash) {
+  const hashValue = String(storedHash ?? "");
+
+  if (hashValue.startsWith("$2")) {
+    return bcrypt.compareSync(password, hashValue);
+  }
+
+  return verifyLegacyPassword(password, hashValue);
+}
+
+function hashResetToken(token) {
+  return crypto.createHash("sha256").update(token).digest("hex");
 }
 
 function sanitizeUser(user) {
@@ -65,6 +85,11 @@ function sanitizeUser(user) {
     created_at: user.created_at,
     updated_at: user.updated_at,
   };
+}
+
+function getUserByEmailRecord(email) {
+  const normalizedEmail = normalizeEmail(email);
+  return getUsers().find((item) => item.email === normalizedEmail) ?? null;
 }
 
 export function createUser({ fullName, email, password }) {
@@ -92,6 +117,8 @@ export function createUser({ fullName, email, password }) {
     upgrade_requested_at: null,
     upgrade_approved_at: null,
     upgrade_approved_by: null,
+    passwordResetTokenHash: null,
+    passwordResetExpiresAt: null,
     created_at: now,
     updated_at: now,
   };
@@ -102,8 +129,7 @@ export function createUser({ fullName, email, password }) {
 }
 
 export function authenticateUser({ email, password }) {
-  const normalizedEmail = normalizeEmail(email);
-  const user = getUsers().find((item) => item.email === normalizedEmail);
+  const user = getUserByEmailRecord(email);
 
   if (!user || !verifyPassword(password, user.password_hash)) {
     throw new Error("Invalid email or password.");
@@ -207,5 +233,66 @@ export function updateUpgradeStatus({
         : current.upgrade_requested_at,
     upgrade_approved_at: status === "approved" ? now : null,
     upgrade_approved_by: status === "approved" ? actedBy : null,
+  }));
+}
+
+export function createPasswordResetRequest(email) {
+  const user = getUserByEmailRecord(email);
+
+  if (!user) {
+    return null;
+  }
+
+  const rawToken = crypto.randomBytes(32).toString("hex");
+  const now = Date.now();
+  const expiresAt = new Date(now + 60 * 60 * 1000).toISOString();
+  const tokenHash = hashResetToken(rawToken);
+
+  updateUser(user.id, () => ({
+    passwordResetTokenHash: tokenHash,
+    passwordResetExpiresAt: expiresAt,
+  }));
+
+  return {
+    user: sanitizeUser(user),
+    rawToken,
+    expiresAt,
+  };
+}
+
+export function resetPasswordWithToken({ token, newPassword }) {
+  if (!newPassword || newPassword.length < 8) {
+    throw new Error("Password must be at least 8 characters long.");
+  }
+
+  const tokenHash = hashResetToken(token);
+  const now = Date.now();
+  const users = getUsers();
+  const targetUser = users.find((user) => {
+    if (!user.passwordResetTokenHash || user.passwordResetTokenHash !== tokenHash) {
+      return false;
+    }
+
+    if (!user.passwordResetExpiresAt) {
+      return false;
+    }
+
+    return new Date(user.passwordResetExpiresAt).getTime() > now;
+  });
+
+  if (!targetUser) {
+    throw new Error("Reset token is invalid or expired.");
+  }
+
+  return updateUser(targetUser.id, () => ({
+    password_hash: hashPassword(newPassword),
+    passwordResetTokenHash: null,
+    passwordResetExpiresAt: null,
+  }));
+}
+
+export function seedLegacyPasswordForTesting({ userId, password }) {
+  return updateUser(userId, () => ({
+    password_hash: hashLegacyPassword(password),
   }));
 }

@@ -1,10 +1,12 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import BottomControlBar from "./BottomControlBar";
-import ExamShell from "./ExamShell";
-import MCQOptionRow from "./MCQOptionRow";
+import BottomNavigation from "./BottomNavigation";
+import ExamLayout from "./ExamLayout";
+import ExamSubHeader from "./ExamSubHeader";
+import PassagePanel from "./PassagePanel";
 import QuestionNavigator from "./QuestionNavigator";
+import QuestionPanel from "./QuestionPanel";
 import ReviewList from "./ReviewList";
-import TopBar from "./TopBar";
+import TopExamHeader from "./TopExamHeader";
 import { fetchApi } from "../lib/api";
 
 function shuffle(items) {
@@ -19,10 +21,15 @@ function shuffle(items) {
 }
 
 function formatTime(totalSeconds) {
-  const minutes = Math.floor(totalSeconds / 60)
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60)
     .toString()
     .padStart(2, "0");
   const seconds = (totalSeconds % 60).toString().padStart(2, "0");
+
+  if (hours > 0) {
+    return `${hours}:${minutes}:${seconds}`;
+  }
 
   return `${minutes}:${seconds}`;
 }
@@ -33,14 +40,45 @@ function buildStudyFeedbackMessage(question, didAnswerCorrectly) {
   );
 
   if (didAnswerCorrectly) {
-    return "Correct. This response matches the keyed answer.";
+    return "This response matches the keyed answer for this item.";
   }
 
-  return `Incorrect. Correct answer: ${correctChoice?.text ?? ""}`;
+  return `The keyed response is ${correctChoice?.text ?? ""}.`;
 }
 
 function renderChoiceLabel(index) {
   return String.fromCharCode(65 + index);
+}
+
+function buildPassageSections(question, mode, currentIndex, totalQuestions, flagged) {
+  const sourceText =
+    question.stimulus ||
+    question.passage ||
+    question.context ||
+    question.scenario ||
+    "Read the prompt, review the item information, and select the best answer based on the teaching situation presented.";
+
+  return [
+    {
+      heading: "Section Directions",
+      paragraphs: [
+        `You are working in ${mode.title}. Review the reference material, then answer Question ${currentIndex + 1} of ${totalQuestions}.`,
+        "Choose the single best answer. Use the navigation controls to move between questions or mark an item for review.",
+      ],
+    },
+    {
+      heading: "Stimulus / Reference",
+      paragraphs: Array.isArray(sourceText) ? sourceText : [sourceText],
+    },
+    {
+      heading: "Item Details",
+      paragraphs: [
+        `Topic: ${question.topicTag.replaceAll("_", " ")}`,
+        `Difficulty: ${question.difficultyTag}`,
+        flagged ? "Status: Marked for review" : "Status: Not marked",
+      ],
+    },
+  ];
 }
 
 export default function MultipleChoiceMode({
@@ -64,6 +102,7 @@ export default function MultipleChoiceMode({
   const [showFeedback, setShowFeedback] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
   const [feedbackMessage, setFeedbackMessage] = useState("");
+  const [showTimer, setShowTimer] = useState(true);
   const latestAnswersRef = useRef({});
   const latestQuizIdRef = useRef(null);
   const submitStartedRef = useRef(false);
@@ -237,10 +276,7 @@ export default function MultipleChoiceMode({
     () => Object.values(flaggedQuestions).filter(Boolean).length,
     [flaggedQuestions],
   );
-  const progressPercentage = quiz
-    ? Math.round(((currentIndex + 1) / quiz.totalQuestions) * 100)
-    : 0;
-  const canGoNext = isStudyMode ? showFeedback : true;
+  const canAdvance = isStudyMode ? showFeedback : true;
 
   function handleSelect(choiceId) {
     if (!currentQuestion) {
@@ -293,6 +329,10 @@ export default function MultipleChoiceMode({
       return;
     }
 
+    if (isStudyMode && !showFeedback) {
+      return;
+    }
+
     setCurrentIndex((index) => Math.min(index + 1, quiz.totalQuestions - 1));
   }
 
@@ -334,6 +374,16 @@ export default function MultipleChoiceMode({
     return "neutral";
   }
 
+  function handleReviewAction() {
+    submitQuiz();
+  }
+
+  function handleHelpAction() {
+    window.alert(
+      "Use Mark to flag the current question. Use Back and Next to move through the section. Submit or Review when you are ready to end the section.",
+    );
+  }
+
   const navigatorData = quiz
     ? {
         questionIds: quiz.questions.map((question) => question.id),
@@ -341,248 +391,219 @@ export default function MultipleChoiceMode({
       }
     : { questionIds: [], byId: {} };
 
-  const topBar = (
-    <TopBar
+  const selectedLabel = currentQuestion?.choices.findIndex(
+    (choice) => choice.id === selectedAnswer,
+  );
+
+  const topHeader = (
+    <TopExamHeader
       title="NBCT Component 1"
-      sectionTitle={isStudyMode ? "Multiple Choice Section" : "Multiple Choice Section"}
-      centerContent={
-        <div className="flex items-center gap-4 text-[12px] text-slate-600">
-          <span>Item {currentIndex + 1} of {quiz?.totalQuestions ?? 0}</span>
-          <span>{progressPercentage}% complete</span>
-          {isStudyMode ? <span>Study feedback enabled</span> : <span>Exam review enabled</span>}
-        </div>
-      }
-      rightContent={
-        <>
-          <div className="border border-slate-300 px-3 py-1.5 text-[12px] font-semibold text-slate-700">
-            Time {formatTime(secondsRemaining)}
-          </div>
-          <div className="border border-slate-300 px-3 py-1.5 text-[12px] font-semibold text-slate-700">
-            Flagged {flaggedCount}
-          </div>
-        </>
-      }
+      examLabel="Multiple Choice Examination"
+      onExit={onBack}
+      onMark={toggleFlag}
+      onReview={handleReviewAction}
+      onHelp={handleHelpAction}
+      onBack={handlePrevious}
+      onNext={handleNext}
+      canGoBack={currentIndex > 0}
+      canGoNext={Boolean(quiz) && (!isStudyMode || canAdvance)}
+      isFlagged={Boolean(currentQuestion && flaggedQuestions[currentQuestion.id])}
+    />
+  );
+
+  const subHeader = (
+    <ExamSubHeader
+      sectionLabel={isStudyMode ? "Study Section" : "Exam Section"}
+      progressLabel={`Question ${currentIndex + 1} of ${quiz?.totalQuestions ?? 0}`}
+      timeLabel={`Time ${formatTime(secondsRemaining)}`}
+      onToggleTime={() => setShowTimer((current) => !current)}
+      timerHidden={!showTimer}
+      statusLabel={`${answeredCount} answered | ${flaggedCount} marked`}
     />
   );
 
   if (isLoading) {
     return (
-      <ExamShell
-        topBar={topBar}
-        sidebar={<div className="border border-slate-300 bg-white p-4 text-[14px] text-slate-600">Loading section...</div>}
-        bottomBar={<BottomControlBar leftContent={null} rightContent={null} />}
-      >
-        <div className="border border-slate-300 bg-white p-6 text-slate-700">
-          Loading {mode.title}...
-        </div>
-      </ExamShell>
+      <ExamLayout
+        topHeader={topHeader}
+        subHeader={subHeader}
+        leftPanel={
+          <div className="border border-slate-400 bg-white p-5 text-[14px] text-slate-600">
+            Loading section materials...
+          </div>
+        }
+        rightPanel={
+          <div className="border border-slate-400 bg-white p-6 text-slate-700">
+            Loading {mode.title}...
+          </div>
+        }
+        bottomNavigation={<BottomNavigation selectedLabel={null} leftActions={[]} rightActions={[]} />}
+      />
     );
   }
 
   if (errorMessage) {
     return (
-      <ExamShell
-        topBar={topBar}
-        sidebar={null}
-        bottomBar={
-          <BottomControlBar
-            leftContent={
-              <button
-                type="button"
-                onClick={onBack}
-                className="border border-slate-300 px-4 py-2 text-[13px] font-semibold text-slate-700"
-              >
-                Back Home
-              </button>
-            }
-            rightContent={
-              <button
-                type="button"
-                onClick={loadQuiz}
-                className="border border-slate-900 bg-slate-900 px-4 py-2 text-[13px] font-semibold text-white"
-              >
-                Retry Section
-              </button>
-            }
+      <ExamLayout
+        topHeader={topHeader}
+        subHeader={subHeader}
+        leftPanel={
+          <div className="border border-slate-400 bg-white p-5 text-[14px] text-slate-600">
+            Section materials unavailable.
+          </div>
+        }
+        rightPanel={
+          <div className="border border-slate-400 bg-white p-6">
+            <h1 className="text-[20px] font-bold text-slate-900">Unable to load section</h1>
+            <p className="mt-3 text-[14px] text-slate-700">{errorMessage}</p>
+          </div>
+        }
+        bottomNavigation={
+          <BottomNavigation
+            selectedLabel={null}
+            leftActions={[
+              { label: "Exit", onClick: onBack },
+              { label: "Retry", onClick: loadQuiz, tone: "primary" },
+            ]}
+            rightActions={[]}
           />
         }
-      >
-        <div className="border border-rose-300 bg-white p-6">
-          <h1 className="text-[20px] font-bold text-slate-900">Unable to load section</h1>
-          <p className="mt-3 text-[14px] text-slate-700">{errorMessage}</p>
-        </div>
-      </ExamShell>
+      />
     );
   }
 
   if (result) {
     return (
-      <ExamShell
-        topBar={
-          <TopBar
+      <ExamLayout
+        topHeader={
+          <TopExamHeader
             title="NBCT Component 1"
-            sectionTitle="Multiple Choice Section Review"
-            centerContent={<div className="text-[12px] text-slate-600">Section submitted</div>}
-            rightContent={
-              <div className="border border-slate-300 px-3 py-1.5 text-[12px] font-semibold text-slate-700">
-                Score {result.score}/{result.totalQuestions}
-              </div>
-            }
+            examLabel="Multiple Choice Section Review"
+            onExit={onBack}
+            onMark={() => {}}
+            onReview={() => {}}
+            onHelp={handleHelpAction}
+            onBack={() => {}}
+            onNext={() => {}}
+            canGoBack={false}
+            canGoNext={false}
+            isFlagged={false}
           />
         }
-        sidebar={
-          <div className="border border-slate-300 bg-white">
-            <div className="border-b border-slate-300 px-4 py-3">
-              <p className="text-[12px] font-bold uppercase tracking-[0.16em] text-slate-500">
+        subHeader={
+          <ExamSubHeader
+            sectionLabel="Review"
+            progressLabel={`Score ${result.score} of ${result.totalQuestions}`}
+            timeLabel={`Correct ${result.percentage}%`}
+            onToggleTime={() => {}}
+            timerHidden={false}
+            statusLabel="Section submitted"
+          />
+        }
+        leftPanel={
+          <div className="border border-slate-400 bg-white">
+            <div className="border-b border-slate-300 bg-slate-100 px-4 py-3">
+              <p className="text-[12px] font-semibold uppercase tracking-[0.12em] text-slate-600">
                 Section Summary
               </p>
             </div>
-            <div className="space-y-3 px-4 py-4 text-[14px]">
-              <p className="text-[28px] font-bold text-slate-900">
+            <div className="space-y-3 px-4 py-5 text-[14px] text-slate-700">
+              <p className="text-[30px] font-bold text-slate-900">
                 {result.score}/{result.totalQuestions}
               </p>
-              <p className="text-slate-600">{result.percentage}% correct</p>
-              <p className="text-slate-600">
-                Review each item below before starting another section.
+              <p>{result.percentage}% correct</p>
+              <p>
+                Review each item below. You can return home or begin a new section when ready.
               </p>
             </div>
           </div>
         }
-        bottomBar={
-          <BottomControlBar
-            leftContent={
-              <button
-                type="button"
-                onClick={onBack}
-                className="border border-slate-300 px-4 py-2 text-[13px] font-semibold text-slate-700"
-              >
-                Back Home
-              </button>
-            }
-            rightContent={
-              <button
-                type="button"
-                onClick={loadQuiz}
-                className="border border-slate-900 bg-slate-900 px-4 py-2 text-[13px] font-semibold text-white"
-              >
-                Start New Section
-              </button>
-            }
+        rightPanel={<ReviewList review={result.review} />}
+        bottomNavigation={
+          <BottomNavigation
+            selectedLabel={null}
+            leftActions={[{ label: "Back Home", onClick: onBack }]}
+            rightActions={[{ label: "New Section", onClick: loadQuiz, tone: "primary" }]}
           />
         }
-      >
-        <ReviewList review={result.review} />
-      </ExamShell>
+      />
     );
   }
 
-  const sidebar = quiz ? (
-    <QuestionNavigator
-      totalQuestions={quiz.totalQuestions}
-      currentIndex={currentIndex}
-      answers={navigatorData}
-      flaggedQuestions={flaggedQuestions}
-      onSelectQuestion={setCurrentIndex}
+  const leftPanel = currentQuestion ? (
+    <PassagePanel
+      title="Passage / Reference"
+      sections={buildPassageSections(
+        currentQuestion,
+        mode,
+        currentIndex,
+        quiz?.totalQuestions ?? 0,
+        Boolean(flaggedQuestions[currentQuestion.id]),
+      )}
+      navigator={
+        quiz ? (
+          <QuestionNavigator
+            totalQuestions={quiz.totalQuestions}
+            currentIndex={currentIndex}
+            answers={navigatorData}
+            flaggedQuestions={flaggedQuestions}
+            onSelectQuestion={setCurrentIndex}
+          />
+        ) : null
+      }
     />
   ) : null;
 
-  const bottomBar = (
-    <BottomControlBar
-      leftContent={
-        <>
-          <button
-            type="button"
-            onClick={onBack}
-            className="border border-slate-300 px-4 py-2 text-[13px] font-semibold text-slate-700"
-          >
-            Exit
-          </button>
-          <button
-            type="button"
-            onClick={handlePrevious}
-            disabled={currentIndex === 0}
-            className="border border-slate-300 px-4 py-2 text-[13px] font-semibold text-slate-700 disabled:cursor-not-allowed disabled:opacity-40"
-          >
-            Previous
-          </button>
-          <button
-            type="button"
-            onClick={handleNext}
-            hidden={!canGoNext}
-            className="border border-slate-900 bg-slate-900 px-4 py-2 text-[13px] font-semibold text-white"
-          >
-            {currentIndex === (quiz?.totalQuestions ?? 1) - 1 ? "End Section" : "Next"}
-          </button>
-          <button
-            type="button"
-            onClick={toggleFlag}
-            className={`border px-4 py-2 text-[13px] font-semibold ${
-              currentQuestion && flaggedQuestions[currentQuestion.id]
-                ? "border-amber-500 bg-amber-50 text-amber-800"
-                : "border-slate-300 text-slate-700"
-            }`}
-          >
-            Flag for Review
-          </button>
-        </>
-      }
-      rightContent={
-        <button
-          type="button"
-          onClick={submitQuiz}
-          disabled={isSubmitting}
-          className="border border-slate-900 px-4 py-2 text-[13px] font-semibold text-slate-900 disabled:cursor-not-allowed disabled:opacity-50"
-        >
-          {isSubmitting ? "Submitting..." : "Submit Section"}
-        </button>
-      }
+  const rightPanel = currentQuestion ? (
+    <QuestionPanel
+      question={currentQuestion}
+      currentIndex={currentIndex}
+      totalQuestions={quiz?.totalQuestions ?? 0}
+      selectedAnswer={selectedAnswer}
+      showFeedback={showFeedback}
+      isStudyMode={isStudyMode}
+      isCorrect={isCorrect}
+      feedbackMessage={feedbackMessage}
+      onSelectChoice={handleSelect}
+      getOptionVariant={getOptionVariant}
     />
-  );
+  ) : null;
 
   return (
-    <ExamShell topBar={topBar} sidebar={sidebar} bottomBar={bottomBar}>
-      {currentQuestion ? (
-        <div className="space-y-4">
-          <div className="border border-slate-300 bg-white px-4 py-3">
-            <div className="flex flex-wrap items-center justify-between gap-3 text-[12px] uppercase tracking-[0.12em] text-slate-500">
-              <span>Topic: {currentQuestion.topicTag.replaceAll("_", " ")}</span>
-              <span>Difficulty: {currentQuestion.difficultyTag}</span>
-              <span>Item {currentIndex + 1}</span>
-            </div>
-          </div>
-
-          <div className="border border-slate-300 bg-white px-4 py-5">
-            <h1 className="text-[20px] font-bold leading-8 text-slate-900">
-              {currentQuestion.question}
-            </h1>
-
-            <div className="mt-5 space-y-3">
-              {currentQuestion.choices.map((choice, index) => (
-                <MCQOptionRow
-                  key={`${currentQuestion.id}-${choice.id}-${index}`}
-                  label={renderChoiceLabel(index)}
-                  text={choice.text}
-                  onSelect={() => handleSelect(choice.id)}
-                  disabled={isStudyMode && showFeedback}
-                  variant={getOptionVariant(choice)}
-                />
-              ))}
-            </div>
-
-            {showFeedback && isStudyMode ? (
-              <div
-                className={`mt-4 border px-4 py-3 text-[14px] leading-6 ${
-                  isCorrect
-                    ? "border-emerald-300 bg-emerald-50 text-emerald-900"
-                    : "border-rose-300 bg-rose-50 text-rose-900"
-                }`}
-              >
-                {feedbackMessage}
-              </div>
-            ) : null}
-          </div>
-        </div>
-      ) : null}
-    </ExamShell>
+    <ExamLayout
+      topHeader={topHeader}
+      subHeader={subHeader}
+      leftPanel={leftPanel}
+      rightPanel={rightPanel}
+      bottomNavigation={
+        <BottomNavigation
+          selectedLabel={
+            selectedLabel !== -1 && selectedLabel !== undefined && selectedLabel !== null
+              ? renderChoiceLabel(selectedLabel)
+              : null
+          }
+          leftActions={[
+            { label: "Previous", onClick: handlePrevious, disabled: currentIndex === 0 },
+            {
+              label: currentIndex === (quiz?.totalQuestions ?? 1) - 1 ? "End Section" : "Next",
+              onClick: handleNext,
+              disabled: !canAdvance,
+              tone: "primary",
+            },
+          ]}
+          rightActions={[
+            {
+              label: currentQuestion && flaggedQuestions[currentQuestion.id] ? "Marked" : "Mark",
+              onClick: toggleFlag,
+            },
+            {
+              label: isSubmitting ? "Submitting..." : "Submit Section",
+              onClick: submitQuiz,
+              disabled: isSubmitting,
+            },
+          ]}
+        />
+      }
+    />
   );
 }

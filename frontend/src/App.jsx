@@ -3,9 +3,11 @@ import AccountPage from "./components/AccountPage";
 import AdminPage from "./components/AdminPage";
 import ApprovalStatusPage from "./components/ApprovalStatusPage";
 import AuthPage from "./components/AuthPage";
+import ForgotPasswordPage from "./components/ForgotPasswordPage";
 import HomeScreen from "./components/HomeScreen";
 import MultipleChoiceMode from "./components/MultipleChoiceMode";
 import PaywallPage from "./components/PaywallPage";
+import ResetPasswordPage from "./components/ResetPasswordPage";
 import WrittenPromptMode from "./components/WrittenPromptMode";
 import { fetchApi } from "./lib/api";
 
@@ -62,7 +64,9 @@ async function readJson(response) {
 
 export default function App() {
   const [activeMode, setActiveMode] = useState(null);
-  const [view, setView] = useState("home");
+  const [view, setView] = useState(
+    window.location.pathname === "/reset-password" ? "resetPassword" : "home",
+  );
   const [anonId, setAnonId] = useState(null);
   const [authToken, setAuthToken] = useState(
     window.localStorage.getItem(AUTH_TOKEN_KEY) ?? null,
@@ -92,13 +96,17 @@ export default function App() {
   }, [anonId, authToken]);
 
   useEffect(() => {
-    const token = new URLSearchParams(window.location.search).get("verify");
+    const params = new URLSearchParams(window.location.search);
+    const verificationToken = params.get("verify");
 
-    if (!token) {
+    if (window.location.pathname === "/reset-password") {
+      setView("resetPassword");
       return;
     }
 
-    verifyEmailToken(token);
+    if (verificationToken) {
+      verifyEmailToken(verificationToken);
+    }
   }, []);
 
   const requestHeaders = useMemo(() => {
@@ -112,6 +120,16 @@ export default function App() {
 
     return headers;
   }, [anonId, authToken]);
+
+  function navigateToHome(nextView = "home") {
+    window.history.replaceState({}, "", "/");
+    setView(nextView);
+  }
+
+  function navigateToResetPassword() {
+    window.history.replaceState({}, "", "/reset-password");
+    setView("resetPassword");
+  }
 
   async function verifyEmailToken(token) {
     setVerificationState({
@@ -128,16 +146,13 @@ export default function App() {
     });
 
     const payload = await readJson(response);
-    const url = new URL(window.location.href);
-    url.searchParams.delete("verify");
-    window.history.replaceState({}, "", url);
+    navigateToHome("approval");
 
     if (!response.ok) {
       setVerificationState({
         status: "error",
         message: payload.message || "Verification failed.",
       });
-      setView("approval");
       return;
     }
 
@@ -146,7 +161,6 @@ export default function App() {
       status: "success",
       message: payload.message || "Email verified successfully.",
     });
-    setView("approval");
   }
 
   async function refreshSessionState() {
@@ -238,8 +252,47 @@ export default function App() {
     window.localStorage.setItem(AUTH_TOKEN_KEY, result.token);
     setAuthToken(result.token);
     setCurrentUser(result.user);
-    setView("home");
+    navigateToHome("home");
     await refreshSessionState();
+  }
+
+  async function handleForgotPassword(email) {
+    const response = await fetchApi("/api/auth/forgot-password", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email }),
+    });
+
+    const payload = await readJson(response);
+
+    if (!response.ok) {
+      throw new Error(payload.message || "Unable to send reset link.");
+    }
+
+    return payload;
+  }
+
+  async function handleResetPassword({ token, newPassword }) {
+    const response = await fetchApi("/api/auth/reset-password", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        token,
+        newPassword,
+      }),
+    });
+
+    const payload = await readJson(response);
+
+    if (!response.ok) {
+      throw new Error(payload.message || "Unable to reset password.");
+    }
+
+    return payload;
   }
 
   async function handleLogout() {
@@ -259,7 +312,7 @@ export default function App() {
       status: "idle",
       message: "",
     });
-    setView("home");
+    navigateToHome("home");
   }
 
   async function handleUpgrade() {
@@ -367,6 +420,24 @@ export default function App() {
     }
   }, [currentUser]);
 
+  if (view === "forgotPassword") {
+    return (
+      <ForgotPasswordPage
+        onBack={() => navigateToHome("login")}
+        onSubmit={handleForgotPassword}
+      />
+    );
+  }
+
+  if (view === "resetPassword") {
+    return (
+      <ResetPasswordPage
+        onBackToLogin={() => navigateToHome("login")}
+        onSubmit={handleResetPassword}
+      />
+    );
+  }
+
   if (view === "login" || view === "signup") {
     return (
       <AuthPage
@@ -374,11 +445,12 @@ export default function App() {
         onBack={() => {
           setAuthError("");
           setAuthNotice("");
-          setView("home");
+          navigateToHome("home");
         }}
         onSubmit={(formState) => handleAuthSubmit(view, formState)}
         errorMessage={authError}
         noticeMessage={authNotice}
+        onForgotPassword={() => setView("forgotPassword")}
       />
     );
   }
@@ -401,8 +473,8 @@ export default function App() {
       <ApprovalStatusPage
         user={currentUser}
         verificationState={verificationState}
-        onBack={() => setView("home")}
-        onLogin={() => setView("login")}
+        onBack={() => navigateToHome("home")}
+        onLogin={() => navigateToHome("login")}
         onResendVerification={handleResendVerification}
         onLogout={handleLogout}
       />

@@ -18,14 +18,22 @@ function saveNotifications(items) {
 }
 
 function getMailConfig() {
+  const smtpUser = process.env.SMTP_USER || process.env.EMAIL_USER || "";
+  const smtpPass = process.env.SMTP_PASS || process.env.EMAIL_PASS || "";
+
   return {
     provider: "smtp",
     adminEmail: process.env.ADMIN_EMAIL || "giteshpandya@gmail.com",
     emailFrom: process.env.EMAIL_FROM || "",
     smtpHost: process.env.SMTP_HOST || "",
     smtpPort: process.env.SMTP_PORT || "",
-    smtpUser: process.env.SMTP_USER || "",
-    smtpPass: process.env.SMTP_PASS || "",
+    smtpUser,
+    smtpPass,
+    authSource: process.env.SMTP_USER
+      ? "SMTP_USER/SMTP_PASS"
+      : process.env.EMAIL_USER
+        ? "EMAIL_USER/EMAIL_PASS"
+        : "missing",
   };
 }
 
@@ -53,6 +61,7 @@ function getMailProviderStatus() {
     provider: config.provider,
     admin_email: config.adminEmail,
     smtp_configured: smtpConfigured,
+    auth_source: config.authSource,
     diagnostics,
   };
 }
@@ -336,6 +345,7 @@ export async function notifyAdminOfEmailVerification(user) {
 
 export async function notifyAdminOfUpgradeRequest(user, upgradeRequest) {
   const config = getMailConfig();
+  const providerStatus = getMailProviderStatus();
   const subject = `Upgrade request pending: ${user.full_name}`;
   const lines = [
     "A user requested an upgrade.",
@@ -345,6 +355,21 @@ export async function notifyAdminOfUpgradeRequest(user, upgradeRequest) {
     `Request id: ${upgradeRequest.id}`,
   ];
   const text = lines.join("\n");
+
+  logEmailAttempt("upgrade_admin_notification_prepare", {
+    provider: providerStatus.provider,
+    adminEmailConfigured: providerStatus.diagnostics.has_admin_email,
+    emailFromConfigured: providerStatus.diagnostics.has_email_from,
+    smtpHostConfigured: providerStatus.diagnostics.has_smtp_host,
+    smtpPortConfigured: providerStatus.diagnostics.has_smtp_port,
+    smtpUserConfigured:
+      providerStatus.diagnostics.has_smtp_user || providerStatus.diagnostics.has_email_user,
+    smtpPassConfigured:
+      providerStatus.diagnostics.has_smtp_pass || providerStatus.diagnostics.has_email_pass,
+    authSource: providerStatus.auth_source,
+    requestId: upgradeRequest.id,
+    userId: user.id,
+  });
 
   const emailResult = await trySendEmail({
     to: config.adminEmail,
@@ -446,6 +471,37 @@ export async function notifyUserUpgradeUpdate(user, status) {
 
 export function listAdminNotifications() {
   return getNotifications().filter((item) => item.audience === "admin");
+}
+
+export async function notifyUserPasswordResetEmail(user, resetUrl) {
+  const subject = "Reset your password";
+  const lines = [
+    "We received a request to reset your password.",
+    "Use the link below to choose a new password. This link expires in 1 hour.",
+    resetUrl,
+  ];
+  const text = lines.join("\n\n");
+
+  const emailResult = await trySendEmail({
+    to: user.email,
+    subject,
+    text,
+    html: toHtmlParagraphs([
+      "We received a request to reset your password.",
+      "Use the link below to choose a new password. This link expires in 1 hour.",
+      `<a href="${resetUrl}">${resetUrl}</a>`,
+    ]),
+  });
+
+  return createNotificationRecord({
+    audience: "user",
+    type: "password_reset",
+    title: subject,
+    body: text,
+    userId: user.id,
+    userEmail: user.email,
+    emailResult,
+  });
 }
 
 export { getMailProviderStatus };
