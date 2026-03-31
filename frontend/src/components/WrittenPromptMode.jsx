@@ -2,13 +2,28 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import BottomControlBar from "./BottomControlBar";
 import ExamShell from "./ExamShell";
 import TopBar from "./TopBar";
+import { writingPrompts } from "../features/writing-trainer/prompts";
 import WritingPromptTrainer from "../features/writing-trainer/WritingPromptTrainer";
-import { fetchApi } from "../lib/api";
 
 const LOCAL_DRAFT_PREFIX = "nbct-written-draft";
+const DEFAULT_DURATION_SECONDS = 30 * 60;
 
 function getDraftKey(promptId) {
   return `${LOCAL_DRAFT_PREFIX}:${promptId}`;
+}
+
+function getRandomPrompt(previousPromptId = null) {
+  if (!writingPrompts.length) {
+    return null;
+  }
+
+  const eligiblePrompts =
+    previousPromptId && writingPrompts.length > 1
+      ? writingPrompts.filter((prompt) => prompt.id !== previousPromptId)
+      : writingPrompts;
+
+  const selectedIndex = Math.floor(Math.random() * eligiblePrompts.length);
+  return eligiblePrompts[selectedIndex] ?? eligiblePrompts[0] ?? null;
 }
 
 function formatTime(totalSeconds) {
@@ -46,20 +61,35 @@ function buildTrainerPrompt(session, feedbackData) {
   return {
     id: sourcePrompt.id,
     domain: sourcePrompt.domain,
-    title: sourcePrompt.domainFocus || sourcePrompt.category || `Prompt ${sourcePrompt.id}`,
+    title:
+      sourcePrompt.title ||
+      sourcePrompt.domainFocus ||
+      sourcePrompt.category ||
+      `Prompt ${sourcePrompt.id}`,
     promptText: sourcePrompt.promptText,
-    scenario: sourcePrompt.promptText,
+    scenario: sourcePrompt.scenario || sourcePrompt.promptText,
     task:
-      sourcePrompt.idealStructure?.length
+      sourcePrompt.task ||
+      (sourcePrompt.idealStructure?.length
         ? sourcePrompt.idealStructure.join(" ")
-        : "Write a focused instructional response that addresses the scenario and explains your plan clearly.",
-    logic: logicSentence,
+        : "Write a focused instructional response that addresses the scenario and explains your plan clearly."),
+    logic: sourcePrompt.logic || logicSentence,
     sentenceStarter: sourcePrompt.sentenceStarter || sourcePrompt.ideal_answer || "",
-    powerWords: sourcePrompt.keywords ?? [],
+    powerWords: sourcePrompt.powerWords ?? sourcePrompt.keywords ?? [],
     idealAnswer: feedbackData?.idealAnswer ?? sourcePrompt.idealAnswer ?? "",
-    keywords: feedbackData?.keywords ?? sourcePrompt.keywords ?? [],
+    keywords:
+      feedbackData?.keywords ??
+      sourcePrompt.keywords ??
+      sourcePrompt.powerWords ??
+      [],
     rubric: feedbackData?.rubric ?? sourcePrompt.rubric ?? [],
-    supports: Array.isArray(sourcePrompt.idealStructure)
+    supports: Array.isArray(sourcePrompt.checklistItems)
+      ? sourcePrompt.checklistItems.map((item, index) => ({
+          id: `required-${index + 1}`,
+          label: `Required ${index + 1}`,
+          content: item,
+        }))
+      : Array.isArray(sourcePrompt.idealStructure)
       ? sourcePrompt.idealStructure.map((item, index) => ({
           id: `required-${index + 1}`,
           label: `Required ${index + 1}`,
@@ -124,6 +154,67 @@ function buildFeedbackModel({
           notes: item.description,
         }))
       : [],
+  };
+}
+
+function buildLocalKeywordSummary(responseText, prompt) {
+  const keywords = prompt.powerWords ?? [];
+  const normalizedResponse = responseText.toLowerCase();
+  const items = keywords.map((keyword) => ({
+    keyword,
+    matched: normalizedResponse.includes(String(keyword).toLowerCase()),
+  }));
+
+  return {
+    matched: items.filter((item) => item.matched).length,
+    total: items.length,
+    items,
+  };
+}
+
+function buildLocalRubricResults(prompt) {
+  if (!prompt.idealAnswer) {
+    return [];
+  }
+
+  return [
+    {
+      score: 4,
+      description: prompt.idealAnswer,
+      achieved: true,
+    },
+  ];
+}
+
+function buildLocalScoreEstimate(responseText, prompt, keywordSummary) {
+  const normalizedResponse = responseText.toLowerCase();
+  const barrierMatched = (prompt.acceptableBarrierTerms ?? []).some((term) =>
+    normalizedResponse.includes(String(term).toLowerCase()),
+  );
+  const evidenceMatched = (prompt.evidenceTerms ?? []).some((term) =>
+    normalizedResponse.includes(String(term).toLowerCase()),
+  );
+  const sdiMatched = (prompt.sdiTerms ?? []).some((term) =>
+    normalizedResponse.includes(String(term).toLowerCase()),
+  );
+  const impactMatched = /impact|affect|ability|access|outcome|progress|success|independence/.test(
+    normalizedResponse,
+  );
+
+  const matchedSignals = [
+    barrierMatched,
+    evidenceMatched,
+    impactMatched,
+    sdiMatched,
+    keywordSummary.matched > 0,
+  ].filter(Boolean).length;
+
+  const estimatedScore = Math.max(1, Math.min(4, matchedSignals));
+
+  return {
+    estimatedScore,
+    maxRubricScore: 4,
+    performanceLabel: `${estimatedScore}/4`,
   };
 }
 
@@ -204,27 +295,21 @@ export default function WrittenPromptMode({ onBack, requestHeaders, onBlocked })
     setIsLoading(true);
 
     try {
-      const response = await fetchApi("/api/written-prompts/session", {
-        headers: requestHeaders,
-      });
+      const selectedPrompt = getRandomPrompt(session?.prompt?.id ?? null);
 
-      if (response.status === 401 || response.status === 402 || response.status === 403) {
-        const blockedPayload = await response.json();
-        onBlocked(blockedPayload);
-        return;
-      }
-
-      if (!response.ok) {
+      if (!selectedPrompt) {
         throw new Error("Unable to load a written prompt.");
       }
-
-      const payload = await response.json();
       const localDraft =
-        window.localStorage.getItem(getDraftKey(payload.prompt.id)) ?? "";
+        window.localStorage.getItem(getDraftKey(selectedPrompt.id)) ?? "";
 
-      setSession(payload);
+      setSession({
+        sessionId: crypto.randomUUID(),
+        durationSeconds: DEFAULT_DURATION_SECONDS,
+        prompt: selectedPrompt,
+      });
       setResponseText(localDraft);
-      setSecondsRemaining(payload.durationSeconds);
+      setSecondsRemaining(DEFAULT_DURATION_SECONDS);
     } catch (error) {
       setErrorMessage(error.message);
     } finally {
@@ -238,29 +323,7 @@ export default function WrittenPromptMode({ onBack, requestHeaders, onBlocked })
     }
 
     window.localStorage.setItem(getDraftKey(session.prompt.id), nextText);
-
-    try {
-      const response = await fetchApi("/api/written-prompts/autosave", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          ...requestHeaders,
-        },
-        body: JSON.stringify({
-          sessionId: session.sessionId,
-          responseText: nextText,
-        }),
-      });
-
-      if (!response.ok) {
-        throw new Error("Autosave failed.");
-      }
-
-      const payload = await response.json();
-      setLastSavedAt(payload.savedAt);
-    } catch (_error) {
-      setLastSavedAt(null);
-    }
+    setLastSavedAt(Date.now());
   }
 
   async function submitResponse(forcedText) {
@@ -275,24 +338,23 @@ export default function WrittenPromptMode({ onBack, requestHeaders, onBlocked })
 
     try {
       await saveDraft(submissionText);
-
-      const response = await fetchApi("/api/written-prompts/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          ...requestHeaders,
-        },
-        body: JSON.stringify({
-          sessionId: session.sessionId,
-          responseText: submissionText,
-        }),
-      });
-
-      if (!response.ok) {
-        throw new Error("Unable to submit the written response.");
-      }
-
-      const payload = await response.json();
+      const keywordSummary = buildLocalKeywordSummary(submissionText, session.prompt);
+      const rubricBreakdown = buildLocalRubricResults(session.prompt);
+      const nextScoreEstimate = buildLocalScoreEstimate(
+        submissionText,
+        session.prompt,
+        keywordSummary,
+      );
+      const payload = {
+        sessionId: session.sessionId,
+        prompt: session.prompt,
+        userResponse: submissionText,
+        idealAnswer: session.prompt.idealAnswer ?? "",
+        rubricBreakdown,
+        keywordSummary,
+        scoreEstimate: nextScoreEstimate,
+        submittedAt: Date.now(),
+      };
       window.localStorage.removeItem(getDraftKey(session.prompt.id));
       setFeedbackData(payload);
       setKeywordResults(payload.keywordSummary ?? null);
