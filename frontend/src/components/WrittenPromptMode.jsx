@@ -1,9 +1,8 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import BottomControlBar from "./BottomControlBar";
 import ExamShell from "./ExamShell";
-import PromptPanel from "./PromptPanel";
 import TopBar from "./TopBar";
-import WritingPanel from "./WritingPanel";
+import WritingPromptTrainer from "../features/writing-trainer/WritingPromptTrainer";
 import { fetchApi } from "../lib/api";
 
 const LOCAL_DRAFT_PREFIX = "nbct-written-draft";
@@ -21,10 +20,6 @@ function formatTime(totalSeconds) {
   return `${minutes}:${seconds}`;
 }
 
-function countWords(value) {
-  return value.trim() ? value.trim().split(/\s+/).length : 0;
-}
-
 function formatTimestamp(value) {
   if (!value) {
     return "Not saved";
@@ -34,6 +29,102 @@ function formatTimestamp(value) {
     hour: "numeric",
     minute: "2-digit",
   });
+}
+
+function buildTrainerPrompt(session, feedbackData) {
+  const sourcePrompt = feedbackData?.prompt ?? session?.prompt;
+
+  if (!sourcePrompt) {
+    return null;
+  }
+
+  const rubricValues = sourcePrompt.rubric
+    ? Object.values(sourcePrompt.rubric)
+    : [];
+  const logicSentence = sourcePrompt.idealStructure?.[0] || rubricValues[0] || "";
+
+  return {
+    id: sourcePrompt.id,
+    domain: sourcePrompt.domain,
+    title: sourcePrompt.domainFocus || sourcePrompt.category || `Prompt ${sourcePrompt.id}`,
+    promptText: sourcePrompt.promptText,
+    scenario: sourcePrompt.promptText,
+    task:
+      sourcePrompt.idealStructure?.length
+        ? sourcePrompt.idealStructure.join(" ")
+        : "Write a focused instructional response that addresses the scenario and explains your plan clearly.",
+    logic: logicSentence,
+    sentenceStarter: sourcePrompt.sentenceStarter || sourcePrompt.ideal_answer || "",
+    powerWords: sourcePrompt.keywords ?? [],
+    idealAnswer: feedbackData?.idealAnswer ?? sourcePrompt.idealAnswer ?? "",
+    keywords: feedbackData?.keywords ?? sourcePrompt.keywords ?? [],
+    rubric: feedbackData?.rubric ?? sourcePrompt.rubric ?? [],
+    supports: Array.isArray(sourcePrompt.idealStructure)
+      ? sourcePrompt.idealStructure.map((item, index) => ({
+          id: `required-${index + 1}`,
+          label: `Required ${index + 1}`,
+          content: item,
+        }))
+      : [],
+  };
+}
+
+function buildFeedbackModel({
+  responseText,
+  keywordResults,
+  rubricResults,
+  scoreEstimate,
+  powerWords,
+}) {
+  if (!keywordResults && !rubricResults && !scoreEstimate) {
+    return null;
+  }
+
+  const normalizedResponse = responseText.toLowerCase();
+  const matchedItems = Array.isArray(keywordResults?.items)
+    ? keywordResults.items.filter((item) => item.matched).map((item) => item.keyword)
+    : [];
+  const missingItems = Array.isArray(keywordResults?.items)
+    ? keywordResults.items.filter((item) => !item.matched).map((item) => item.keyword)
+    : [];
+  const usedPowerWords = (powerWords ?? []).filter((word) =>
+    normalizedResponse.includes(String(word).toLowerCase()),
+  );
+  const hasBarrier = /barrier|access|need|challenge|struggle|difficulty/.test(normalizedResponse);
+  const hasEvidence = /data|evidence|monitor|observe|assessment|measure/.test(normalizedResponse);
+  const hasImpact = /impact|outcome|result|progress|success|independence/.test(normalizedResponse);
+  const hasSdi = /sdi|accommodation|modification|support|intervention|specialized/.test(normalizedResponse);
+
+  return {
+    responseText,
+    wordCount: responseText.trim() ? responseText.trim().split(/\s+/).length : 0,
+    keywordSummary: {
+      matched: matchedItems,
+      missing: missingItems,
+    },
+    writingCheck: {
+      barrier: hasBarrier,
+      evidence: hasEvidence,
+      impact: hasImpact,
+      sdi: hasSdi,
+      powerWordsUsed: usedPowerWords,
+    },
+    scoreEstimate: scoreEstimate
+      ? {
+          value: scoreEstimate.estimatedScore,
+          max: scoreEstimate.maxRubricScore,
+          label:
+            scoreEstimate.performanceLabel ||
+            `${scoreEstimate.estimatedScore}/${scoreEstimate.maxRubricScore}`,
+        }
+      : undefined,
+    rubricBreakdown: Array.isArray(rubricResults)
+      ? rubricResults.map((item) => ({
+          criterion: `Score ${item.score}`,
+          notes: item.description,
+        }))
+      : [],
+  };
 }
 
 export default function WrittenPromptMode({ onBack, requestHeaders, onBlocked }) {
@@ -60,12 +151,6 @@ export default function WrittenPromptMode({ onBack, requestHeaders, onBlocked })
   useEffect(() => {
     latestTextRef.current = responseText;
   }, [responseText]);
-
-  useEffect(() => {
-    if (session?.prompt) {
-      console.log("PROMPT DATA:", session.prompt);
-    }
-  }, [session]);
 
   useEffect(() => {
     if (!session || submitted || secondsRemaining <= 0 || isSubmitting) {
@@ -213,6 +298,7 @@ export default function WrittenPromptMode({ onBack, requestHeaders, onBlocked })
       setKeywordResults(payload.keywordSummary ?? null);
       setRubricResults(payload.rubricBreakdown ?? null);
       setScoreEstimate(payload.scoreEstimate ?? null);
+      setResponseText(payload.userResponse ?? submissionText);
       setSubmitted(true);
       setShowFeedback(true);
     } catch (error) {
@@ -223,7 +309,26 @@ export default function WrittenPromptMode({ onBack, requestHeaders, onBlocked })
     }
   }
 
-  const wordCount = countWords(responseText);
+  const trainerPrompt = useMemo(
+    () => buildTrainerPrompt(session, feedbackData),
+    [session, feedbackData],
+  );
+
+  const trainerFeedback = useMemo(
+    () =>
+      buildFeedbackModel({
+        responseText: feedbackData?.userResponse ?? responseText,
+        keywordResults,
+        rubricResults,
+        scoreEstimate,
+        powerWords: trainerPrompt?.powerWords ?? [],
+      }),
+    [feedbackData, keywordResults, rubricResults, responseText, scoreEstimate, trainerPrompt],
+  );
+
+  const saveStatus = submitted
+    ? `Saved ${formatTimestamp(lastSavedAt)}`
+    : `Saved ${formatTimestamp(lastSavedAt)}`;
 
   const topBar = (
     <TopBar
@@ -231,7 +336,7 @@ export default function WrittenPromptMode({ onBack, requestHeaders, onBlocked })
       sectionTitle="Written Response Practice"
       centerContent={
         <div className="text-[12px] text-slate-600">
-          Domain: {submitted && feedbackData ? feedbackData.prompt.domain : session?.prompt.domain}
+          Domain: {trainerPrompt?.domain ?? "--"}
         </div>
       }
       rightContent={
@@ -241,16 +346,13 @@ export default function WrittenPromptMode({ onBack, requestHeaders, onBlocked })
               <div className="border border-slate-300 px-3 py-1.5 text-[12px] font-semibold text-slate-700">
                 Time {formatTime(secondsRemaining)}
               </div>
-              <div className="border border-slate-300 px-3 py-1.5 text-[12px] font-semibold text-slate-700">
-                {wordCount} words
-              </div>
               <div className="border border-slate-300 px-3 py-1.5 text-[12px] text-slate-700">
-                Saved {formatTimestamp(lastSavedAt)}
+                {saveStatus}
               </div>
             </>
           ) : (
             <div className="border border-slate-300 px-3 py-1.5 text-[12px] font-semibold text-slate-700">
-              Feedback ready
+              {saveStatus}
             </div>
           )}
         </>
@@ -308,247 +410,60 @@ export default function WrittenPromptMode({ onBack, requestHeaders, onBlocked })
     );
   }
 
-  if (submitted && showFeedback && !errorMessage && feedbackData) {
-    return (
-      <ExamShell
-        topBar={topBar}
-        sidebar={null}
-        bottomBar={
-          <BottomControlBar
-            leftContent={
-              <button
-                type="button"
-                onClick={onBack}
-                className="border border-slate-300 px-4 py-2 text-[13px] font-semibold text-slate-700"
-              >
-                Back Home
-              </button>
-            }
-            rightContent={
-              <button
-                type="button"
-                onClick={loadPrompt}
-                className="border border-slate-900 bg-slate-900 px-4 py-2 text-[13px] font-semibold text-white"
-              >
-                New Written Prompt
-              </button>
-            }
-          />
-        }
-      >
-        <div className="grid gap-4 xl:grid-cols-[1.1fr_0.9fr]">
-          <div className="space-y-4">
-            <div className="border border-slate-300 bg-white">
-              <div className="border-b border-slate-300 px-4 py-3">
-                <p className="text-[12px] font-bold uppercase tracking-[0.16em] text-slate-500">
-                  Prompt
-                </p>
-              </div>
-              <div className="space-y-3 px-4 py-4">
-                <p className="text-[12px] font-bold uppercase tracking-[0.16em] text-slate-500">
-                  Prompt {feedbackData.prompt.id}
-                </p>
-                <p className="text-[14px] text-slate-600">
-                  Domain: {feedbackData.prompt.domain}
-                </p>
-                <p className="text-[20px] font-bold leading-8 text-slate-900">
-                  {feedbackData.prompt.promptText}
-                </p>
-              </div>
-            </div>
-
-            <div className="border border-slate-300 bg-white">
-              <div className="border-b border-slate-300 px-4 py-3">
-                <p className="text-[12px] font-bold uppercase tracking-[0.16em] text-slate-500">
-                  Your Response
-                </p>
-              </div>
-              <div className="px-4 py-4">
-                <p className="whitespace-pre-wrap text-[14px] leading-7 text-slate-800">
-                  {feedbackData.userResponse || "No response submitted."}
-                </p>
-              </div>
-            </div>
-
-            <div className="border border-slate-300 bg-white">
-              <div className="border-b border-slate-300 px-4 py-3">
-                <p className="text-[12px] font-bold uppercase tracking-[0.16em] text-slate-500">
-                  Ideal Answer
-                </p>
-              </div>
-              <div className="px-4 py-4">
-                <p className="whitespace-pre-wrap text-[14px] leading-7 text-slate-800">
-                  {feedbackData.idealAnswer}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="space-y-4">
-            <div className="border border-slate-300 bg-white">
-              <div className="border-b border-slate-300 px-4 py-3">
-                <p className="text-[12px] font-bold uppercase tracking-[0.16em] text-slate-500">
-                  Score Estimate
-                </p>
-              </div>
-              <div className="px-4 py-4">
-                <p className="text-[28px] font-bold text-slate-900">
-                  {scoreEstimate?.estimatedScore}/{scoreEstimate?.maxRubricScore}
-                </p>
-                <p className="mt-2 text-[14px] text-slate-600">
-                  {scoreEstimate?.performanceLabel ||
-                    "Review rubric and rule matches below."}
-                </p>
-              </div>
-            </div>
-
-            <div className="border border-slate-300 bg-white">
-              <div className="border-b border-slate-300 px-4 py-3">
-                <p className="text-[12px] font-bold uppercase tracking-[0.16em] text-slate-500">
-                  Keyword Match Summary
-                </p>
-              </div>
-              <div className="px-4 py-4">
-                <p className="text-[20px] font-bold text-slate-900">
-                  {keywordResults?.matched}/{keywordResults?.total}
-                </p>
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {keywordResults?.items.map((item) => (
-                    <span
-                      key={item.keyword}
-                      className={`border px-2 py-1 text-[12px] font-semibold ${
-                        item.matched
-                          ? "border-emerald-300 bg-emerald-50 text-emerald-900"
-                          : "border-slate-300 bg-slate-50 text-slate-600"
-                      }`}
-                    >
-                      {item.keyword}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            <div className="border border-slate-300 bg-white">
-              <div className="border-b border-slate-300 px-4 py-3">
-                <p className="text-[12px] font-bold uppercase tracking-[0.16em] text-slate-500">
-                  Rubric Breakdown
-                </p>
-              </div>
-              <div className="space-y-2 px-4 py-4">
-                {rubricResults?.map((item) => (
-                  <div
-                    key={item.score}
-                    className={`border px-3 py-3 ${
-                      item.achieved
-                        ? "border-emerald-300 bg-emerald-50"
-                        : "border-slate-300 bg-white"
-                    }`}
-                  >
-                    <p className="text-[12px] font-bold uppercase tracking-[0.16em] text-slate-600">
-                      Score {item.score}
-                    </p>
-                    <p className="mt-2 text-[14px] leading-6 text-slate-700">
-                      {item.description}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="border border-slate-300 bg-white">
-              <div className="border-b border-slate-300 px-4 py-3">
-                <p className="text-[12px] font-bold uppercase tracking-[0.16em] text-slate-500">
-                  Rule-Based Estimate
-                </p>
-              </div>
-              <div className="space-y-2 px-4 py-4">
-                {feedbackData.ruleSummary.map((item) => (
-                  <div
-                    key={item.rule}
-                    className={`border px-3 py-3 ${
-                      item.matched
-                        ? "border-emerald-300 bg-emerald-50"
-                        : "border-slate-300 bg-white"
-                    }`}
-                  >
-                    <div className="flex items-center justify-between gap-3">
-                      <p className="text-[12px] font-bold uppercase tracking-[0.16em] text-slate-700">
-                        {item.rule.replaceAll("_", " ")}
-                      </p>
-                      <span className="text-[12px] text-slate-500">
-                        Weight {item.weight}
-                      </span>
-                    </div>
-                    <p className="mt-2 text-[14px] leading-6 text-slate-700">
-                      {item.matched
-                        ? `Matched through "${item.evidence}".`
-                        : "No clear matching language detected."}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </ExamShell>
-    );
-  }
-
-  if (submitted) {
+  if (!trainerPrompt) {
     return null;
   }
 
   return (
     <ExamShell
       topBar={topBar}
-      sidebar={
-        session ? (
-          <PromptPanel
-            domain={session.prompt.domain}
-            promptId={session.prompt.id}
-            promptText={session.prompt.promptText}
-            isLoading={isLoading}
-            errorMessage={errorMessage}
-          />
-        ) : null
-      }
+      sidebar={null}
       bottomBar={
         <BottomControlBar
           leftContent={
-            <>
-              <button
-                type="button"
-                onClick={onBack}
-                className="border border-slate-300 px-4 py-2 text-[13px] font-semibold text-slate-700"
-              >
-                Back Home
-              </button>
-              <button
-                type="button"
-                onClick={() => saveDraft(responseText)}
-                className="border border-slate-300 px-4 py-2 text-[13px] font-semibold text-slate-700"
-              >
-                Save Draft
-              </button>
-            </>
-          }
-          rightContent={
             <button
               type="button"
-              onClick={() => submitResponse(responseText)}
-              disabled={isSubmitting}
-              className="border border-slate-900 bg-slate-900 px-4 py-2 text-[13px] font-semibold text-white disabled:cursor-not-allowed disabled:opacity-60"
+              onClick={onBack}
+              className="border border-slate-300 px-4 py-2 text-[13px] font-semibold text-slate-700"
             >
-              {isSubmitting ? "Submitting..." : "Submit Response"}
+              Back Home
             </button>
+          }
+          rightContent={
+            !submitted ? (
+              <>
+                <button
+                  type="button"
+                  onClick={() => saveDraft(responseText)}
+                  className="border border-slate-300 px-4 py-2 text-[13px] font-semibold text-slate-700"
+                >
+                  Save Draft
+                </button>
+                <button
+                  type="button"
+                  onClick={() => submitResponse(responseText)}
+                  disabled={isSubmitting}
+                  className="border border-slate-900 bg-slate-900 px-4 py-2 text-[13px] font-semibold text-white disabled:cursor-not-allowed disabled:opacity-60"
+                >
+                  {isSubmitting ? "Submitting..." : "Submit Response"}
+                </button>
+              </>
+            ) : null
           }
         />
       }
     >
-      <WritingPanel
+      <WritingPromptTrainer
+        prompt={trainerPrompt}
         responseText={responseText}
-        onChange={setResponseText}
+        onResponseChange={setResponseText}
+        onRewriteResponse={loadPrompt}
+        onNextPrompt={loadPrompt}
+        feedback={submitted && showFeedback ? trainerFeedback : null}
+        secondsRemaining={submitted ? null : secondsRemaining}
+        saveStatus={saveStatus}
+        submitted={submitted && showFeedback}
+        isSubmitting={isSubmitting}
       />
     </ExamShell>
   );

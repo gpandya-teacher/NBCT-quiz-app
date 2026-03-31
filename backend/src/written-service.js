@@ -36,7 +36,13 @@ function normalizePrompt(record) {
   return {
     id: String(record.id),
     domain: record.domain ?? "general",
+    domainFocus: String(record.domain_focus ?? "").trim(),
+    category: String(record.category ?? "").trim(),
     promptText: String(record.prompt_text).trim(),
+    sentenceStarter: String(record.sentence_starter ?? "").trim(),
+    idealStructure: Array.isArray(record.ideal_structure)
+      ? record.ideal_structure.map((item) => String(item).trim()).filter(Boolean)
+      : [],
     idealAnswer: String(record.sentence_starter ?? "").trim(),
     keywords: Array.isArray(record.keywords)
       ? record.keywords.map((keyword) => String(keyword).trim()).filter(Boolean)
@@ -149,7 +155,11 @@ export function createWrittenPromptSession() {
     prompt: {
       id: selectedPrompt.id,
       domain: selectedPrompt.domain,
+      domainFocus: selectedPrompt.domainFocus,
+      category: selectedPrompt.category,
       promptText: selectedPrompt.promptText,
+      sentenceStarter: selectedPrompt.sentenceStarter,
+      idealStructure: selectedPrompt.idealStructure,
       keywords: selectedPrompt.keywords,
       ideal_answer: selectedPrompt.idealAnswer,
       rubric: selectedPrompt.rubric,
@@ -206,7 +216,11 @@ export function submitWrittenPrompt(sessionId, responseText = "") {
     prompt: {
       id: prompt.id,
       domain: prompt.domain,
+      domainFocus: prompt.domainFocus,
+      category: prompt.category,
       promptText: prompt.promptText,
+      sentenceStarter: prompt.sentenceStarter,
+      idealStructure: prompt.idealStructure,
       keywords: prompt.keywords,
       ideal_answer: prompt.idealAnswer,
       rubric: prompt.rubric,

@@ -10,7 +10,7 @@ export default function ExamShell({
         {topBar}
       </div>
 
-      <div className="mx-auto max-w-[1440px] px-4 pb-[88px] pt-[72px] sm:px-5">
+      <div className="mx-auto max-w-[1440px] px-4 pb-[104px] pt-[72px] sm:px-5">
         <div className="grid gap-4 lg:grid-cols-[240px_minmax(0,1fr)]">
           {sidebar ? <aside>{sidebar}</aside> : null}
           <section className="min-w-0">{children}</section>
