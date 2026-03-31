@@ -3,6 +3,7 @@ export default function HomeScreen({
   onSelectMode,
   currentUser,
   usageSnapshot,
+  authBypassed = false,
   onLogin,
   onSignup,
   onAccount,
@@ -20,13 +21,15 @@ export default function HomeScreen({
                 Access
               </p>
               <p className="mt-1 text-[14px] text-slate-700">
-                {currentUser
+                {authBypassed
+                  ? "Public access is temporarily enabled for this deployment."
+                  : currentUser
                   ? `Signed in as ${currentUser.full_name}`
                   : "Anonymous free access available"}
               </p>
             </div>
             <div className="flex flex-wrap gap-2">
-              {currentUser ? (
+              {authBypassed ? null : currentUser ? (
                 <>
                   {currentUser.role === "admin" ? (
                     <button
@@ -93,34 +96,43 @@ export default function HomeScreen({
               </p>
               <p className="mt-3">Multiple choice study and exam simulation</p>
               <p className="mt-2">Written response drafting and feedback</p>
-              <p className="mt-3 border-t border-slate-200 pt-3">
-                Free usage today: {usageSnapshot?.usage?.free_usage_count_today ?? 0}/
-                {usageSnapshot?.usage?.daily_limit ?? 1}
-              </p>
-              {currentUser ? (
-                <p className="mt-2 text-[13px]">
-                  Email verified: {currentUser.email_verified ? "Yes" : "No"}
+              {authBypassed ? (
+                <p className="mt-3 border-t border-slate-200 pt-3 text-[13px]">
+                  Authentication is temporarily bypassed, so users can open practice
+                  sections directly without signing in.
                 </p>
-              ) : null}
-              {currentUser ? (
-                <p className="mt-2 text-[13px]">
-                  Upgrade status: {currentUser.upgrade_status ?? "none"}
-                </p>
-              ) : null}
-              <p className="mt-2 text-[13px]">
-                {usageSnapshot?.has_unlimited_access
-                  ? "Unlimited access is active."
-                  : "Upgrade to unlimited access for $1/day."}
-              </p>
-              {!usageSnapshot?.has_unlimited_access ? (
-                <button
-                  type="button"
-                  onClick={onUpgrade}
-                  className="mt-3 border border-slate-900 bg-slate-900 px-3 py-2 text-[13px] font-semibold text-white"
-                >
-                  Upgrade
-                </button>
-              ) : null}
+              ) : (
+                <>
+                  <p className="mt-3 border-t border-slate-200 pt-3">
+                    Free usage today: {usageSnapshot?.usage?.free_usage_count_today ?? 0}/
+                    {usageSnapshot?.usage?.daily_limit ?? 1}
+                  </p>
+                  {currentUser ? (
+                    <p className="mt-2 text-[13px]">
+                      Email verified: {currentUser.email_verified ? "Yes" : "No"}
+                    </p>
+                  ) : null}
+                  {currentUser ? (
+                    <p className="mt-2 text-[13px]">
+                      Upgrade status: {currentUser.upgrade_status ?? "none"}
+                    </p>
+                  ) : null}
+                  <p className="mt-2 text-[13px]">
+                    {usageSnapshot?.has_unlimited_access
+                      ? "Unlimited access is active."
+                      : "Upgrade to unlimited access for $1/day."}
+                  </p>
+                  {!usageSnapshot?.has_unlimited_access ? (
+                    <button
+                      type="button"
+                      onClick={onUpgrade}
+                      className="mt-3 border border-slate-900 bg-slate-900 px-3 py-2 text-[13px] font-semibold text-white"
+                    >
+                      Upgrade
+                    </button>
+                  ) : null}
+                </>
+              )}
             </div>
           </div>
         </section>

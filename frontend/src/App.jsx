@@ -13,6 +13,8 @@ import { fetchApi } from "./lib/api";
 
 const AUTH_TOKEN_KEY = "nbct-auth-token";
 const ANON_ID_KEY = "nbct-anon-id";
+const AUTH_BYPASS_ENABLED =
+  import.meta.env.VITE_BYPASS_AUTH === "true" || import.meta.env.PROD;
 
 const modeConfig = {
   study: {
@@ -108,6 +110,18 @@ export default function App() {
       verifyEmailToken(verificationToken);
     }
   }, []);
+
+  useEffect(() => {
+    if (!AUTH_BYPASS_ENABLED) {
+      return;
+    }
+
+    if (
+      ["login", "signup", "forgotPassword", "approval", "paywall", "account"].includes(view)
+    ) {
+      navigateToHome("home");
+    }
+  }, [view]);
 
   const requestHeaders = useMemo(() => {
     const headers = {
@@ -316,6 +330,10 @@ export default function App() {
   }
 
   async function handleUpgrade() {
+    if (AUTH_BYPASS_ENABLED) {
+      return;
+    }
+
     if (!currentUser) {
       setView("signup");
       return;
@@ -346,6 +364,10 @@ export default function App() {
   }
 
   function handleBlockedAccess(payload) {
+    if (AUTH_BYPASS_ENABLED) {
+      return;
+    }
+
     setActiveMode(null);
     setPaywallState(payload);
 
@@ -421,6 +443,10 @@ export default function App() {
   }, [currentUser]);
 
   if (view === "forgotPassword") {
+    if (AUTH_BYPASS_ENABLED) {
+      return null;
+    }
+
     return (
       <ForgotPasswordPage
         onBack={() => navigateToHome("login")}
@@ -430,6 +456,10 @@ export default function App() {
   }
 
   if (view === "resetPassword") {
+    if (AUTH_BYPASS_ENABLED) {
+      return null;
+    }
+
     return (
       <ResetPasswordPage
         onBackToLogin={() => navigateToHome("login")}
@@ -439,6 +469,10 @@ export default function App() {
   }
 
   if (view === "login" || view === "signup") {
+    if (AUTH_BYPASS_ENABLED) {
+      return null;
+    }
+
     return (
       <AuthPage
         mode={view}
@@ -456,6 +490,10 @@ export default function App() {
   }
 
   if (view === "account" && currentUser) {
+    if (AUTH_BYPASS_ENABLED) {
+      return null;
+    }
+
     return (
       <AccountPage
         user={currentUser}
@@ -469,6 +507,10 @@ export default function App() {
   }
 
   if (view === "approval") {
+    if (AUTH_BYPASS_ENABLED) {
+      return null;
+    }
+
     return (
       <ApprovalStatusPage
         user={currentUser}
@@ -497,6 +539,10 @@ export default function App() {
   }
 
   if (view === "paywall") {
+    if (AUTH_BYPASS_ENABLED) {
+      return null;
+    }
+
     return (
       <PaywallPage
         user={currentUser}
@@ -537,6 +583,7 @@ export default function App() {
       onSelectMode={(modeId) => setActiveMode(modeId)}
       currentUser={currentUser}
       usageSnapshot={usageSnapshot}
+      authBypassed={AUTH_BYPASS_ENABLED}
       onLogin={() => setView("login")}
       onSignup={() => setView("signup")}
       onAccount={() => setView("account")}

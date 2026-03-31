@@ -5,6 +5,8 @@ import { readJsonFile, writeJsonFile } from "./storage-service.js";
 const ANON_USAGE_FILE = "anon-usage.json";
 const APP_TIMEZONE = process.env.APP_TIMEZONE || "America/Los_Angeles";
 const DAILY_FREE_LIMIT = 1;
+const AUTH_BYPASS_ENABLED =
+  process.env.BYPASS_AUTH === "true" || process.env.NODE_ENV === "production";
 
 function getTodayKey() {
   return new Intl.DateTimeFormat("en-CA", {
@@ -174,6 +176,20 @@ function consumeUserSession(user) {
 export function consumeLaunchAccess(request) {
   const identity = getRequestIdentity(request);
 
+  if (AUTH_BYPASS_ENABLED) {
+    return {
+      allowed: true,
+      unlimited: true,
+      usage: identity.user
+        ? describeUsageState(identity.user)
+        : describeUsageState({
+            free_usage_count_today: 0,
+            last_free_usage_date: null,
+          }),
+      user: identity.user ?? null,
+    };
+  }
+
   if (identity.user) {
     return {
       ...consumeUserSession(identity.user),
@@ -189,6 +205,21 @@ export function consumeLaunchAccess(request) {
 
 export function getUsageSnapshot(request) {
   const identity = getRequestIdentity(request);
+
+  if (AUTH_BYPASS_ENABLED) {
+    return {
+      user: identity.user ?? null,
+      usage: identity.user
+        ? describeUsageState(identity.user)
+        : describeUsageState({
+            free_usage_count_today: 0,
+            last_free_usage_date: null,
+          }),
+      has_unlimited_access: true,
+      timezone: APP_TIMEZONE,
+      auth_bypassed: true,
+    };
+  }
 
   if (identity.user) {
     return {
