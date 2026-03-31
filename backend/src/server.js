@@ -356,13 +356,8 @@ app.post("/api/billing/upgrade-request", async (request, response) => {
     requestId: requestRecord.id,
     adminEmailConfigured: providerStatus.diagnostics.has_admin_email,
     emailFromConfigured: providerStatus.diagnostics.has_email_from,
-    smtpHostConfigured: providerStatus.diagnostics.has_smtp_host,
-    smtpPortConfigured: providerStatus.diagnostics.has_smtp_port,
-    smtpUserConfigured:
-      providerStatus.diagnostics.has_smtp_user || providerStatus.diagnostics.has_email_user,
-    smtpPassConfigured:
-      providerStatus.diagnostics.has_smtp_pass || providerStatus.diagnostics.has_email_pass,
-    authSource: providerStatus.auth_source,
+    resendApiKeyConfigured: providerStatus.diagnostics.has_resend_api_key,
+    resendConfigured: providerStatus.resend_configured,
   });
   const adminNotification = await notifyAdminOfUpgradeRequest(
     access.user,

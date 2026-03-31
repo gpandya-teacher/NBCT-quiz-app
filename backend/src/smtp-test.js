@@ -1,24 +1,12 @@
-import dns from "node:dns/promises";
-import nodemailer from "nodemailer";
 import "./env-service.js";
+import { Resend } from "resend";
 import { getEnvDiagnostics } from "./env-service.js";
 
 function getMailConfig() {
-  const smtpUser = process.env.SMTP_USER || process.env.EMAIL_USER || "";
-  const smtpPass = process.env.SMTP_PASS || process.env.EMAIL_PASS || "";
-
   return {
     adminEmail: process.env.ADMIN_EMAIL || "giteshpandya@gmail.com",
     emailFrom: process.env.EMAIL_FROM || "",
-    smtpHost: process.env.SMTP_HOST || "",
-    smtpPort: process.env.SMTP_PORT || "",
-    smtpUser,
-    smtpPass,
-    authSource: process.env.SMTP_USER
-      ? "SMTP_USER/SMTP_PASS"
-      : process.env.EMAIL_USER
-        ? "EMAIL_USER/EMAIL_PASS"
-        : "missing",
+    resendApiKey: process.env.RESEND_API_KEY || "",
   };
 }
 
@@ -26,73 +14,66 @@ async function main() {
   const config = getMailConfig();
   const diagnostics = getEnvDiagnostics();
 
-  console.info("[smtp-test] runtime config", {
-    smtpHost: config.smtpHost,
-    smtpPort: Number(config.smtpPort),
-    adminEmailConfigured: Boolean(process.env.ADMIN_EMAIL),
-    emailFromConfigured: Boolean(process.env.EMAIL_FROM),
-    smtpHostConfigured: Boolean(process.env.SMTP_HOST),
-    smtpPortConfigured: Boolean(process.env.SMTP_PORT),
-    smtpUserConfigured: Boolean(process.env.SMTP_USER || process.env.EMAIL_USER),
-    smtpPassConfigured: Boolean(process.env.SMTP_PASS || process.env.EMAIL_PASS),
-    authSource: config.authSource,
+  console.info("[email-test] runtime config", {
+    provider: "resend",
+    adminEmailConfigured: Boolean(config.adminEmail),
+    emailFromConfigured: Boolean(config.emailFrom),
+    resendApiKeyConfigured: Boolean(config.resendApiKey),
     envLoadedPath: diagnostics.loaded_path,
   });
 
-  try {
-    const lookup = await dns.lookup(config.smtpHost, { all: true });
-    console.info("[smtp-test] dns.lookup success", {
-      smtpHost: config.smtpHost,
-      addresses: lookup.map((item) => ({
-        address: item.address,
-        family: item.family,
-      })),
+  if (!config.resendApiKey || !config.emailFrom) {
+    console.error("[email-test] blocked", {
+      reason: "email_not_configured",
+      message: "Set RESEND_API_KEY and EMAIL_FROM before testing email delivery.",
     });
-  } catch (error) {
-    console.error("[smtp-test] dns.lookup failure", {
-      smtpHost: config.smtpHost,
-      code: error.code || error.name || "dns_lookup_failed",
-      message: error.message,
-      stack: error.stack,
-    });
+    process.exitCode = 1;
+    return;
   }
 
   try {
-    console.info("[smtp-test] transporter create start", {
-      smtpHost: config.smtpHost,
-      smtpPort: Number(config.smtpPort),
-      secure: Number(config.smtpPort) === 465,
+    console.info("[email-test] client create start", {
+      provider: "resend",
     });
 
-    const transporter = nodemailer.createTransport({
-      host: config.smtpHost,
-      port: Number(config.smtpPort),
-      secure: Number(config.smtpPort) === 465,
-      auth: {
-        user: config.smtpUser,
-        pass: config.smtpPass,
-      },
+    const resend = new Resend(config.resendApiKey);
+
+    console.info("[email-test] send start", {
+      provider: "resend",
+      to: config.adminEmail,
+      from: config.emailFrom,
     });
 
-    console.info("[smtp-test] transporter verify start", {
-      smtpHost: config.smtpHost,
-      smtpPort: Number(config.smtpPort),
+    const { data, error } = await resend.emails.send({
+      from: config.emailFrom,
+      to: [config.adminEmail],
+      subject: "NBCT Resend test",
+      text: "This is a Resend test email from the NBCT backend.",
+      html: "<p>This is a Resend test email from the NBCT backend.</p>",
     });
 
-    await transporter.verify();
+    if (error) {
+      console.error("[email-test] send failure", {
+        provider: "resend",
+        reason: error.name || "resend_error",
+        message: error.message,
+      });
+      process.exitCode = 1;
+      return;
+    }
 
-    console.info("[smtp-test] transporter verify success", {
-      smtpHost: config.smtpHost,
-      smtpPort: Number(config.smtpPort),
+    console.info("[email-test] send success", {
+      provider: "resend",
+      messageId: data?.id ?? null,
     });
   } catch (error) {
-    console.error("[smtp-test] transporter verify failure", {
-      smtpHost: config.smtpHost,
-      smtpPort: Number(config.smtpPort),
-      code: error.code || error.name || "smtp_verify_failed",
+    console.error("[email-test] send failure", {
+      provider: "resend",
+      reason: error.code || error.name || "send_failed",
       message: error.message,
       stack: error.stack,
     });
+    process.exitCode = 1;
   }
 }
 

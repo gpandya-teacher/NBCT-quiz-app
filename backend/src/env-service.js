@@ -69,11 +69,6 @@ export function getEnvDiagnostics() {
     loaded_path: loadedPath,
     has_admin_email: Boolean(process.env.ADMIN_EMAIL),
     has_email_from: Boolean(process.env.EMAIL_FROM),
-    has_email_user: Boolean(process.env.EMAIL_USER),
-    has_email_pass: Boolean(process.env.EMAIL_PASS),
-    has_smtp_host: Boolean(process.env.SMTP_HOST),
-    has_smtp_port: Boolean(process.env.SMTP_PORT),
-    has_smtp_user: Boolean(process.env.SMTP_USER),
-    has_smtp_pass: Boolean(process.env.SMTP_PASS),
+    has_resend_api_key: Boolean(process.env.RESEND_API_KEY),
   };
 }

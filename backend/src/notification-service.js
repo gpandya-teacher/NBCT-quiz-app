@@ -1,13 +1,13 @@
 import crypto from "node:crypto";
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 import "./env-service.js";
 import { getEnvDiagnostics } from "./env-service.js";
 import { readJsonFile, writeJsonFile } from "./storage-service.js";
 
 const NOTIFICATIONS_FILE = "admin-notifications.json";
 
-let cachedTransporter = null;
-let cachedTransporterKey = null;
+let cachedResendClient = null;
+let cachedApiKey = null;
 
 function getNotifications() {
   return readJsonFile(NOTIFICATIONS_FILE, []);
@@ -18,145 +18,95 @@ function saveNotifications(items) {
 }
 
 function getMailConfig() {
-  const smtpUser = process.env.SMTP_USER || process.env.EMAIL_USER || "";
-  const smtpPass = process.env.SMTP_PASS || process.env.EMAIL_PASS || "";
-
   return {
-    provider: "smtp",
+    provider: "resend",
     adminEmail: process.env.ADMIN_EMAIL || "giteshpandya@gmail.com",
     emailFrom: process.env.EMAIL_FROM || "",
-    smtpHost: process.env.SMTP_HOST || "",
-    smtpPort: process.env.SMTP_PORT || "",
-    smtpUser,
-    smtpPass,
-    authSource: process.env.SMTP_USER
-      ? "SMTP_USER/SMTP_PASS"
-      : process.env.EMAIL_USER
-        ? "EMAIL_USER/EMAIL_PASS"
-        : "missing",
+    resendApiKey: process.env.RESEND_API_KEY || "",
   };
-}
-
-function getSmtpConfigKey(config) {
-  return [
-    config.smtpHost,
-    config.smtpPort,
-    config.smtpUser,
-    config.emailFrom,
-  ].join("|");
 }
 
 function getMailProviderStatus() {
   const config = getMailConfig();
   const diagnostics = getEnvDiagnostics();
-  const smtpConfigured = Boolean(
-    config.emailFrom &&
-      config.smtpHost &&
-      config.smtpPort &&
-      config.smtpUser &&
-      config.smtpPass,
+  const resendConfigured = Boolean(
+    config.emailFrom && config.resendApiKey,
   );
 
   return {
     provider: config.provider,
     admin_email: config.adminEmail,
-    smtp_configured: smtpConfigured,
-    auth_source: config.authSource,
+    resend_configured: resendConfigured,
     diagnostics,
   };
 }
 
-async function getTransporter() {
+function getResendClient() {
   const config = getMailConfig();
   const providerStatus = getMailProviderStatus();
 
-  if (!providerStatus.smtp_configured) {
+  if (!providerStatus.resend_configured) {
     return {
-      transporter: null,
+      resend: null,
       providerStatus,
       reason: "email_not_configured",
+      error_message:
+        "Email sending is not configured. Add RESEND_API_KEY and EMAIL_FROM before sending email.",
     };
   }
 
-  const nextKey = getSmtpConfigKey(config);
-
-  if (cachedTransporter && cachedTransporterKey === nextKey) {
+  if (cachedResendClient && cachedApiKey === config.resendApiKey) {
     return {
-      transporter: cachedTransporter,
+      resend: cachedResendClient,
       providerStatus,
       reason: "cached",
     };
   }
 
-  logEmailAttempt("transporter_create_start", {
+  logEmailAttempt("client_create_start", {
     provider: providerStatus.provider,
-    host: config.smtpHost,
-    port: Number(config.smtpPort),
-    secure: Number(config.smtpPort) === 465,
+    emailFromConfigured: Boolean(config.emailFrom),
+    apiKeyConfigured: Boolean(config.resendApiKey),
   });
 
   try {
-    const transporter = nodemailer.createTransport({
-      host: config.smtpHost,
-      port: Number(config.smtpPort),
-      secure: Number(config.smtpPort) === 465,
-      auth: {
-        user: config.smtpUser,
-        pass: config.smtpPass,
-      },
-    });
+    const resend = new Resend(config.resendApiKey);
 
-    logEmailAttempt("transporter_verify_start", {
+    cachedResendClient = resend;
+    cachedApiKey = config.resendApiKey;
+
+    logEmailAttempt("client_create_success", {
       provider: providerStatus.provider,
-      host: config.smtpHost,
-      port: Number(config.smtpPort),
     });
-
-    await transporter.verify();
-
-    logEmailAttempt("transporter_verify_success", {
-      provider: providerStatus.provider,
-      host: config.smtpHost,
-      port: Number(config.smtpPort),
-    });
-
-    cachedTransporter = transporter;
-    cachedTransporterKey = nextKey;
 
     return {
-      transporter,
+      resend,
       providerStatus,
-      reason: "verified",
+      reason: "ready",
     };
   } catch (error) {
-    logEmailFailure("transporter_verify_failure", {
+    logEmailFailure("client_create_failure", {
       provider: providerStatus.provider,
-      host: config.smtpHost,
-      port: Number(config.smtpPort),
-      reason: error.code || error.name || "smtp_error",
+      reason: error.code || error.name || "resend_client_error",
       message: error.message,
       stack: error.stack,
     });
 
     return {
-      transporter: null,
+      resend: null,
       providerStatus,
-      reason: "smtp_error",
+      reason: "resend_client_error",
       error_message: error.message,
     };
   }
 }
 
 function logEmailAttempt(stage, details) {
-  console.info(
-    `[email] ${stage} ${JSON.stringify(details)}`,
-  );
+  console.info(`[email] ${stage} ${JSON.stringify(details)}`);
 }
 
 function logEmailFailure(stage, details) {
-  console.error(
-    `[email] ${stage} ${JSON.stringify(details)}`,
-  );
+  console.error(`[email] ${stage} ${JSON.stringify(details)}`);
 }
 
 async function trySendEmail({ to, subject, text, html = "" }) {
@@ -186,9 +136,9 @@ async function trySendEmail({ to, subject, text, html = "" }) {
   }
 
   try {
-    const { transporter, reason, error_message } = await getTransporter();
+    const { resend, reason, error_message } = getResendClient();
 
-    if (!transporter) {
+    if (!resend) {
       logEmailFailure("blocked", {
         ...safeContext,
         reason,
@@ -200,27 +150,39 @@ async function trySendEmail({ to, subject, text, html = "" }) {
         delivered: false,
         provider: providerStatus.provider,
         reason,
-        error_message:
-          error_message ||
-          (reason === "email_not_configured"
-            ? "Email sending is not configured. Add SMTP environment variables before sending email."
-            : "SMTP transport is unavailable."),
+        error_message,
       };
     }
 
     logEmailAttempt("send_start", safeContext);
 
-    const result = await transporter.sendMail({
+    const { data, error } = await resend.emails.send({
       from: config.emailFrom,
-      to,
+      to: Array.isArray(to) ? to : [to],
       subject,
       text,
       ...(html ? { html } : {}),
     });
 
+    if (error) {
+      logEmailFailure("send_failure", {
+        ...safeContext,
+        reason: error.name || "resend_error",
+        message: error.message,
+      });
+
+      return {
+        attempted: true,
+        delivered: false,
+        provider: providerStatus.provider,
+        reason: error.name || "resend_error",
+        error_message: error.message,
+      };
+    }
+
     logEmailAttempt("send_success", {
       ...safeContext,
-      messageId: result.messageId,
+      messageId: data?.id ?? null,
       transport: reason,
     });
 
@@ -229,7 +191,7 @@ async function trySendEmail({ to, subject, text, html = "" }) {
       delivered: true,
       provider: providerStatus.provider,
       reason: "sent",
-      message_id: result.messageId,
+      message_id: data?.id ?? null,
     };
   } catch (error) {
     logEmailFailure("send_failure", {
@@ -360,13 +322,7 @@ export async function notifyAdminOfUpgradeRequest(user, upgradeRequest) {
     provider: providerStatus.provider,
     adminEmailConfigured: providerStatus.diagnostics.has_admin_email,
     emailFromConfigured: providerStatus.diagnostics.has_email_from,
-    smtpHostConfigured: providerStatus.diagnostics.has_smtp_host,
-    smtpPortConfigured: providerStatus.diagnostics.has_smtp_port,
-    smtpUserConfigured:
-      providerStatus.diagnostics.has_smtp_user || providerStatus.diagnostics.has_email_user,
-    smtpPassConfigured:
-      providerStatus.diagnostics.has_smtp_pass || providerStatus.diagnostics.has_email_pass,
-    authSource: providerStatus.auth_source,
+    resendConfigured: providerStatus.diagnostics.has_resend_api_key,
     requestId: upgradeRequest.id,
     userId: user.id,
   });
