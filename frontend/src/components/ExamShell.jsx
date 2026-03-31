@@ -11,10 +11,14 @@ export default function ExamShell({
       </div>
 
       <div className="mx-auto max-w-[1440px] px-4 pb-[104px] pt-[72px] sm:px-5">
-        <div className="grid gap-4 lg:grid-cols-[240px_minmax(0,1fr)]">
-          {sidebar ? <aside>{sidebar}</aside> : null}
+        {sidebar ? (
+          <div className="grid gap-4 lg:grid-cols-[240px_minmax(0,1fr)]">
+            <aside>{sidebar}</aside>
+            <section className="min-w-0">{children}</section>
+          </div>
+        ) : (
           <section className="min-w-0">{children}</section>
-        </div>
+        )}
       </div>
 
       <div className="fixed inset-x-0 bottom-0 z-30 border-t border-slate-300 bg-white">
