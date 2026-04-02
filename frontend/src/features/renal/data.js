@@ -1,9 +1,9 @@
-import renalFullDataset from "../../../../data/renal/renal_full_dataset.json";
-import renalGeneratedQuestionBank from "../../../../data/renal/renal_generated_question_bank.json";
-import renalTrapRecognitionRaw from "../../../../data/renal/renal_trap_recognition.csv?raw";
-import renalAnkiImportRaw from "../../../../data/renal/renal_anki_import.tsv?raw";
-import renalStudyGuideRaw from "../../../../data/renal/renal_study_guide.md?raw";
-import renalHighYieldRulesRaw from "../../../../data/renal/renal_high_yield_rules.md?raw";
+import renalFullDataset from "../../data/renal/renal_full_dataset.json";
+import renalGeneratedQuestionBank from "../../data/renal/renal_generated_question_bank.json";
+import renalTrapRecognitionRaw from "../../data/renal/renal_trap_recognition.csv?raw";
+import renalAnkiImportRaw from "../../data/renal/renal_anki_import.tsv?raw";
+import renalStudyGuideRaw from "../../data/renal/renal_study_guide.md?raw";
+import renalHighYieldRulesRaw from "../../data/renal/renal_high_yield_rules.md?raw";
 import { parseDelimitedText, parseMarkdownSections } from "./parsers";
 
 function slugifyTopic(value) {
