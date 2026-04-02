@@ -7,18 +7,7 @@ import QuestionNavigator from "./QuestionNavigator";
 import QuestionPanel from "./QuestionPanel";
 import ReviewList from "./ReviewList";
 import TopExamHeader from "./TopExamHeader";
-import { fetchApi } from "../lib/api";
-
-function shuffle(items) {
-  const clone = [...items];
-
-  for (let index = clone.length - 1; index > 0; index -= 1) {
-    const swapIndex = Math.floor(Math.random() * (index + 1));
-    [clone[index], clone[swapIndex]] = [clone[swapIndex], clone[index]];
-  }
-
-  return clone;
-}
+import { createLocalQuizSession, gradeLocalQuizSession } from "../lib/localQuizService";
 
 function formatTime(totalSeconds) {
   const hours = Math.floor(totalSeconds / 3600);
@@ -106,11 +95,18 @@ export default function MultipleChoiceMode({
   const latestAnswersRef = useRef({});
   const latestQuizIdRef = useRef(null);
   const submitStartedRef = useRef(false);
+  const loadRequestRef = useRef(0);
   const isStudyMode = mode.tone === "study";
 
   useEffect(() => {
     loadQuiz();
   }, [mode.questionLimit]);
+
+  useEffect(() => {
+    return () => {
+      loadRequestRef.current += 1;
+    };
+  }, []);
 
   useEffect(() => {
     latestAnswersRef.current = answers;
@@ -166,7 +162,7 @@ export default function MultipleChoiceMode({
   }, [quiz, result, secondsRemaining, isSubmitting]);
 
   useEffect(() => {
-    if (quiz && !result && secondsRemaining === 0 && !isSubmitting) {
+    if (quiz && quiz.totalQuestions > 0 && !result && secondsRemaining === 0 && !isSubmitting) {
       submitQuiz({
         quizId: latestQuizIdRef.current,
         answersSnapshot: latestAnswersRef.current,
@@ -175,6 +171,8 @@ export default function MultipleChoiceMode({
   }, [quiz, result, secondsRemaining, isSubmitting]);
 
   async function loadQuiz() {
+    const requestId = loadRequestRef.current + 1;
+    loadRequestRef.current = requestId;
     setIsLoading(true);
     setErrorMessage("");
     setResult(null);
@@ -193,41 +191,33 @@ export default function MultipleChoiceMode({
     submitStartedRef.current = false;
 
     try {
-      const response = await fetchApi(`/api/quiz?limit=${mode.questionLimit}`, {
-        headers: requestHeaders,
-      });
+      const payload = await createLocalQuizSession(mode.questionLimit);
 
-      if (response.status === 401 || response.status === 402 || response.status === 403) {
-        const payload = await response.json();
-        onBlocked(payload);
+      if (!payload?.questions?.length) {
+        throw new Error("No multiple-choice questions are available.");
+      }
+
+      if (loadRequestRef.current !== requestId) {
         return;
       }
 
-      if (!response.ok) {
-        throw new Error("Unable to start the quiz.");
-      }
-
-      const payload = await response.json();
-      setQuiz({
-        ...payload,
-        questions: payload.questions.map((question) => ({
-          ...question,
-          choices: shuffle(question.choices),
-        })),
-      });
+      setQuiz(payload);
       setSecondsRemaining(payload.durationSeconds);
     } catch (error) {
-      setErrorMessage(error.message);
+      if (loadRequestRef.current === requestId) {
+        setErrorMessage(error.message);
+      }
     } finally {
-      setIsLoading(false);
+      if (loadRequestRef.current === requestId) {
+        setIsLoading(false);
+      }
     }
   }
 
   async function submitQuiz(options = {}) {
-    const targetQuizId = options.quizId ?? quiz?.quizId;
     const targetAnswers = options.answersSnapshot ?? answers;
 
-    if (!targetQuizId || submitStartedRef.current) {
+    if (!quiz || submitStartedRef.current) {
       return;
     }
 
@@ -236,28 +226,11 @@ export default function MultipleChoiceMode({
     setErrorMessage("");
 
     try {
-      const response = await fetchApi("/api/quiz/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          ...requestHeaders,
-        },
-        body: JSON.stringify({
-          quizId: targetQuizId,
-          answers: Object.entries(targetAnswers).map(
-            ([questionId, selectedChoiceId]) => ({
-              questionId,
-              selectedChoiceId,
-            }),
-          ),
-        }),
-      });
+      const payload = gradeLocalQuizSession(quiz, targetAnswers);
 
-      if (!response.ok) {
+      if (!payload) {
         throw new Error("Unable to submit the quiz.");
       }
-
-      const payload = await response.json();
       setResult(payload);
     } catch (error) {
       submitStartedRef.current = false;

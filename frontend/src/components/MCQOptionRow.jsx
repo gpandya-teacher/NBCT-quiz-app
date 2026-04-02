@@ -3,6 +3,7 @@ export default function MCQOptionRow({
   text,
   onSelect,
   disabled,
+  isSelected = false,
   variant = "neutral",
 }) {
   const variants = {
@@ -15,6 +16,10 @@ export default function MCQOptionRow({
   return (
     <button
       type="button"
+      role="radio"
+      aria-checked={isSelected}
+      aria-disabled={disabled}
+      aria-label={`Choice ${label}: ${text}`}
       onClick={onSelect}
       disabled={disabled}
       className={`flex w-full items-start gap-3 border px-4 py-3 text-left disabled:cursor-not-allowed disabled:opacity-70 ${variants[variant]}`}

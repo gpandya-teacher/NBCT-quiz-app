@@ -6,12 +6,17 @@ function renderChoiceLabel(index) {
 
 export default function ChoiceList({
   choices,
+  selectedAnswer,
   onSelectChoice,
   disabled,
   getOptionVariant,
 }) {
   return (
-    <div className="space-y-2">
+    <div
+      role="radiogroup"
+      aria-label="Answer choices"
+      className="space-y-2"
+    >
       {choices.map((choice, index) => (
         <MCQOptionRow
           key={`${choice.id}-${index}`}
@@ -19,6 +24,7 @@ export default function ChoiceList({
           text={choice.text}
           onSelect={() => onSelectChoice(choice.id)}
           disabled={disabled}
+          isSelected={selectedAnswer === choice.id}
           variant={getOptionVariant(choice)}
         />
       ))}

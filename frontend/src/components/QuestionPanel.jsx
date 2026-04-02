@@ -31,6 +31,7 @@ export default function QuestionPanel({
         <div className="mt-6">
           <ChoiceList
             choices={question.choices}
+            selectedAnswer={selectedAnswer}
             onSelectChoice={onSelectChoice}
             disabled={isStudyMode && showFeedback}
             getOptionVariant={getOptionVariant}
