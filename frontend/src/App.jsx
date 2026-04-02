@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { Suspense, lazy, useEffect, useMemo, useState } from "react";
 import AccountPage from "./components/AccountPage";
 import AdminPage from "./components/AdminPage";
 import ApprovalStatusPage from "./components/ApprovalStatusPage";
@@ -10,6 +10,8 @@ import PaywallPage from "./components/PaywallPage";
 import ResetPasswordPage from "./components/ResetPasswordPage";
 import WrittenPromptMode from "./components/WrittenPromptMode";
 import { fetchApi } from "./lib/api";
+
+const RenalModule = lazy(() => import("./features/renal/RenalModule"));
 
 const AUTH_TOKEN_KEY = "nbct-auth-token";
 const ANON_ID_KEY = "nbct-anon-id";
@@ -41,6 +43,13 @@ const modeConfig = {
     eyebrow: "Component 1",
     description:
       "Draft a constructed response in a realistic writing workspace, then review rubric-based feedback.",
+  },
+  renal: {
+    id: "renal",
+    title: "Renal",
+    eyebrow: "Study Module",
+    description:
+      "Browse renal questions by topic, review generated prompts, and study rules, traps, guides, and flashcards.",
   },
 };
 
@@ -574,6 +583,14 @@ export default function App() {
         requestHeaders={requestHeaders}
         onBlocked={handleBlockedAccess}
       />
+    );
+  }
+
+  if (activeMode === "renal") {
+    return (
+      <Suspense fallback={null}>
+        <RenalModule onBack={() => setActiveMode(null)} />
+      </Suspense>
     );
   }
 
