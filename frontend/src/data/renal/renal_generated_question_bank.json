@@ -1,0 +1,1518 @@
+[
+  {
+    "id": "renal-recall-1",
+    "type": "short_answer",
+    "topic": "Congenital and developmental anomalies",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This child presents with recurrent febrile urinary tract infections (UTIs) and is found to have right-sided hydronephrosis on renal ultrasound with a normal voiding cystourethrogram (VCUG).",
+    "answer": "Right ureteropelvic junction",
+    "explanation": "Recurrent febrile UTIs in a child with unilateral hydronephrosis and a normal voiding cystourethrogram suggest a non-refluxing obstructive cause. Contrast-enhanced radiography confirming a dilated renal pelvis with abrupt narrowing and delayed drainage points to ureteropelvic junction (UPJ) obstruction, the most common congenital cause of unilateral hydronephrosis."
+  },
+  {
+    "id": "renal-mcq-1",
+    "type": "mcq",
+    "topic": "Congenital and developmental anomalies",
+    "prompt": "Which answer best matches this board-style clue? This child presents with recurrent febrile urinary tract infections (UTIs) and is found to have right-sided hydronephrosis on renal ultrasound with a normal voiding cystourethrogram (VCUG).",
+    "choices": [
+      "Bladder neck",
+      "Distal urethra",
+      "Left ureteropelvic junction",
+      "Right ureteropelvic junction",
+      "Right ureterovesical junction"
+    ],
+    "correct_answer": "Right ureteropelvic junction",
+    "teaching_point": "Recurrent febrile UTIs in a child with unilateral hydronephrosis and a normal voiding cystourethrogram suggest a non-refluxing obstructive cause. Contrast-enhanced radiography confirming a dilated renal pelvis with abrupt narrowing and delayed drainage points to ureteropelvic junction (UPJ) obstruction, the most common congenital cause of unilateral hydronephrosis.",
+    "trap_to_avoid": "Do not confuse Right ureteropelvic junction with Bladder neck"
+  },
+  {
+    "id": "renal-recall-2",
+    "type": "short_answer",
+    "topic": "Urinary incontinence",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient with long-standing diabetes mellitus presents with urinary hesitancy, a weak stream, sensation of incomplete bladder emptying, and nocturnal incontinence without awareness\u2014findings characteristic of overflow incontinence due to neurogenic bladder.",
+    "answer": "Impaired detrusor contractility",
+    "explanation": "Overflow incontinence in diabetic patients is most often due to neurogenic bladder caused by autonomic neuropathy leading to impaired detrusor contractility. It presents with chronic painless urinary retention, high post-void residual volume, dribbling, and a distended bladder. Diagnosis is confirmed by measuring residual volume, and management begins with bladder decompression followed by cholinergic stimulation using agents like bethanechol."
+  },
+  {
+    "id": "renal-mcq-2",
+    "type": "mcq",
+    "topic": "Urinary incontinence",
+    "prompt": "Which answer best matches this board-style clue? This patient with long-standing diabetes mellitus presents with urinary hesitancy, a weak stream, sensation of incomplete bladder emptying, and nocturnal incontinence without awareness\u2014findings characteristic of overflow incontinence due to neurogenic bladder.",
+    "choices": [
+      "Detrusor hyperactivity",
+      "External urethral sphincter laxity",
+      "Impaired detrusor contractility",
+      "Impaired voluntary relaxation of the pelvic floor",
+      "Urethral inflammation"
+    ],
+    "correct_answer": "Impaired detrusor contractility",
+    "teaching_point": "Overflow incontinence in diabetic patients is most often due to neurogenic bladder caused by autonomic neuropathy leading to impaired detrusor contractility. It presents with chronic painless urinary retention, high post-void residual volume, dribbling, and a distended bladder. Diagnosis is confirmed by measuring residual volume, and management begins with bladder decompression followed by cholinergic stimulation using agents like bethanechol.",
+    "trap_to_avoid": "Do not confuse Impaired detrusor contractility with Detrusor hyperactivity"
+  },
+  {
+    "id": "renal-recall-3",
+    "type": "short_answer",
+    "topic": "Acute kidney injury",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient presents with acute kidney injury (AKI) characterized by oliguria and a rising serum creatinine from 0.9 mg/dL to 2.3 mg/dL following intraoperative hypotension and significant blood loss.",
+    "answer": "Acute tubular necrosis",
+    "explanation": "Acute tubular necrosis is the most likely cause of AKI following significant intraoperative hypotension or blood loss. The proximal tubule is highly susceptible to ischemia due to its high ATP demand. Key lab findings in ATN include elevated urine sodium (>40 mEq/L), FENa >1%, and BUN/Cr ratio <20 \u2014 in contrast to prerenal azotemia, which shows low urine sodium and high BUN/Cr. ATN is a clinical diagnosis triggered by ischemia, nephrotoxins, or rhabdomyolysis."
+  },
+  {
+    "id": "renal-mcq-3",
+    "type": "mcq",
+    "topic": "Acute kidney injury",
+    "prompt": "Which answer best matches this board-style clue? This patient presents with acute kidney injury (AKI) characterized by oliguria and a rising serum creatinine from 0.9 mg/dL to 2.3 mg/dL following intraoperative hypotension and significant blood loss.",
+    "choices": [
+      "Acute interstitial nephritis",
+      "Acute tubular necrosis",
+      "Glomerulonephritis",
+      "Prerenal azotemia",
+      "Renal artery thrombosis"
+    ],
+    "correct_answer": "Acute tubular necrosis",
+    "teaching_point": "Acute tubular necrosis is the most likely cause of AKI following significant intraoperative hypotension or blood loss. The proximal tubule is highly susceptible to ischemia due to its high ATP demand. Key lab findings in ATN include elevated urine sodium (>40 mEq/L), FENa >1%, and BUN/Cr ratio <20 \u2014 in contrast to prerenal azotemia, which shows low urine sodium and high BUN/Cr. ATN is a clinical diagnosis triggered by ischemia, nephrotoxins, or rhabdomyolysis.",
+    "trap_to_avoid": "Do not confuse Acute tubular necrosis with Acute interstitial nephritis"
+  },
+  {
+    "id": "renal-recall-4",
+    "type": "short_answer",
+    "topic": "Acute kidney injury",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient with sickle cell disease presenting with acute-onset gross hematuria and flank pain most likely has renal papillary necrosis (RPN).",
+    "answer": "Ischemic necrosis of the renal papillae",
+    "explanation": "Renal papillary necrosis occurs due to ischemic injury of the renal papillae in settings such as sickle cell disease, diabetes mellitus, analgesic nephropathy, and pyelonephritis. Recognition of clinical patterns and urinalysis features helps differentiate this condition from glomerular or infectious causes of hematuria. A 64-year-old man undergoes an abdominal aortic aneurysm repair. During the"
+  },
+  {
+    "id": "renal-mcq-4",
+    "type": "mcq",
+    "topic": "Acute kidney injury",
+    "prompt": "Which answer best matches this board-style clue? This patient with sickle cell disease presenting with acute-onset gross hematuria and flank pain most likely has renal papillary necrosis (RPN).",
+    "choices": [
+      "Crystal-induced obstruction of renal tubules",
+      "Deposition of immune complexes in glomerular capillary walls",
+      "Ischemic necrosis of the renal papillae",
+      "Malignant transformation of urothelial transitional epithelium",
+      "Retrograde bacterial ascent through the urethra"
+    ],
+    "correct_answer": "Ischemic necrosis of the renal papillae",
+    "teaching_point": "Renal papillary necrosis occurs due to ischemic injury of the renal papillae in settings such as sickle cell disease, diabetes mellitus, analgesic nephropathy, and pyelonephritis. Recognition of clinical patterns and urinalysis features helps differentiate this condition from glomerular or infectious causes of hematuria. A 64-year-old man undergoes an abdominal aortic aneurysm repair. During the",
+    "trap_to_avoid": "Do not confuse Ischemic necrosis of the renal papillae with Crystal-induced obstruction of renal tubules"
+  },
+  {
+    "id": "renal-recall-5",
+    "type": "short_answer",
+    "topic": "Acute kidney injury",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient developed acute kidney injury (AKI) following a major hypotensive episode during vascular surgery, with a creatinine rise from 1 mg/dL to 4.5 mg/dL in 48 hours and severe oliguria.",
+    "answer": "Acute tubular necrosis from ischemia",
+    "explanation": "Ischemic acute tubular necrosis is the leading cause of intrinsic AKI after sustained hypotension, often during major surgery. It targets the proximal tubules and thick ascending limb, producing muddy brown casts and a triphasic course. Supportive care with hemodynamic optimization and nephrotoxin avoidance allows recovery if the basement membrane is intact."
+  },
+  {
+    "id": "renal-mcq-5",
+    "type": "mcq",
+    "topic": "Acute kidney injury",
+    "prompt": "Which answer best matches this board-style clue? This patient developed acute kidney injury (AKI) following a major hypotensive episode during vascular surgery, with a creatinine rise from 1 mg/dL to 4.5 mg/dL in 48 hours and severe oliguria.",
+    "choices": [
+      "Acute interstitial nephritis",
+      "Acute tubular necrosis from ischemia",
+      "Normal postoperative renal function",
+      "Postrenal obstruction from ureteral injury",
+      "Rhabdomyolysis-induced pigment nephropathy"
+    ],
+    "correct_answer": "Acute tubular necrosis from ischemia",
+    "teaching_point": "Ischemic acute tubular necrosis is the leading cause of intrinsic AKI after sustained hypotension, often during major surgery. It targets the proximal tubules and thick ascending limb, producing muddy brown casts and a triphasic course. Supportive care with hemodynamic optimization and nephrotoxin avoidance allows recovery if the basement membrane is intact.",
+    "trap_to_avoid": "Do not confuse Acute tubular necrosis from ischemia with Acute interstitial nephritis"
+  },
+  {
+    "id": "renal-recall-6",
+    "type": "short_answer",
+    "topic": "Autoimmune processes",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This child\u2019s recent history of a resolved pharyngitis followed by tea-colored urine, periorbital edema, and hypertension is consistent with a postinfectious glomerulonephritis, most commonly poststreptococcal glomerulonephritis (PSGN).",
+    "answer": "C3",
+    "explanation": "PSGN typically presents 1\u20133 weeks after streptococcal infection with hematuria, edema, and hypertension. It is classically associated with decreased serum C3 levels due to activation of the classical complement pathway. A 63-year-old man comes to the clinic because of progressive urinary changes. He"
+  },
+  {
+    "id": "renal-mcq-6",
+    "type": "mcq",
+    "topic": "Autoimmune processes",
+    "prompt": "Which answer best matches this board-style clue? This child\u2019s recent history of a resolved pharyngitis followed by tea-colored urine, periorbital edema, and hypertension is consistent with a postinfectious glomerulonephritis, most commonly poststreptococcal glomerulonephritis (PSGN).",
+    "choices": [
+      "C1 esterase inhibitor",
+      "C1q",
+      "C3",
+      "C4",
+      "C9"
+    ],
+    "correct_answer": "C3",
+    "teaching_point": "PSGN typically presents 1\u20133 weeks after streptococcal infection with hematuria, edema, and hypertension. It is classically associated with decreased serum C3 levels due to activation of the classical complement pathway. A 63-year-old man comes to the clinic because of progressive urinary changes. He",
+    "trap_to_avoid": "Do not confuse C3 with C1 esterase inhibitor"
+  },
+  {
+    "id": "renal-recall-7",
+    "type": "short_answer",
+    "topic": "Chronic kidney disease",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This older man developed progressive urinary frequency, nocturia, and passage of large volumes of dilute urine after pelvic radiation, with imaging showing bilateral hydroureters.",
+    "answer": "Impaired ability to concentrate urine",
+    "explanation": "Pelvic radiation caused ureteral fibrosis and tubular injury, leading to loss of the medullary gradient and an impaired ability to concentrate urine, which manifests as polyuria and nocturia. 8.1"
+  },
+  {
+    "id": "renal-mcq-7",
+    "type": "mcq",
+    "topic": "Chronic kidney disease",
+    "prompt": "Which answer best matches this board-style clue? This older man developed progressive urinary frequency, nocturia, and passage of large volumes of dilute urine after pelvic radiation, with imaging showing bilateral hydroureters.",
+    "choices": [
+      "Decreased ammonium excretion",
+      "Impaired ability to concentrate urine",
+      "Increased aldosterone secretion",
+      "Increased proximal sodium reabsorption",
+      "Reduced atrial natriuretic peptide activity"
+    ],
+    "correct_answer": "Impaired ability to concentrate urine",
+    "teaching_point": "Pelvic radiation caused ureteral fibrosis and tubular injury, leading to loss of the medullary gradient and an impaired ability to concentrate urine, which manifests as polyuria and nocturia. 8.1",
+    "trap_to_avoid": "Do not confuse Impaired ability to concentrate urine with Decreased ammonium excretion"
+  },
+  {
+    "id": "renal-recall-8",
+    "type": "short_answer",
+    "topic": "Congenital and developmental anomalies",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient\u2019s presentation is most consistent with cystinosis, a rare autosomal recessive lysosomal storage disorder caused by defective transport of cystine out of lysosomes.",
+    "answer": "",
+    "explanation": "Cystinosis is a lysosomal storage disorder that damages the proximal tubule, causing Fanconi syndrome. The key defect is decreased sodium bicarbonate reabsorption, producing a type 2 (proximal) renal tubular acidosis with polyuria, polydipsia, growth failure, hypophosphatemia, glucosuria, and aminoaciduria. A 25-year-old man is evaluated in the emergency department because of decreased"
+  },
+  {
+    "id": "renal-mcq-8",
+    "type": "mcq",
+    "topic": "Congenital and developmental anomalies",
+    "prompt": "Which answer best matches this board-style clue? This patient\u2019s presentation is most consistent with cystinosis, a rare autosomal recessive lysosomal storage disorder caused by defective transport of cystine out of lysosomes.",
+    "choices": [
+      "Decreased hydrogen ion secretion in the collecting duct"
+    ],
+    "correct_answer": "",
+    "teaching_point": "Cystinosis is a lysosomal storage disorder that damages the proximal tubule, causing Fanconi syndrome. The key defect is decreased sodium bicarbonate reabsorption, producing a type 2 (proximal) renal tubular acidosis with polyuria, polydipsia, growth failure, hypophosphatemia, glucosuria, and aminoaciduria. A 25-year-old man is evaluated in the emergency department because of decreased",
+    "trap_to_avoid": "Do not confuse  with Decreased hydrogen ion secretion in the collecting duct"
+  },
+  {
+    "id": "renal-recall-9",
+    "type": "short_answer",
+    "topic": "Fluid, electrolytes, and acid-base",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient\u2019s post-exertional oliguria after prolonged endurance activity in heat, with hypovolemia, elevated creatinine and potassium, and a urinalysis that is heme-positive on dipstick but shows few or no red cells on microscopy, is classic for pigment nephropathy from myoglobin.",
+    "answer": "Rhabdomyolysis",
+    "explanation": "This patient\u2019s AKI after exertion with heme-positive urine but no RBCs is due to rhabdomyolysis, where myoglobin release causes tubular toxicity, cast formation, and vasoconstriction. A 71-year-old man is brought to the emergency department because of dizziness"
+  },
+  {
+    "id": "renal-mcq-9",
+    "type": "mcq",
+    "topic": "Fluid, electrolytes, and acid-base",
+    "prompt": "Which answer best matches this board-style clue? This patient\u2019s post-exertional oliguria after prolonged endurance activity in heat, with hypovolemia, elevated creatinine and potassium, and a urinalysis that is heme-positive on dipstick but shows few or no red cells on microscopy, is classic for pigment nephropathy from myoglobin.",
+    "choices": [
+      "Acute interstitial nephritis",
+      "Glomerulonephritis",
+      "Postrenal obstruction",
+      "Renal artery stenosis",
+      "Rhabdomyolysis"
+    ],
+    "correct_answer": "Rhabdomyolysis",
+    "teaching_point": "This patient\u2019s AKI after exertion with heme-positive urine but no RBCs is due to rhabdomyolysis, where myoglobin release causes tubular toxicity, cast formation, and vasoconstriction. A 71-year-old man is brought to the emergency department because of dizziness",
+    "trap_to_avoid": "Do not confuse Rhabdomyolysis with Acute interstitial nephritis"
+  },
+  {
+    "id": "renal-recall-10",
+    "type": "short_answer",
+    "topic": "Fluid, electrolytes, and acid-base",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This vignette screams volume depletion: diarrhea, poor intake, hypotension, tachycardia, dry mucous membranes, oliguria, and a bland urinalysis.",
+    "answer": "Elevated blood urea nitrogen/creatinine ratio (>20:1)",
+    "explanation": "Prerenal azotemia is characterized by BUN/Cr ratio >20:1, FENa <1%, and urine osmolality >500 mOsm/kg, and a bland sediment with possible hyaline casts. 11.1"
+  },
+  {
+    "id": "renal-mcq-10",
+    "type": "mcq",
+    "topic": "Fluid, electrolytes, and acid-base",
+    "prompt": "Which answer best matches this board-style clue? This vignette screams volume depletion: diarrhea, poor intake, hypotension, tachycardia, dry mucous membranes, oliguria, and a bland urinalysis.",
+    "choices": [
+      "Elevated blood urea nitrogen/creatinine ratio (>20:1)",
+      "Elevated urine sodium concentration (>40 mEq/L)",
+      "Granular casts on urine microscopy",
+      "Red blood cell casts on urine microscopy",
+      "White blood cell casts on urine microscopy"
+    ],
+    "correct_answer": "Elevated blood urea nitrogen/creatinine ratio (>20:1)",
+    "teaching_point": "Prerenal azotemia is characterized by BUN/Cr ratio >20:1, FENa <1%, and urine osmolality >500 mOsm/kg, and a bland sediment with possible hyaline casts. 11.1",
+    "trap_to_avoid": "Do not confuse Elevated blood urea nitrogen/creatinine ratio (>20:1) with Elevated urine sodium concentration (>40 mEq/L)"
+  },
+  {
+    "id": "renal-recall-11",
+    "type": "short_answer",
+    "topic": "Fluid, electrolytes, and acid-base",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient presents with rhabdomyolysis, a life-threatening condition involving acute skeletal muscle breakdown and release of intracellular contents into the bloodstream.",
+    "answer": "Rhabdomyolysis",
+    "explanation": "Rhabdomyolysis presents with elevated creatine kinase, false-positive urine blood with few or no RBCs, and often hyperkalemia and acute kidney injury. Myoglobin, released from damaged muscle, is nephrotoxic and can cause acute tubular necrosis. The most appropriate step in management is aggressive IV hydration with isotonic saline. A 22-year-old woman is brought to the emergency department by her roommate"
+  },
+  {
+    "id": "renal-mcq-11",
+    "type": "mcq",
+    "topic": "Fluid, electrolytes, and acid-base",
+    "prompt": "Which answer best matches this board-style clue? This patient presents with rhabdomyolysis, a life-threatening condition involving acute skeletal muscle breakdown and release of intracellular contents into the bloodstream.",
+    "choices": [
+      "Acute interstitial nephritis",
+      "Drug-induced crystal nephropathy",
+      "Glomerulonephritis",
+      "Hepatorenal syndrome",
+      "Rhabdomyolysis"
+    ],
+    "correct_answer": "Rhabdomyolysis",
+    "teaching_point": "Rhabdomyolysis presents with elevated creatine kinase, false-positive urine blood with few or no RBCs, and often hyperkalemia and acute kidney injury. Myoglobin, released from damaged muscle, is nephrotoxic and can cause acute tubular necrosis. The most appropriate step in management is aggressive IV hydration with isotonic saline. A 22-year-old woman is brought to the emergency department by her roommate",
+    "trap_to_avoid": "Do not confuse Rhabdomyolysis with Acute interstitial nephritis"
+  },
+  {
+    "id": "renal-recall-12",
+    "type": "short_answer",
+    "topic": "Fluid, electrolytes, and acid-base",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient exhibits classic signs of prerenal azotemia due to volume depletion, most likely caused by prolonged diuretic abuse.",
+    "answer": "\u2191 BUN/Cr ratio, \u2193 FeNa",
+    "explanation": "In prerenal azotemia from volume depletion, the BUN/Cr ratio is increased due to urea reabsorption, and FeNa is decreased due to sodium conservation. A 10-year-old boy is brought to the emergency department due to fever, lower"
+  },
+  {
+    "id": "renal-mcq-12",
+    "type": "mcq",
+    "topic": "Fluid, electrolytes, and acid-base",
+    "prompt": "Which answer best matches this board-style clue? This patient exhibits classic signs of prerenal azotemia due to volume depletion, most likely caused by prolonged diuretic abuse.",
+    "choices": [
+      "\u2191 BUN/Cr ratio, \u2191 FeNa",
+      "\u2191 BUN/Cr ratio, \u2193 FeNa",
+      "\u2193 BUN/Cr ratio, \u2191 FeNa",
+      "\u2193 BUN/Cr ratio, \u2193 FeNa",
+      "\u2193 BUN/Cr ratio, \u2194 FeNa"
+    ],
+    "correct_answer": "\u2191 BUN/Cr ratio, \u2193 FeNa",
+    "teaching_point": "In prerenal azotemia from volume depletion, the BUN/Cr ratio is increased due to urea reabsorption, and FeNa is decreased due to sodium conservation. A 10-year-old boy is brought to the emergency department due to fever, lower",
+    "trap_to_avoid": "Do not confuse \u2191 BUN/Cr ratio, \u2193 FeNa with \u2191 BUN/Cr ratio, \u2191 FeNa"
+  },
+  {
+    "id": "renal-recall-13",
+    "type": "short_answer",
+    "topic": "Genitourinary tract infections",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient presents with recurrent urinary tract infections and a renal ultrasound showing a U-shaped structure in the lower abdomen\u2014findings consistent with a horseshoe kidney.",
+    "answer": "Fusion of the inferior poles of the developing kidneys",
+    "explanation": "Horseshoe kidney results from fusion of the inferior poles of the metanephric kidneys during weeks 4\u20136 of embryogenesis, forming a U-shaped structure that is often trapped under the inferior mesenteric artery, preventing normal ascent. Most cases are asymptomatic and discovered incidentally on imaging; however, patients may present with recurrent urinary tract infections, nephrolithiasis, or hydronephrosis due to abnormal ureteral drainage. Diagnosis is confirmed by imaging (e.g., ultrasound or "
+  },
+  {
+    "id": "renal-mcq-13",
+    "type": "mcq",
+    "topic": "Genitourinary tract infections",
+    "prompt": "Which answer best matches this board-style clue? This patient presents with recurrent urinary tract infections and a renal ultrasound showing a U-shaped structure in the lower abdomen\u2014findings consistent with a horseshoe kidney.",
+    "choices": [
+      "Failure of mesonephric duct regression",
+      "Fusion of the inferior poles of the developing kidneys",
+      "Persistence of the pronephros",
+      "Ureteric bud duplication"
+    ],
+    "correct_answer": "Fusion of the inferior poles of the developing kidneys",
+    "teaching_point": "Horseshoe kidney results from fusion of the inferior poles of the metanephric kidneys during weeks 4\u20136 of embryogenesis, forming a U-shaped structure that is often trapped under the inferior mesenteric artery, preventing normal ascent. Most cases are asymptomatic and discovered incidentally on imaging; however, patients may present with recurrent urinary tract infections, nephrolithiasis, or hydronephrosis due to abnormal ureteral drainage. Diagnosis is confirmed by imaging (e.g., ultrasound or ",
+    "trap_to_avoid": "Do not confuse Fusion of the inferior poles of the developing kidneys with Failure of mesonephric duct regression"
+  },
+  {
+    "id": "renal-recall-14",
+    "type": "short_answer",
+    "topic": "Genitourinary tract infections",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? Acute pyelonephritis is an ascending urinary tract infection involving the renal pelvis and parenchyma, most commonly caused by Gram-negative bacteria such as Escherichia coli.",
+    "answer": "Ciprofloxacin",
+    "explanation": "Acute pyelonephritis is a bacterial infection of the renal parenchyma that presents with fever, flank pain, and pyuria and requires antibiotic therapy with an agent that achieves high renal tissue concentrations such as a fluoroquinolone. Ciprofloxacin is the first-line choice for outpatient therapy because of its potent Gram-negative coverage and excellent renal penetration."
+  },
+  {
+    "id": "renal-mcq-14",
+    "type": "mcq",
+    "topic": "Genitourinary tract infections",
+    "prompt": "Which answer best matches this board-style clue? Acute pyelonephritis is an ascending urinary tract infection involving the renal pelvis and parenchyma, most commonly caused by Gram-negative bacteria such as Escherichia coli.",
+    "choices": [
+      "Acyclovir",
+      "Amoxicillin-clavulanate",
+      "Ciprofloxacin",
+      "Doxycycline",
+      "Nitrofurantoin"
+    ],
+    "correct_answer": "Ciprofloxacin",
+    "teaching_point": "Acute pyelonephritis is a bacterial infection of the renal parenchyma that presents with fever, flank pain, and pyuria and requires antibiotic therapy with an agent that achieves high renal tissue concentrations such as a fluoroquinolone. Ciprofloxacin is the first-line choice for outpatient therapy because of its potent Gram-negative coverage and excellent renal penetration.",
+    "trap_to_avoid": "Do not confuse Ciprofloxacin with Acyclovir"
+  },
+  {
+    "id": "renal-recall-15",
+    "type": "short_answer",
+    "topic": "Genitourinary tract infections",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? Vesicoureteral reflux (VUR) is a congenital or acquired condition in which urine flows retrograde from the bladder into the ureter and sometimes all the way to the renal pelvis.",
+    "answer": "Cortical scarring of the kidneys",
+    "explanation": "Congenital VUR due to a short intramural ureteral tunnel predisposes to cortical scarring through recurrent reflux and pyelonephritis, with long-term risks of reflux nephropathy, hypertension, and chronic kidney disease. 16.1"
+  },
+  {
+    "id": "renal-mcq-15",
+    "type": "mcq",
+    "topic": "Genitourinary tract infections",
+    "prompt": "Which answer best matches this board-style clue? Vesicoureteral reflux (VUR) is a congenital or acquired condition in which urine flows retrograde from the bladder into the ureter and sometimes all the way to the renal pelvis.",
+    "choices": [
+      "Acute interstitial nephritis",
+      "Cortical scarring of the kidneys",
+      "Nephrolithiasis with uric acid precipitation",
+      "Renal artery stenosis with hypertension",
+      "Wilms tumor development"
+    ],
+    "correct_answer": "Cortical scarring of the kidneys",
+    "teaching_point": "Congenital VUR due to a short intramural ureteral tunnel predisposes to cortical scarring through recurrent reflux and pyelonephritis, with long-term risks of reflux nephropathy, hypertension, and chronic kidney disease. 16.1",
+    "trap_to_avoid": "Do not confuse Cortical scarring of the kidneys with Acute interstitial nephritis"
+  },
+  {
+    "id": "renal-recall-16",
+    "type": "short_answer",
+    "topic": "Glomerular diseases",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? Minimal change disease (MCD) is the most common cause of nephrotic syndrome in children and is characterized by selective proteinuria leading to hypoalbuminemia and edema.",
+    "answer": "Minimal change disease",
+    "explanation": "Minimal change disease is the leading cause of nephrotic syndrome in children, presenting with selective proteinuria, hypoalbuminemia, and edema. It responds well to corticosteroids and generally has an excellent prognosis compared to other nephrotic syndromes. A 7-year-old boy is brought to the physician by his parents due to a recent onset of"
+  },
+  {
+    "id": "renal-mcq-16",
+    "type": "mcq",
+    "topic": "Glomerular diseases",
+    "prompt": "Which answer best matches this board-style clue? Minimal change disease (MCD) is the most common cause of nephrotic syndrome in children and is characterized by selective proteinuria leading to hypoalbuminemia and edema.",
+    "choices": [
+      "Focal segmental glomerulosclerosis",
+      "IgA nephropathy",
+      "Membranous nephropathy",
+      "Minimal change disease",
+      "Post-infectious glomerulonephritis"
+    ],
+    "correct_answer": "Minimal change disease",
+    "teaching_point": "Minimal change disease is the leading cause of nephrotic syndrome in children, presenting with selective proteinuria, hypoalbuminemia, and edema. It responds well to corticosteroids and generally has an excellent prognosis compared to other nephrotic syndromes. A 7-year-old boy is brought to the physician by his parents due to a recent onset of",
+    "trap_to_avoid": "Do not confuse Minimal change disease with Focal segmental glomerulosclerosis"
+  },
+  {
+    "id": "renal-recall-17",
+    "type": "short_answer",
+    "topic": "Glomerular diseases",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This 7-year-old boy presents with periorbital and lower extremity edema, hypercholesterolemia, and heavy proteinuria without hematuria (One NBME Q gives 3-4 RBCs/hpf as negative.), a typical description of nephrotic syndrome.",
+    "answer": "Effacement of podocyte foot processes",
+    "explanation": "Minimal change disease is the most common cause of nephrotic syndrome in children, presenting with edema, hypoalbuminemia, and heavy proteinuria. The hallmark finding on electron microscopy is podocyte foot process effacement, while light microscopy and immunofluorescence are often normal. The disease is often idiopathic, but may be triggered by infections or immunizations."
+  },
+  {
+    "id": "renal-mcq-17",
+    "type": "mcq",
+    "topic": "Glomerular diseases",
+    "prompt": "Which answer best matches this board-style clue? This 7-year-old boy presents with periorbital and lower extremity edema, hypercholesterolemia, and heavy proteinuria without hematuria (One NBME Q gives 3-4 RBCs/hpf as negative.), a typical description of nephrotic syndrome.",
+    "choices": [
+      "Dense subendothelial deposits with a \"tram-track\" appearance",
+      "Effacement of podocyte foot processes",
+      "Subepithelial humps with granular deposits"
+    ],
+    "correct_answer": "Effacement of podocyte foot processes",
+    "teaching_point": "Minimal change disease is the most common cause of nephrotic syndrome in children, presenting with edema, hypoalbuminemia, and heavy proteinuria. The hallmark finding on electron microscopy is podocyte foot process effacement, while light microscopy and immunofluorescence are often normal. The disease is often idiopathic, but may be triggered by infections or immunizations.",
+    "trap_to_avoid": "Do not confuse Effacement of podocyte foot processes with Dense subendothelial deposits with a \"tram-track\" appearance"
+  },
+  {
+    "id": "renal-recall-18",
+    "type": "short_answer",
+    "topic": "Glomerular diseases",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? Membranoproliferative glomerulonephritis (MPGN) is a pattern of glomerular injury that often appears on the USMLE as hematuria (red or tea-colored urine) in a patient with hepatitis C, hepatitis B, or certain malignancies (especially chronic lymphocytic leukemia or lymphoma).",
+    "answer": "Membranoproliferative glomerulonephritis",
+    "explanation": "MPGN is the answer on USMLE for red urine in the setting of hepatitis C or malignancy. Biopsy shows a \"tram-track\" appearance due to duplication of the basement membranes. Dense deposits can also sometimes be seen. A 33-year-old man comes to the clinic because of increasing facial puffiness"
+  },
+  {
+    "id": "renal-mcq-18",
+    "type": "mcq",
+    "topic": "Glomerular diseases",
+    "prompt": "Which answer best matches this board-style clue? Membranoproliferative glomerulonephritis (MPGN) is a pattern of glomerular injury that often appears on the USMLE as hematuria (red or tea-colored urine) in a patient with hepatitis C, hepatitis B, or certain malignancies (especially chronic lymphocytic leukemia or lymphoma).",
+    "choices": [
+      "Acute poststreptococcal glomerulonephritis",
+      "Alport syndrome",
+      "Focal segmental glomerulosclerosis",
+      "Membranoproliferative glomerulonephritis",
+      "Minimal change disease"
+    ],
+    "correct_answer": "Membranoproliferative glomerulonephritis",
+    "teaching_point": "MPGN is the answer on USMLE for red urine in the setting of hepatitis C or malignancy. Biopsy shows a \"tram-track\" appearance due to duplication of the basement membranes. Dense deposits can also sometimes be seen. A 33-year-old man comes to the clinic because of increasing facial puffiness",
+    "trap_to_avoid": "Do not confuse Membranoproliferative glomerulonephritis with Acute poststreptococcal glomerulonephritis"
+  },
+  {
+    "id": "renal-recall-19",
+    "type": "short_answer",
+    "topic": "Glomerular diseases",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? Membranous glomerulonephropathy (MG), aka membranous glomerulonephritis, is a nephrotic syndrome and can be seen in conditions like autoimmune diseases (e.g., rhuematoid arthritis), drug use (dapsone, gold salts, sulfonamides), primary membranous glomerulonephropathy (antibodies against phospholipase A2 receptor), hepatitis B/C, and solid tumors (such as pancreatic or breast).",
+    "answer": "Membranous glomerulonephropathy",
+    "explanation": "Membranous glomerulonephropathy is the answer on USMLE for a nephrotic syndrome in someone with hepatitis B/C, an autoimmune disease like RA, malignancy, or exposure to dapsone, gold salts, or sulfonamides. Biopsy shows a \"spike and dome\" appearance due to subepithelial IgG and C3 deposition. A 24-year-old woman presents to the clinic with a 6-month history of urinary"
+  },
+  {
+    "id": "renal-mcq-19",
+    "type": "mcq",
+    "topic": "Glomerular diseases",
+    "prompt": "Which answer best matches this board-style clue? Membranous glomerulonephropathy (MG), aka membranous glomerulonephritis, is a nephrotic syndrome and can be seen in conditions like autoimmune diseases (e.g., rhuematoid arthritis), drug use (dapsone, gold salts, sulfonamides), primary membranous glomerulonephropathy (antibodies against phospholipase A2 receptor), hepatitis B/C, and solid tumors (such as pancreatic or breast).",
+    "choices": [
+      "Alport syndrome",
+      "Interstitial nephritis",
+      "Membranous glomerulonephropathy",
+      "Membranoproliferative glomerulonephritis",
+      "Renal amyloidosis"
+    ],
+    "correct_answer": "Membranous glomerulonephropathy",
+    "teaching_point": "Membranous glomerulonephropathy is the answer on USMLE for a nephrotic syndrome in someone with hepatitis B/C, an autoimmune disease like RA, malignancy, or exposure to dapsone, gold salts, or sulfonamides. Biopsy shows a \"spike and dome\" appearance due to subepithelial IgG and C3 deposition. A 24-year-old woman presents to the clinic with a 6-month history of urinary",
+    "trap_to_avoid": "Do not confuse Membranous glomerulonephropathy with Alport syndrome"
+  },
+  {
+    "id": "renal-recall-20",
+    "type": "short_answer",
+    "topic": "Miscellaneous",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? Chronic interstitial cystitis, also known as bladder pain syndrome, is a poorly understood chronic condition characterized by bladder pain, urinary frequency, urgency, and pelvic discomfort, typically in women.",
+    "answer": "Chronic interstitial cystitis",
+    "explanation": "Chronic interstitial cystitis (bladder pain syndrome) presents with urinary urgency, frequency, dyspareunia, and suprapubic pain that improves with voiding. It is a diagnosis of exclusion in women with persistent urinary symptoms and negative cultures. Anterior vaginal wall tenderness is a classic exam finding. 21.1"
+  },
+  {
+    "id": "renal-mcq-20",
+    "type": "mcq",
+    "topic": "Miscellaneous",
+    "prompt": "Which answer best matches this board-style clue? Chronic interstitial cystitis, also known as bladder pain syndrome, is a poorly understood chronic condition characterized by bladder pain, urinary frequency, urgency, and pelvic discomfort, typically in women.",
+    "choices": [
+      "Bacterial cystitis",
+      "Chronic interstitial cystitis",
+      "Endometriosis",
+      "Overactive bladder syndrome",
+      "Pelvic inflammatory disease"
+    ],
+    "correct_answer": "Chronic interstitial cystitis",
+    "teaching_point": "Chronic interstitial cystitis (bladder pain syndrome) presents with urinary urgency, frequency, dyspareunia, and suprapubic pain that improves with voiding. It is a diagnosis of exclusion in women with persistent urinary symptoms and negative cultures. Anterior vaginal wall tenderness is a classic exam finding. 21.1",
+    "trap_to_avoid": "Do not confuse Chronic interstitial cystitis with Bacterial cystitis"
+  },
+  {
+    "id": "renal-recall-21",
+    "type": "short_answer",
+    "topic": "Miscellaneous",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? Interstitial cystitis, also known as painful bladder syndrome, is a chronic condition characterized by bladder pain associated with urinary urgency and frequency in the absence of infection or another identifiable cause.",
+    "answer": "Interstitial cystitis",
+    "explanation": "Interstitial cystitis is a chronic bladder pain syndrome causing urgency and frequency with sterile cultures, pain that worsens on filling and improves after voiding, and requires supportive, multimodal management. A 70-year-old man presents for routine evaluation. He reports intermittent"
+  },
+  {
+    "id": "renal-mcq-21",
+    "type": "mcq",
+    "topic": "Miscellaneous",
+    "prompt": "Which answer best matches this board-style clue? Interstitial cystitis, also known as painful bladder syndrome, is a chronic condition characterized by bladder pain associated with urinary urgency and frequency in the absence of infection or another identifiable cause.",
+    "choices": [
+      "Autoimmune-mediated destruction of renal papillae",
+      "Chronic bacterial colonization of the bladder",
+      "Dysfunction of the pelvic floor musculature",
+      "Interstitial cystitis",
+      "Urethral obstruction with incomplete bladder emptying"
+    ],
+    "correct_answer": "Interstitial cystitis",
+    "teaching_point": "Interstitial cystitis is a chronic bladder pain syndrome causing urgency and frequency with sterile cultures, pain that worsens on filling and improves after voiding, and requires supportive, multimodal management. A 70-year-old man presents for routine evaluation. He reports intermittent",
+    "trap_to_avoid": "Do not confuse Interstitial cystitis with Autoimmune-mediated destruction of renal papillae"
+  },
+  {
+    "id": "renal-recall-22",
+    "type": "short_answer",
+    "topic": "Neoplasms of the kidneys and urinary tract",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient presents with painless gross hematuria, the classic presentation of urothelial carcinoma (transitional cell carcinoma), which is the most common type of bladder cancer.",
+    "answer": "Transitional cell carcinoma of the bladder",
+    "explanation": "Painless gross hematuria in an older adult should always prompt evaluation for urothelial carcinoma, especially with risk factors like industrial chemical exposure. Transitional cell carcinoma of the bladder is the most common type and presents insidiously. Benign, infectious, or renal causes of hematuria are less likely without supportive symptoms or lab findings."
+  },
+  {
+    "id": "renal-mcq-22",
+    "type": "mcq",
+    "topic": "Neoplasms of the kidneys and urinary tract",
+    "prompt": "Which answer best matches this board-style clue? This patient presents with painless gross hematuria, the classic presentation of urothelial carcinoma (transitional cell carcinoma), which is the most common type of bladder cancer.",
+    "choices": [
+      "Benign prostatic hyperplasia",
+      "Nephrolithiasis",
+      "Renal cell carcinoma",
+      "Squamous cell carcinoma of the bladder",
+      "Transitional cell carcinoma of the bladder"
+    ],
+    "correct_answer": "Transitional cell carcinoma of the bladder",
+    "teaching_point": "Painless gross hematuria in an older adult should always prompt evaluation for urothelial carcinoma, especially with risk factors like industrial chemical exposure. Transitional cell carcinoma of the bladder is the most common type and presents insidiously. Benign, infectious, or renal causes of hematuria are less likely without supportive symptoms or lab findings.",
+    "trap_to_avoid": "Do not confuse Transitional cell carcinoma of the bladder with Benign prostatic hyperplasia"
+  },
+  {
+    "id": "renal-recall-23",
+    "type": "short_answer",
+    "topic": "Nephrolithiasis and urinary tract obstruction",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? The ureterovesical junction (UVJ) is the most common site of urinary stone impaction because it represents the narrowest point of the ureter as it passes obliquely through the bladder wall.",
+    "answer": "Ureterovesical junction",
+    "explanation": "Urinary calculi most often become trapped at natural ureteral narrowings, with the ureterovesical junction being the most common site due to its anatomic constriction as the ureter enters the bladder wall. This location is associated with classic flank-to-groin colicky pain and irritative urinary symptoms once the stone reaches the distal ureter. 24.1"
+  },
+  {
+    "id": "renal-mcq-23",
+    "type": "mcq",
+    "topic": "Nephrolithiasis and urinary tract obstruction",
+    "prompt": "Which answer best matches this board-style clue? The ureterovesical junction (UVJ) is the most common site of urinary stone impaction because it represents the narrowest point of the ureter as it passes obliquely through the bladder wall.",
+    "choices": [
+      "Detrusor muscle wall of the bladder",
+      "Internal urethral sphincter",
+      "Prostatic urethra",
+      "Ureterovesical junction",
+      "Urethral meatus"
+    ],
+    "correct_answer": "Ureterovesical junction",
+    "teaching_point": "Urinary calculi most often become trapped at natural ureteral narrowings, with the ureterovesical junction being the most common site due to its anatomic constriction as the ureter enters the bladder wall. This location is associated with classic flank-to-groin colicky pain and irritative urinary symptoms once the stone reaches the distal ureter. 24.1",
+    "trap_to_avoid": "Do not confuse Ureterovesical junction with Detrusor muscle wall of the bladder"
+  },
+  {
+    "id": "renal-recall-24",
+    "type": "short_answer",
+    "topic": "Nephrolithiasis and urinary tract obstruction",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient is presenting with classic findings of nephrolithiasis: sudden-onset flank pain radiating to the groin, nausea, and vomiting.",
+    "answer": "Uric acid overproduction",
+    "explanation": "Uric acid stones are radiolucent, form in acidic urine, and are associated with purine overproduction, high-protein diets, or gout. Rhomboid crystals are characteristic. Management involves alkalinization of urine and xanthine oxidase inhibitors. A 9-year-old boy is brought to the clinic by his parents due to facial puffiness and leg"
+  },
+  {
+    "id": "renal-mcq-24",
+    "type": "mcq",
+    "topic": "Nephrolithiasis and urinary tract obstruction",
+    "prompt": "Which answer best matches this board-style clue? This patient is presenting with classic findings of nephrolithiasis: sudden-onset flank pain radiating to the groin, nausea, and vomiting.",
+    "choices": [
+      "Cystinuria",
+      "Hypercalcemia",
+      "Hypocitraturia",
+      "Proteus infection",
+      "Tumor lysis syndrome",
+      "Uric acid overproduction"
+    ],
+    "correct_answer": "Uric acid overproduction",
+    "teaching_point": "Uric acid stones are radiolucent, form in acidic urine, and are associated with purine overproduction, high-protein diets, or gout. Rhomboid crystals are characteristic. Management involves alkalinization of urine and xanthine oxidase inhibitors. A 9-year-old boy is brought to the clinic by his parents due to facial puffiness and leg",
+    "trap_to_avoid": "Do not confuse Uric acid overproduction with Cystinuria"
+  },
+  {
+    "id": "renal-recall-25",
+    "type": "short_answer",
+    "topic": "Nephrotic & nephritic syndromes",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This child presents with periorbital and peripheral edema, abdominal distention, hypoalbuminemia, hyperlipidemia, and heavy proteinuria in the absence of hematuria.",
+    "answer": "Minimal change disease",
+    "explanation": "Nephrotic syndrome presents with proteinuria, hypoalbuminemia, hyperlipidemia, and edema, without hematuria. In children, minimal change disease is the most common cause and is usually triggered by a recent viral illness. Corticosteroids are the mainstay of treatment. A clinical trial is conducted to study renal oxygen consumption by measuring"
+  },
+  {
+    "id": "renal-mcq-25",
+    "type": "mcq",
+    "topic": "Nephrotic & nephritic syndromes",
+    "prompt": "Which answer best matches this board-style clue? This child presents with periorbital and peripheral edema, abdominal distention, hypoalbuminemia, hyperlipidemia, and heavy proteinuria in the absence of hematuria.",
+    "choices": [
+      "Alport syndrome",
+      "Goodpasture syndrome",
+      "IgA nephropathy",
+      "Minimal change disease",
+      "Poststreptococcal glomerulonephritis"
+    ],
+    "correct_answer": "Minimal change disease",
+    "teaching_point": "Nephrotic syndrome presents with proteinuria, hypoalbuminemia, hyperlipidemia, and edema, without hematuria. In children, minimal change disease is the most common cause and is usually triggered by a recent viral illness. Corticosteroids are the mainstay of treatment. A clinical trial is conducted to study renal oxygen consumption by measuring",
+    "trap_to_avoid": "Do not confuse Minimal change disease with Alport syndrome"
+  },
+  {
+    "id": "renal-recall-26",
+    "type": "short_answer",
+    "topic": "Normal structure and function of the kidneys and urinary system",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? The proximal tubule is the nephron segment most susceptible to anoxic injury because it has one of the highest oxygen demands in the kidney due to its intensive active transport processes.",
+    "answer": "Proximal tubule",
+    "explanation": "The proximal tubule is the site of many active transport processes taking place in the nephron which makes it very metabolically active and therefore it has a high oxygen demand. This places the proximal tubule at a high risk for both anoxic and nephrotoxic injury. 27.1"
+  },
+  {
+    "id": "renal-mcq-26",
+    "type": "mcq",
+    "topic": "Normal structure and function of the kidneys and urinary system",
+    "prompt": "Which answer best matches this board-style clue? The proximal tubule is the nephron segment most susceptible to anoxic injury because it has one of the highest oxygen demands in the kidney due to its intensive active transport processes.",
+    "choices": [
+      "Bowman capsule",
+      "Distal convoluted tubule",
+      "Efferent arteriole",
+      "Glomerulus",
+      "Proximal tubule"
+    ],
+    "correct_answer": "Proximal tubule",
+    "teaching_point": "The proximal tubule is the site of many active transport processes taking place in the nephron which makes it very metabolically active and therefore it has a high oxygen demand. This places the proximal tubule at a high risk for both anoxic and nephrotoxic injury. 27.1",
+    "trap_to_avoid": "Do not confuse Proximal tubule with Bowman capsule"
+  },
+  {
+    "id": "renal-recall-27",
+    "type": "short_answer",
+    "topic": "Normal structure and function of the kidneys and urinary system",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient developed acute tubular necrosis (ATN) due to abrupt ischemia from intraoperative blood loss.",
+    "answer": "\u2193 BUN/Cr ratio, \u2191 FeNa",
+    "explanation": "Sudden ischemia during surgery can cause acute tubular necrosis, leading to low BUN/Cr and high FeNa. These values reflect impaired reabsorption of both urea and sodium due to tubular injury. A 29-year-old woman comes to the clinic due to episodes of urine leakage that have"
+  },
+  {
+    "id": "renal-mcq-27",
+    "type": "mcq",
+    "topic": "Normal structure and function of the kidneys and urinary system",
+    "prompt": "Which answer best matches this board-style clue? This patient developed acute tubular necrosis (ATN) due to abrupt ischemia from intraoperative blood loss.",
+    "choices": [
+      "\u2191 BUN/Cr ratio, \u2193 FeNa",
+      "\u2191 BUN/Cr ratio, \u2191 FeNa",
+      "\u2193 BUN/Cr ratio, \u2193 FeNa",
+      "\u2193 BUN/Cr ratio, \u2191 FeNa",
+      "\u2193 BUN/Cr ratio, \u2194 FeNa"
+    ],
+    "correct_answer": "\u2193 BUN/Cr ratio, \u2191 FeNa",
+    "teaching_point": "Sudden ischemia during surgery can cause acute tubular necrosis, leading to low BUN/Cr and high FeNa. These values reflect impaired reabsorption of both urea and sodium due to tubular injury. A 29-year-old woman comes to the clinic due to episodes of urine leakage that have",
+    "trap_to_avoid": "Do not confuse \u2193 BUN/Cr ratio, \u2191 FeNa with \u2191 BUN/Cr ratio, \u2193 FeNa"
+  },
+  {
+    "id": "renal-recall-28",
+    "type": "short_answer",
+    "topic": "Urinary incontinence",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient with a known demyelinating disease is presenting with classic features of urge incontinence\u2014sudden, strong urges to void followed by involuntary leakage.",
+    "answer": "Uninhibited detrusor contractions",
+    "explanation": "Urge incontinence is caused by involuntary detrusor muscle contractions, leading to sudden urgency and unintentional urine loss. In multiple sclerosis, demyelination disrupts descending inhibitory pathways, resulting in detrusor hyperactivity and frequent, small-volume voids. Management focuses on reducing bladder muscle excitability using antimuscarinic agents like oxybutynin."
+  },
+  {
+    "id": "renal-mcq-28",
+    "type": "mcq",
+    "topic": "Urinary incontinence",
+    "prompt": "Which answer best matches this board-style clue? This patient with a known demyelinating disease is presenting with classic features of urge incontinence\u2014sudden, strong urges to void followed by involuntary leakage.",
+    "choices": [
+      "Detrusor underactivity due to autonomic neuropathy",
+      "External sphincter laxity",
+      "Impaired detrusor contractility due to sacral nerve compression",
+      "Overflow incontinence due to bladder outlet obstruction",
+      "Uninhibited detrusor contractions"
+    ],
+    "correct_answer": "Uninhibited detrusor contractions",
+    "teaching_point": "Urge incontinence is caused by involuntary detrusor muscle contractions, leading to sudden urgency and unintentional urine loss. In multiple sclerosis, demyelination disrupts descending inhibitory pathways, resulting in detrusor hyperactivity and frequent, small-volume voids. Management focuses on reducing bladder muscle excitability using antimuscarinic agents like oxybutynin.",
+    "trap_to_avoid": "Do not confuse Uninhibited detrusor contractions with Detrusor underactivity due to autonomic neuropathy"
+  },
+  {
+    "id": "renal-recall-29",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? Patients with advanced COPD develop chronic CO\u2082 retention due to persistent airflow limitation and destruction of alveolar surface area.",
+    "answer": "\u2193 pH, \u2191 HCO \u2083 \u207b , \u2191 CO \u2082",
+    "explanation": "Stable COPD patients often exhibit chronic respiratory acidosis with compensatory metabolic alkalosis. Their acid-base profile shows \u2193 pH, \u2191 HCO\u2083\u207b, \u2191 CO\u2082, which reflects long-term CO\u2082 retention and renal adaptation. 30.1"
+  },
+  {
+    "id": "renal-mcq-29",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? Patients with advanced COPD develop chronic CO\u2082 retention due to persistent airflow limitation and destruction of alveolar surface area.",
+    "choices": [
+      "\u2191 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082",
+      "\u2191 pH, \u2191 HCO \u2083 \u207b , \u2193 CO \u2082",
+      "\u2193 pH, \u2193 HCO \u2083 \u207b , \u2191 CO \u2082",
+      "\u2193 pH, \u2191 HCO \u2083 \u207b , \u2191 CO \u2082",
+      "\u2193 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082"
+    ],
+    "correct_answer": "\u2193 pH, \u2191 HCO \u2083 \u207b , \u2191 CO \u2082",
+    "teaching_point": "Stable COPD patients often exhibit chronic respiratory acidosis with compensatory metabolic alkalosis. Their acid-base profile shows \u2193 pH, \u2191 HCO\u2083\u207b, \u2191 CO\u2082, which reflects long-term CO\u2082 retention and renal adaptation. 30.1",
+    "trap_to_avoid": "Do not confuse \u2193 pH, \u2191 HCO \u2083 \u207b , \u2191 CO \u2082 with \u2191 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082"
+  },
+  {
+    "id": "renal-recall-30",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? The child has pyloric stenosis, which is due to a hypertrophic pyloric muscle, presenting as forceful, projectile non-bilious vomiting in the first few weeks of life.",
+    "answer": "\u2193 Cl; \u2193 K; \u2191 HCO3; \u2191 pH",
+    "explanation": "The arrows you need to know for USMLE are: Vomiting + loop/diuretic use: \u2193 Cl; \u2193 K; \u2191 HCO3; \u2191 pH."
+  },
+  {
+    "id": "renal-mcq-30",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? The child has pyloric stenosis, which is due to a hypertrophic pyloric muscle, presenting as forceful, projectile non-bilious vomiting in the first few weeks of life.",
+    "choices": [
+      "\u2191 Cl; \u2191 K; \u2191 HCO3; \u2191 pH",
+      "\u2191 Cl; \u2191 K; \u2191 HCO3; \u2193 pH",
+      "\u2191 Cl; \u2191 K; \u2193 HCO3; \u2191 pH",
+      "\u2191 Cl; \u2193 K; \u2191 HCO3; \u2191 pH",
+      "\u2191 Cl; \u2191 K; \u2193 HCO3; \u2193 pH",
+      "\u2191 Cl; \u2193 K; \u2191 HCO3; \u2193 pH",
+      "\u2191 Cl; \u2193 K; \u2193 HCO3; \u2191 pH",
+      "\u2191 Cl; \u2193 K; \u2193 HCO3; \u2193 pH",
+      "\u2193 Cl; \u2191 K; \u2191 HCO3; \u2191 pH",
+      "\u2193 Cl; \u2191 K; \u2191 HCO3; \u2193 pH",
+      "\u2193 Cl; \u2191 K; \u2193 HCO3; \u2191 pH",
+      "\u2193 Cl; \u2193 K; \u2191 HCO3; \u2191 pH",
+      "\u2193 Cl; \u2191 K; \u2193 HCO3; \u2193 pH",
+      "\u2193 Cl; \u2193 K; \u2191 HCO3; \u2193 pH",
+      "\u2193 Cl; \u2193 K; \u2193 HCO3; \u2191 pH",
+      "\u2193 Cl; \u2193 K; \u2193 HCO3; \u2193 pH"
+    ],
+    "correct_answer": "\u2193 Cl; \u2193 K; \u2191 HCO3; \u2191 pH",
+    "teaching_point": "The arrows you need to know for USMLE are: Vomiting + loop/diuretic use: \u2193 Cl; \u2193 K; \u2191 HCO3; \u2191 pH.",
+    "trap_to_avoid": "Do not confuse \u2193 Cl; \u2193 K; \u2191 HCO3; \u2191 pH with \u2191 Cl; \u2191 K; \u2191 HCO3; \u2191 pH"
+  },
+  {
+    "id": "renal-recall-31",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient has classic signs and symptoms of diabetic ketoacidosis (DKA), including fatigue, weight loss, polydipsia, polyuria, dehydration, tachypnea (Kussmaul respirations), and orthostatic symptoms.",
+    "answer": "Decreased bicarbonate",
+    "explanation": "DKA presents with fatigue, polyuria, polydipsia, dehydration, and Kussmaul breathing. It causes a high anion-gap metabolic acidosis with decreased serum bicarbonate due to accumulation of ketones and hydrogen ions. Treatment consists of intravenous fluids, insulin, and electrolyte repletion. A 3-year-old girl is brought to the emergency department by her parents after they"
+  },
+  {
+    "id": "renal-mcq-31",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? This patient has classic signs and symptoms of diabetic ketoacidosis (DKA), including fatigue, weight loss, polydipsia, polyuria, dehydration, tachypnea (Kussmaul respirations), and orthostatic symptoms.",
+    "choices": [
+      "Decreased bicarbonate",
+      "Decreased magnesium",
+      "Increased bicarbonate",
+      "Increased calcium",
+      "Increased creatine kinase"
+    ],
+    "correct_answer": "Decreased bicarbonate",
+    "teaching_point": "DKA presents with fatigue, polyuria, polydipsia, dehydration, and Kussmaul breathing. It causes a high anion-gap metabolic acidosis with decreased serum bicarbonate due to accumulation of ketones and hydrogen ions. Treatment consists of intravenous fluids, insulin, and electrolyte repletion. A 3-year-old girl is brought to the emergency department by her parents after they",
+    "trap_to_avoid": "Do not confuse Decreased bicarbonate with Decreased magnesium"
+  },
+  {
+    "id": "renal-recall-32",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This child has ingested a toxic amount of iron, a well-known cause of high anion gap metabolic acidosis, particularly in pediatric patients.",
+    "answer": "\u2193 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082 , \u2191 Anion gap",
+    "explanation": "Acute iron poisoning causes a high anion gap metabolic acidosis with decreased pH, decreased bicarbonate, and compensatory low CO\u2082 due to hyperventilation. Radiopaque pills on imaging and bloody diarrhea help confirm the diagnosis in young children with unclear ingestion history. 33.1"
+  },
+  {
+    "id": "renal-mcq-32",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? This child has ingested a toxic amount of iron, a well-known cause of high anion gap metabolic acidosis, particularly in pediatric patients.",
+    "choices": [
+      "\u2191 pH, \u2191 HCO \u2083 \u207b , \u2191 CO \u2082 , \u2191 Anion gap",
+      "\u2193 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082 , \u2191 Anion gap",
+      "\u2193 pH, \u2191 HCO \u2083 \u207b , \u2191 CO \u2082 , \u2193 Anion gap",
+      "\u2193 pH, \u2191 HCO \u2083 \u207b , \u2193 CO \u2082 , \u2191 Anion gap",
+      "\u2191 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082 , \u2193 Anion gap"
+    ],
+    "correct_answer": "\u2193 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082 , \u2191 Anion gap",
+    "teaching_point": "Acute iron poisoning causes a high anion gap metabolic acidosis with decreased pH, decreased bicarbonate, and compensatory low CO\u2082 due to hyperventilation. Radiopaque pills on imaging and bloody diarrhea help confirm the diagnosis in young children with unclear ingestion history. 33.1",
+    "trap_to_avoid": "Do not confuse \u2193 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082 , \u2191 Anion gap with \u2191 pH, \u2191 HCO \u2083 \u207b , \u2191 CO \u2082 , \u2191 Anion gap"
+  },
+  {
+    "id": "renal-recall-33",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This child is in late-stage status asthmaticus, where respiratory fatigue has set in after a prolonged asthma exacerbation.",
+    "answer": "\u2193 pH, \u2194 HCO \u2083 \u207b , \u2191 CO \u2082",
+    "explanation": "In a child with asthma who becomes somnolent and hypoventilates after a prolonged attack, the expected blood gas findings are \u2193 pH, \u2194 HCO\u2083\u207b, and \u2191 CO\u2082, indicating acute respiratory acidosis due to respiratory muscle fatigue. This finding warrants urgent intervention to prevent respiratory arrest. A comparative physiology study is conducted involving 12 adult bonobos resting in a"
+  },
+  {
+    "id": "renal-mcq-33",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? This child is in late-stage status asthmaticus, where respiratory fatigue has set in after a prolonged asthma exacerbation.",
+    "choices": [
+      "\u2191 pH, \u2194 HCO \u2083 \u207b , \u2193 CO \u2082",
+      "\u2193 pH, \u2194 HCO \u2083 \u207b , \u2191 CO \u2082",
+      "\u2194 pH, \u2194 HCO \u2083 \u207b , \u2194 CO \u2082",
+      "\u2193 pH, \u2191 HCO \u2083 \u207b , \u2191 CO \u2082",
+      "\u2191 pH, \u2191 HCO \u2083 \u207b , \u2193 CO \u2082"
+    ],
+    "correct_answer": "\u2193 pH, \u2194 HCO \u2083 \u207b , \u2191 CO \u2082",
+    "teaching_point": "In a child with asthma who becomes somnolent and hypoventilates after a prolonged attack, the expected blood gas findings are \u2193 pH, \u2194 HCO\u2083\u207b, and \u2191 CO\u2082, indicating acute respiratory acidosis due to respiratory muscle fatigue. This finding warrants urgent intervention to prevent respiratory arrest. A comparative physiology study is conducted involving 12 adult bonobos resting in a",
+    "trap_to_avoid": "Do not confuse \u2193 pH, \u2194 HCO \u2083 \u207b , \u2191 CO \u2082 with \u2191 pH, \u2194 HCO \u2083 \u207b , \u2193 CO \u2082"
+  },
+  {
+    "id": "renal-recall-34",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? Bicarbonate (HCO\u2083\u207b) transported in the plasma is the primary form by which carbon dioxide is carried from metabolizing tissues to the lungs.",
+    "answer": "HCO\u2083\u207b transported in the plasma",
+    "explanation": "The majority of CO\u2082 transported from tissues to lungs is carried as bicarbonate ion (HCO\u2083\u207b) in plasma, a process catalyzed by carbonic anhydrase and regulated by the chloride shift within erythrocytes. A 39-year-old woman comes to the clinic for evaluation of elevated blood pressure"
+  },
+  {
+    "id": "renal-mcq-34",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? Bicarbonate (HCO\u2083\u207b) transported in the plasma is the primary form by which carbon dioxide is carried from metabolizing tissues to the lungs.",
+    "choices": [
+      "Carbaminohemoglobin in erythrocytes",
+      "Carbonic acid within erythrocytes",
+      "CO\u2082 bound to albumin",
+      "HCO\u2083\u207b transported in the plasma",
+      "HCO\u2083\u207b transported in the red blood cell"
+    ],
+    "correct_answer": "HCO\u2083\u207b transported in the plasma",
+    "teaching_point": "The majority of CO\u2082 transported from tissues to lungs is carried as bicarbonate ion (HCO\u2083\u207b) in plasma, a process catalyzed by carbonic anhydrase and regulated by the chloride shift within erythrocytes. A 39-year-old woman comes to the clinic for evaluation of elevated blood pressure",
+    "trap_to_avoid": "Do not confuse HCO\u2083\u207b transported in the plasma with Carbaminohemoglobin in erythrocytes"
+  },
+  {
+    "id": "renal-recall-35",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient has hypertension, hypokalemia, metabolic alkalosis, elevated aldosterone, and suppressed renin, which is classic for primary hyperaldosteronism.",
+    "answer": "Conn syndrome",
+    "explanation": "Conn syndrome is primary hyperaldosteronism marked by high aldosterone and low renin, with accompanying hypertension, hypokalemia, and metabolic alkalosis. It should be distinguished from secondary causes like renovascular disease by analyzing the renin-aldosterone relationship. 36.1"
+  },
+  {
+    "id": "renal-mcq-35",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? This patient has hypertension, hypokalemia, metabolic alkalosis, elevated aldosterone, and suppressed renin, which is classic for primary hyperaldosteronism.",
+    "choices": [
+      "Conn syndrome",
+      "Cushing syndrome",
+      "Fibromuscular dysplasia",
+      "Pheochromocytoma",
+      "Renal artery stenosis from atherosclerosis"
+    ],
+    "correct_answer": "Conn syndrome",
+    "teaching_point": "Conn syndrome is primary hyperaldosteronism marked by high aldosterone and low renin, with accompanying hypertension, hypokalemia, and metabolic alkalosis. It should be distinguished from secondary causes like renovascular disease by analyzing the renin-aldosterone relationship. 36.1",
+    "trap_to_avoid": "Do not confuse Conn syndrome with Cushing syndrome"
+  },
+  {
+    "id": "renal-recall-36",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient most likely has fibromuscular dysplasia (FMD), a condition characterized by non-atherosclerotic, non-inflammatory proliferation of the tunica media in medium-sized arteries, most commonly the renal arteries.",
+    "answer": "\u2191 Na \u207a , \u2193 K \u207a , \u2191 pH, \u2191 HCO \u2083 \u207b , \u2191 CO \u2082",
+    "explanation": "Fibromuscular dysplasia in young women causes secondary hyperaldosteronism, leading to \u2191 Na\u207a, \u2193 K\u207a, \u2191 pH, \u2191 HCO\u2083\u207b, and \u2191 CO\u2082. These effects are due to RAAS activation from decreased renal perfusion and aldosterone-induced electrolyte shifts. A 13-year-old boy is brought to the emergency department after experiencing"
+  },
+  {
+    "id": "renal-mcq-36",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? This patient most likely has fibromuscular dysplasia (FMD), a condition characterized by non-atherosclerotic, non-inflammatory proliferation of the tunica media in medium-sized arteries, most commonly the renal arteries.",
+    "choices": [
+      "\u2191 Na \u207a , \u2193 K \u207a , \u2191 pH, \u2191 HCO \u2083 \u207b , \u2191 CO \u2082",
+      "\u2191 Na \u207a , \u2191 K \u207a , \u2193 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082",
+      "\u2193 Na \u207a , \u2191 K \u207a , \u2193 pH, \u2193 HCO \u2083 \u207b , \u2191 CO \u2082",
+      "\u2193 Na \u207a , \u2193 K \u207a , \u2191 pH, \u2191 HCO \u2083 \u207b , \u2193 CO \u2082",
+      "\u2191 Na \u207a , \u2193 K \u207a , \u2193 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082"
+    ],
+    "correct_answer": "\u2191 Na \u207a , \u2193 K \u207a , \u2191 pH, \u2191 HCO \u2083 \u207b , \u2191 CO \u2082",
+    "teaching_point": "Fibromuscular dysplasia in young women causes secondary hyperaldosteronism, leading to \u2191 Na\u207a, \u2193 K\u207a, \u2191 pH, \u2191 HCO\u2083\u207b, and \u2191 CO\u2082. These effects are due to RAAS activation from decreased renal perfusion and aldosterone-induced electrolyte shifts. A 13-year-old boy is brought to the emergency department after experiencing",
+    "trap_to_avoid": "Do not confuse \u2191 Na \u207a , \u2193 K \u207a , \u2191 pH, \u2191 HCO \u2083 \u207b , \u2191 CO \u2082 with \u2191 Na \u207a , \u2191 K \u207a , \u2193 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082"
+  },
+  {
+    "id": "renal-recall-37",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient most likely has Waterhouse-Friderichsen syndrome, a form of primary adrenal insufficiency caused by bilateral adrenal hemorrhagic necrosis due to meningococcal septicemia.",
+    "answer": "\u2193 Aldosterone, \u2193 Cortisol, \u2191 ACTH, \u2191 K \u207a , \u2193 Na \u207a , \u2193 HCO \u2083 \u207b , \u2193 pH, \u2193 CO \u2082",
+    "explanation": "Waterhouse-Friderichsen syndrome causes primary adrenal insufficiency due to bilateral adrenal hemorrhage, leading to \u2193 cortisol, \u2193 aldosterone, \u2191 ACTH, \u2191 K\u207a, \u2193 Na\u207a, \u2193 bicarbonate, \u2193 pH, and \u2193 CO\u2082. The key emergency treatment is hydrocortisone, not vasopressors, due to the lack of \u03b11-receptor expression from cortisol deficiency. A 64-year-old man is admitted to the hospital for treatment of sepsis and"
+  },
+  {
+    "id": "renal-mcq-37",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? This patient most likely has Waterhouse-Friderichsen syndrome, a form of primary adrenal insufficiency caused by bilateral adrenal hemorrhagic necrosis due to meningococcal septicemia.",
+    "choices": [
+      "\u2191 Aldosterone, \u2191 Cortisol, \u2193 ACTH, \u2193 K \u207a , \u2191 Na \u207a , \u2191 HCO \u2083 \u207b , \u2191 pH, \u2191 CO \u2082",
+      "\u2191 Aldosterone, \u2193 Cortisol, \u2191 ACTH, \u2191 K \u207a , \u2193 Na \u207a , \u2193 HCO \u2083 \u207b , \u2193 pH, \u2193 CO \u2082",
+      "\u2193 Aldosterone, \u2193 Cortisol, \u2191 ACTH, \u2191 K \u207a , \u2193 Na \u207a , \u2193 HCO \u2083 \u207b , \u2193 pH, \u2193 CO \u2082",
+      "\u2193 Aldosterone, \u2191 Cortisol, \u2193 ACTH, \u2193 K \u207a , \u2191 Na \u207a , \u2191 HCO \u2083 \u207b , \u2191 pH, \u2191 CO \u2082",
+      "\u2194 Aldosterone, \u2191 Cortisol, \u2193 ACTH, \u2193 K \u207a , \u2191 Na \u207a , \u2191 HCO \u2083 \u207b , \u2191 pH, \u2191 CO \u2082"
+    ],
+    "correct_answer": "\u2193 Aldosterone, \u2193 Cortisol, \u2191 ACTH, \u2191 K \u207a , \u2193 Na \u207a , \u2193 HCO \u2083 \u207b , \u2193 pH, \u2193 CO \u2082",
+    "teaching_point": "Waterhouse-Friderichsen syndrome causes primary adrenal insufficiency due to bilateral adrenal hemorrhage, leading to \u2193 cortisol, \u2193 aldosterone, \u2191 ACTH, \u2191 K\u207a, \u2193 Na\u207a, \u2193 bicarbonate, \u2193 pH, and \u2193 CO\u2082. The key emergency treatment is hydrocortisone, not vasopressors, due to the lack of \u03b11-receptor expression from cortisol deficiency. A 64-year-old man is admitted to the hospital for treatment of sepsis and",
+    "trap_to_avoid": "Do not confuse \u2193 Aldosterone, \u2193 Cortisol, \u2191 ACTH, \u2191 K \u207a , \u2193 Na \u207a , \u2193 HCO \u2083 \u207b , \u2193 pH, \u2193 CO \u2082 with \u2191 Aldosterone, \u2191 Cortisol, \u2193 ACTH, \u2193 K \u207a , \u2191 Na \u207a , \u2191 HCO \u2083 \u207b , \u2191 pH, \u2191 CO \u2082"
+  },
+  {
+    "id": "renal-recall-38",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient has developed acute tubular necrosis (ATN), a common cause of intrinsic acute kidney injury typically seen in hospitalized patients with sepsis, hypotension, or nephrotoxic exposure (e.g., gentamicin).",
+    "answer": "\u2193 HCO \u2083 \u207b , \u2193 pH, \u2193 CO \u2082 , \u2191 Anion gap",
+    "explanation": "Acute tubular necrosis causes high-anion gap metabolic acidosis with decreased bicarbonate and pH, and respiratory compensation (low CO\u2082). The hallmark urinalysis finding is muddy brown granular casts. 39.1"
+  },
+  {
+    "id": "renal-mcq-38",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? This patient has developed acute tubular necrosis (ATN), a common cause of intrinsic acute kidney injury typically seen in hospitalized patients with sepsis, hypotension, or nephrotoxic exposure (e.g., gentamicin).",
+    "choices": [
+      "\u2191 HCO \u2083 \u207b , \u2191 pH, \u2191 CO \u2082 , \u2193 Anion gap",
+      "\u2193 HCO \u2083 \u207b , \u2193 pH, \u2191 CO \u2082 , \u2191 Anion gap",
+      "\u2191 HCO \u2083 \u207b , \u2191 pH, \u2193 CO \u2082 , \u2194 Anion gap",
+      "\u2193 HCO \u2083 \u207b , \u2193 pH, \u2193 CO \u2082 , \u2191 Anion gap",
+      "\u2193 HCO \u2083 \u207b , \u2193 pH, \u2193 CO \u2082 , \u2194 Anion gap"
+    ],
+    "correct_answer": "\u2193 HCO \u2083 \u207b , \u2193 pH, \u2193 CO \u2082 , \u2191 Anion gap",
+    "teaching_point": "Acute tubular necrosis causes high-anion gap metabolic acidosis with decreased bicarbonate and pH, and respiratory compensation (low CO\u2082). The hallmark urinalysis finding is muddy brown granular casts. 39.1",
+    "trap_to_avoid": "Do not confuse \u2193 HCO \u2083 \u207b , \u2193 pH, \u2193 CO \u2082 , \u2191 Anion gap with \u2191 HCO \u2083 \u207b , \u2191 pH, \u2191 CO \u2082 , \u2193 Anion gap"
+  },
+  {
+    "id": "renal-recall-39",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? One of the hallmark acid-base disturbances in advanced renal failure is high-anion gap metabolic acidosis, which occurs due to the accumulation of unmeasured anions in the blood.",
+    "answer": "\u2193 HCO \u2083 \u207b , \u2191 K \u207a , \u2191 PO \u2084 \u00b3 \u207b",
+    "explanation": "Chronic renal failure leads to hyperkalemia, hyperphosphatemia, and low bicarbonate due to reduced excretion and impaired tubular function. This results in a high-anion gap metabolic acidosis categorized under \"uremia\" in the MUDPILES mnemonic. A 34-year-old woman comes to the emergency department with confusion,"
+  },
+  {
+    "id": "renal-mcq-39",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? One of the hallmark acid-base disturbances in advanced renal failure is high-anion gap metabolic acidosis, which occurs due to the accumulation of unmeasured anions in the blood.",
+    "choices": [
+      "\u2193 HCO \u2083 \u207b , \u2193 K \u207a , \u2193 PO \u2084 \u00b3 \u207b",
+      "\u2193 HCO \u2083 \u207b , \u2193 K \u207a , \u2191 PO \u2084 \u00b3 \u207b",
+      "\u2193 HCO \u2083 \u207b , \u2191 K \u207a , \u2193 PO \u2084 \u00b3 \u207b",
+      "\u2193 HCO \u2083 \u207b , \u2191 K \u207a , \u2191 PO \u2084 \u00b3 \u207b",
+      "\u2191 HCO \u2083 \u207b , \u2191 K \u207a , \u2191 PO \u2084 \u00b3 \u207b"
+    ],
+    "correct_answer": "\u2193 HCO \u2083 \u207b , \u2191 K \u207a , \u2191 PO \u2084 \u00b3 \u207b",
+    "teaching_point": "Chronic renal failure leads to hyperkalemia, hyperphosphatemia, and low bicarbonate due to reduced excretion and impaired tubular function. This results in a high-anion gap metabolic acidosis categorized under \"uremia\" in the MUDPILES mnemonic. A 34-year-old woman comes to the emergency department with confusion,",
+    "trap_to_avoid": "Do not confuse \u2193 HCO \u2083 \u207b , \u2191 K \u207a , \u2191 PO \u2084 \u00b3 \u207b with \u2193 HCO \u2083 \u207b , \u2193 K \u207a , \u2193 PO \u2084 \u00b3 \u207b"
+  },
+  {
+    "id": "renal-recall-40",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? Uncoupling of oxidative phosphorylation.",
+    "answer": "Uncoupling of oxidative phosphorylation",
+    "explanation": "Aspirin, a salicyclate, causes a mixed metabolic acidosis-respiratory alkalosis. It directly upregulates the respiratory centers in the brain and causes uncoupling of oxidative phosphorylation. -"
+  },
+  {
+    "id": "renal-mcq-40",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? Uncoupling of oxidative phosphorylation.",
+    "choices": [
+      "Activation of the chemoreceptor trigger zone",
+      "Compensation for primary respiratory alkalosis",
+      "Inhibition of renal bicarbonate reabsorption",
+      "Stimulation of the respiratory center in the medulla",
+      "Uncoupling of oxidative phosphorylation"
+    ],
+    "correct_answer": "Uncoupling of oxidative phosphorylation",
+    "teaching_point": "Aspirin, a salicyclate, causes a mixed metabolic acidosis-respiratory alkalosis. It directly upregulates the respiratory centers in the brain and causes uncoupling of oxidative phosphorylation. -",
+    "trap_to_avoid": "Do not confuse Uncoupling of oxidative phosphorylation with Activation of the chemoreceptor trigger zone"
+  },
+  {
+    "id": "renal-recall-41",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient presents with intractable vomiting in early pregnancy, which, when accompanied by urinary ketones, indicates hyperemesis gravidarum.",
+    "answer": "\u2193 K+, \u2193 Cl\u2013, \u2191 HCO \u2083 \u2013, \u2191 pH, \u2191 CO \u2082 , \u2191 urinary ketones",
+    "explanation": "Hyperemesis gravidarum causes hypokalemic, hypochloremic metabolic alkalosis with compensatory CO\u2082 retention and urinary ketones due to starvation. 42.1"
+  },
+  {
+    "id": "renal-mcq-41",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? This patient presents with intractable vomiting in early pregnancy, which, when accompanied by urinary ketones, indicates hyperemesis gravidarum.",
+    "choices": [
+      "\u2191 K+, \u2191 Cl\u2013, \u2193 HCO \u2083 \u2013, \u2193 pH, \u2193 CO \u2082 , \u2193 urinary ketones",
+      "\u2193 K+, \u2193 Cl\u2013, \u2191 HCO \u2083 \u2013, \u2191 pH, \u2191 CO \u2082 , \u2191 urinary ketones",
+      "\u2193 K+, \u2193 Cl\u2013, \u2193 HCO \u2083 \u2013, \u2193 pH, \u2193 CO \u2082 , \u2191 urinary ketones",
+      "\u2193 K+, \u2191 Cl\u2013, \u2193 HCO \u2083 \u2013, \u2191 pH, \u2191 CO \u2082 , \u2193 urinary ketones",
+      "\u2194 K+, \u2191 Cl\u2013, \u2191 HCO \u2083 \u2013, \u2193 pH, \u2194 CO \u2082 , \u2191 urinary ketones"
+    ],
+    "correct_answer": "\u2193 K+, \u2193 Cl\u2013, \u2191 HCO \u2083 \u2013, \u2191 pH, \u2191 CO \u2082 , \u2191 urinary ketones",
+    "teaching_point": "Hyperemesis gravidarum causes hypokalemic, hypochloremic metabolic alkalosis with compensatory CO\u2082 retention and urinary ketones due to starvation. 42.1",
+    "trap_to_avoid": "Do not confuse \u2193 K+, \u2193 Cl\u2013, \u2191 HCO \u2083 \u2013, \u2191 pH, \u2191 CO \u2082 , \u2191 urinary ketones with \u2191 K+, \u2191 Cl\u2013, \u2193 HCO \u2083 \u2013, \u2193 pH, \u2193 CO \u2082 , \u2193 urinary ketones"
+  },
+  {
+    "id": "renal-recall-42",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? Hyperemesis gravidarum is a severe form of nausea and vomiting that typically presents in the first trimester, most often peaking between 8 and 10 weeks' gestation.",
+    "answer": "hCG levels peak during this time",
+    "explanation": "Hyperemesis gravidarum peaks around 8\u201310 weeks\u2019 gestation because that is when hCG levels are highest, stimulating the area postrema and triggering severe vomiting. An 18-year-old college freshman is brought to the student health clinic by her"
+  },
+  {
+    "id": "renal-mcq-42",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? Hyperemesis gravidarum is a severe form of nausea and vomiting that typically presents in the first trimester, most often peaking between 8 and 10 weeks' gestation.",
+    "choices": [
+      "Cortisol levels are peaking",
+      "Estrogen levels are highest",
+      "hCG levels peak during this time",
+      "Progesterone production shifts to the placenta",
+      "TSH levels reach their nadir"
+    ],
+    "correct_answer": "hCG levels peak during this time",
+    "teaching_point": "Hyperemesis gravidarum peaks around 8\u201310 weeks\u2019 gestation because that is when hCG levels are highest, stimulating the area postrema and triggering severe vomiting. An 18-year-old college freshman is brought to the student health clinic by her",
+    "trap_to_avoid": "Do not confuse hCG levels peak during this time with Cortisol levels are peaking"
+  },
+  {
+    "id": "renal-recall-43",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient exhibits classic signs of chronic laxative abuse, which causes secretory diarrhea leading to significant bicarbonate and potassium loss in the stool.",
+    "answer": "\u2193 K \u207a , \u2191 Cl \u207b , \u2193 HCO \u2083 \u207b , \u2193 pH, \u2193 CO \u2082 , \u2194 anion gap",
+    "explanation": "Laxative abuse causes normal anion gap (hyperchloremic) metabolic acidosis with \u2193 K\u207a, \u2191 Cl\u207b, \u2193 HCO\u2083\u207b, \u2193 pH, \u2193 CO\u2082, and \u2194 anion gap. Bicarbonate and potassium are lost in stool, and the body compensates with chloride retention and respiratory alkalosis. A 26-year-old woman comes to the physician for evaluation of fatigue and"
+  },
+  {
+    "id": "renal-mcq-43",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? This patient exhibits classic signs of chronic laxative abuse, which causes secretory diarrhea leading to significant bicarbonate and potassium loss in the stool.",
+    "choices": [
+      "\u2193 K \u207a , \u2193 Cl \u207b , \u2191 HCO \u2083 \u207b , \u2191 pH, \u2191 CO \u2082 , \u2191 anion gap",
+      "\u2193 K \u207a , \u2191 Cl \u207b , \u2191 HCO \u2083 \u207b , \u2191 pH, \u2191 CO \u2082 , \u2193 anion gap",
+      "\u2191 K \u207a , \u2193 Cl \u207b , \u2193 HCO \u2083 \u207b , \u2193 pH, \u2193 CO \u2082 , \u2191 anion gap",
+      "\u2191 K \u207a , \u2191 Cl \u207b , \u2191 HCO \u2083 \u207b , \u2191 pH, \u2193 CO \u2082 , \u2194 anion gap",
+      "\u2193 K \u207a , \u2191 Cl \u207b , \u2193 HCO \u2083 \u207b , \u2193 pH, \u2193 CO \u2082 , \u2194 anion gap"
+    ],
+    "correct_answer": "\u2193 K \u207a , \u2191 Cl \u207b , \u2193 HCO \u2083 \u207b , \u2193 pH, \u2193 CO \u2082 , \u2194 anion gap",
+    "teaching_point": "Laxative abuse causes normal anion gap (hyperchloremic) metabolic acidosis with \u2193 K\u207a, \u2191 Cl\u207b, \u2193 HCO\u2083\u207b, \u2193 pH, \u2193 CO\u2082, and \u2194 anion gap. Bicarbonate and potassium are lost in stool, and the body compensates with chloride retention and respiratory alkalosis. A 26-year-old woman comes to the physician for evaluation of fatigue and",
+    "trap_to_avoid": "Do not confuse \u2193 K \u207a , \u2191 Cl \u207b , \u2193 HCO \u2083 \u207b , \u2193 pH, \u2193 CO \u2082 , \u2194 anion gap with \u2193 K \u207a , \u2193 Cl \u207b , \u2191 HCO \u2083 \u207b , \u2191 pH, \u2191 CO \u2082 , \u2191 anion gap"
+  },
+  {
+    "id": "renal-recall-44",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient is abusing furosemide, a loop diuretic that blocks the Na\u207a/K\u207a/2Cl\u207b cotransporter in the thick ascending limb of the loop of Henle, impairing ion reabsorption and promoting salt and water loss.",
+    "answer": "\u2193 K+, \u2193 Cl\u2212, \u2191 HCO \u2083 \u207b , \u2191 pH, \u2191 CO \u2082",
+    "explanation": "Loop diuretic abuse leads to volume contraction, hypokalemia, hypochloremia, and metabolic alkalosis with CO\u2082 retention as respiratory compensation. This pattern is seen in both furosemide and thiazide use and must be distinguished from other causes of acid-base disturbance. 45.1"
+  },
+  {
+    "id": "renal-mcq-44",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? This patient is abusing furosemide, a loop diuretic that blocks the Na\u207a/K\u207a/2Cl\u207b cotransporter in the thick ascending limb of the loop of Henle, impairing ion reabsorption and promoting salt and water loss.",
+    "choices": [
+      "\u2193 K+, \u2191 Cl\u2212, \u2191 HCO \u2083 \u207b , \u2193 pH, \u2193 CO \u2082",
+      "\u2193 K+, \u2193 Cl\u2212, \u2193 HCO \u2083 \u207b , \u2193 pH, \u2191 CO \u2082",
+      "\u2191 K+, \u2191 Cl\u2212, \u2193 HCO \u2083 \u207b , \u2193 pH, \u2191 CO \u2082",
+      "\u2193 K+, \u2193 Cl\u2212, \u2191 HCO \u2083 \u207b , \u2191 pH, \u2191 CO \u2082",
+      "\u2191 K+, \u2193 Cl\u2212, \u2191 HCO \u2083 \u207b , \u2191 pH, \u2193 CO \u2082"
+    ],
+    "correct_answer": "\u2193 K+, \u2193 Cl\u2212, \u2191 HCO \u2083 \u207b , \u2191 pH, \u2191 CO \u2082",
+    "teaching_point": "Loop diuretic abuse leads to volume contraction, hypokalemia, hypochloremia, and metabolic alkalosis with CO\u2082 retention as respiratory compensation. This pattern is seen in both furosemide and thiazide use and must be distinguished from other causes of acid-base disturbance. 45.1",
+    "trap_to_avoid": "Do not confuse \u2193 K+, \u2193 Cl\u2212, \u2191 HCO \u2083 \u207b , \u2191 pH, \u2191 CO \u2082 with \u2193 K+, \u2191 Cl\u2212, \u2191 HCO \u2083 \u207b , \u2193 pH, \u2193 CO \u2082"
+  },
+  {
+    "id": "renal-recall-45",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? Spironolactone is a potassium-sparing diuretic that functions as an aldosterone receptor antagonist.",
+    "answer": "\u2193 CO \u2082 , \u2193 HCO \u2083 \u207b , \u2193 pH, \u2191 Serum K \u207a , \u2193 androgen receptor activity",
+    "explanation": "Spironolactone use leads to hyperkalemia and non\u2013anion gap metabolic acidosis due to impaired renal excretion of potassium and hydrogen ions. It also antagonizes androgen receptors, leading to endocrine side effects such as gynecomastia and decreased body hair in males. A 44-year-old man comes to the clinic for a routine follow-up visit. He was diagnosed"
+  },
+  {
+    "id": "renal-mcq-45",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? Spironolactone is a potassium-sparing diuretic that functions as an aldosterone receptor antagonist.",
+    "choices": [
+      "\u2193 CO \u2082 , \u2193 HCO \u2083 \u207b , \u2191 pH, \u2191 Serum K \u207a , \u2191 androgen receptor activity",
+      "\u2191 CO \u2082 , \u2191 HCO \u2083 \u207b , \u2191 pH, \u2193 Serum K \u207a , \u2193 androgen receptor activity",
+      "\u2191 CO \u2082 , \u2191 HCO \u2083 \u207b , \u2193 pH, \u2191 Serum K \u207a , \u2191 androgen receptor activity",
+      "\u2193 CO \u2082 , \u2191 HCO \u2083 \u207b , \u2191 pH, \u2193 Serum K \u207a , \u2191 androgen receptor activity",
+      "\u2193 CO \u2082 , \u2193 HCO \u2083 \u207b , \u2193 pH, \u2191 Serum K \u207a , \u2193 androgen receptor activity"
+    ],
+    "correct_answer": "\u2193 CO \u2082 , \u2193 HCO \u2083 \u207b , \u2193 pH, \u2191 Serum K \u207a , \u2193 androgen receptor activity",
+    "teaching_point": "Spironolactone use leads to hyperkalemia and non\u2013anion gap metabolic acidosis due to impaired renal excretion of potassium and hydrogen ions. It also antagonizes androgen receptors, leading to endocrine side effects such as gynecomastia and decreased body hair in males. A 44-year-old man comes to the clinic for a routine follow-up visit. He was diagnosed",
+    "trap_to_avoid": "Do not confuse \u2193 CO \u2082 , \u2193 HCO \u2083 \u207b , \u2193 pH, \u2191 Serum K \u207a , \u2193 androgen receptor activity with \u2193 CO \u2082 , \u2193 HCO \u2083 \u207b , \u2191 pH, \u2191 Serum K \u207a , \u2191 androgen receptor activity"
+  },
+  {
+    "id": "renal-recall-46",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? Thiazide diuretics, such as hydrochlorothiazide, inhibit the sodium-chloride symporter in the early distal convoluted tubule.",
+    "answer": "\u2191 HCO \u2083 \u207b , \u2191 pH, \u2193 K \u207a , \u2191 serum Ca\u00b2 \u207a , \u2193 urinary calcium",
+    "explanation": "Thiazide diuretics cause hypokalemia, metabolic alkalosis, mild hypercalcemia, and decreased urinary calcium excretion. This effect profile is key for distinguishing them from loop diuretics, which have the opposite impact on calcium handling. An 11-year-old girl is brought to the emergency department by her mother due to"
+  },
+  {
+    "id": "renal-mcq-46",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? Thiazide diuretics, such as hydrochlorothiazide, inhibit the sodium-chloride symporter in the early distal convoluted tubule.",
+    "choices": [
+      "\u2191 HCO \u2083 \u207b , \u2191 pH, \u2193 K \u207a , \u2191 serum Ca\u00b2 \u207a , \u2191 urinary calcium",
+      "\u2191 HCO \u2083 \u207b , \u2193 pH, \u2191 K \u207a , \u2193 serum Ca\u00b2 \u207a , \u2191 urinary calcium",
+      "\u2191 HCO \u2083 \u207b , \u2191 pH, \u2193 K \u207a , \u2191 serum Ca\u00b2 \u207a , \u2193 urinary calcium",
+      "\u2193 HCO \u2083 \u207b , \u2193 pH, \u2191 K \u207a , \u2193 serum Ca\u00b2 \u207a , \u2191 urinary calcium",
+      "\u2193 HCO \u2083 \u207b , \u2191 pH, \u2191 K \u207a , \u2191 serum Ca\u00b2 \u207a , \u2193 urinary calcium"
+    ],
+    "correct_answer": "\u2191 HCO \u2083 \u207b , \u2191 pH, \u2193 K \u207a , \u2191 serum Ca\u00b2 \u207a , \u2193 urinary calcium",
+    "teaching_point": "Thiazide diuretics cause hypokalemia, metabolic alkalosis, mild hypercalcemia, and decreased urinary calcium excretion. This effect profile is key for distinguishing them from loop diuretics, which have the opposite impact on calcium handling. An 11-year-old girl is brought to the emergency department by her mother due to",
+    "trap_to_avoid": "Do not confuse \u2191 HCO \u2083 \u207b , \u2191 pH, \u2193 K \u207a , \u2191 serum Ca\u00b2 \u207a , \u2193 urinary calcium with \u2191 HCO \u2083 \u207b , \u2191 pH, \u2193 K \u207a , \u2191 serum Ca\u00b2 \u207a , \u2191 urinary calcium"
+  },
+  {
+    "id": "renal-recall-47",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient is presenting with classic features of diabetic ketoacidosis (DKA), which commonly develops in children with new-onset type 1 diabetes mellitus, often triggered by a recent viral illness such as an upper respiratory tract infection.",
+    "answer": "\u2193 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082",
+    "explanation": "Diabetic ketoacidosis presents with metabolic acidosis characterized by low pH, low bicarbonate, and low CO\u2082 due to compensatory hyperventilation. 48.1"
+  },
+  {
+    "id": "renal-mcq-47",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? This patient is presenting with classic features of diabetic ketoacidosis (DKA), which commonly develops in children with new-onset type 1 diabetes mellitus, often triggered by a recent viral illness such as an upper respiratory tract infection.",
+    "choices": [
+      "\u2191 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082",
+      "\u2193 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082",
+      "\u2193 pH, \u2193 HCO \u2083 \u207b , \u2191 CO \u2082",
+      "\u2193 pH, \u2191 HCO \u2083 \u207b , \u2191 CO \u2082",
+      "\u2193 pH, \u2191 HCO \u2083 \u207b , \u2193 CO \u2082"
+    ],
+    "correct_answer": "\u2193 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082",
+    "teaching_point": "Diabetic ketoacidosis presents with metabolic acidosis characterized by low pH, low bicarbonate, and low CO\u2082 due to compensatory hyperventilation. 48.1",
+    "trap_to_avoid": "Do not confuse \u2193 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082 with \u2191 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082"
+  },
+  {
+    "id": "renal-recall-48",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient presents one hour after ingesting a large amount of aspirin, which is the classic setting for salicylate toxicity.",
+    "answer": "\u2193 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082 , \u2191 anion gap, \u2194 Na \u207a , \u2194 K \u207a",
+    "explanation": "At one hour after aspirin ingestion, patients develop a mixed acid-base disturbance: metabolic acidosis from salicylic acid and respiratory alkalosis from medullary stimulation. A 24-year-old man is brought to the emergency department by his roommate after"
+  },
+  {
+    "id": "renal-mcq-48",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? This patient presents one hour after ingesting a large amount of aspirin, which is the classic setting for salicylate toxicity.",
+    "choices": [
+      "\u2193 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082 , \u2191 anion gap, \u2194 Na \u207a , \u2194 K \u207a",
+      "\u2191 pH, \u2194 HCO \u2083 \u207b , \u2193 CO \u2082 , \u2194 anion gap, \u2191 Na \u207a , \u2191 K \u207a",
+      "\u2193 pH, \u2191 HCO \u2083 \u207b , \u2191 CO \u2082 , \u2194 anion gap, \u2193 Na \u207a , \u2193 K \u207a",
+      "\u2193 pH, \u2193 HCO \u2083 \u207b , \u2191 CO \u2082 , \u2191 anion gap, \u2191 Na \u207a , \u2193 K \u207a",
+      "\u2191 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082 , \u2193 anion gap, \u2194 Na \u207a , \u2191 K \u207a"
+    ],
+    "correct_answer": "\u2193 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082 , \u2191 anion gap, \u2194 Na \u207a , \u2194 K \u207a",
+    "teaching_point": "At one hour after aspirin ingestion, patients develop a mixed acid-base disturbance: metabolic acidosis from salicylic acid and respiratory alkalosis from medullary stimulation. A 24-year-old man is brought to the emergency department by his roommate after",
+    "trap_to_avoid": "Do not confuse \u2193 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082 , \u2191 anion gap, \u2194 Na \u207a , \u2194 K \u207a with \u2191 pH, \u2194 HCO \u2083 \u207b , \u2193 CO \u2082 , \u2194 anion gap, \u2191 Na \u207a , \u2191 K \u207a"
+  },
+  {
+    "id": "renal-recall-49",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? In the setting of salicylate (aspirin) toxicity, sodium bicarbonate is administered to both correct the underlying acidosis and increase the renal elimination of the drug.",
+    "answer": "Increased excretion through urinary alkalinization",
+    "explanation": "Sodium bicarbonate improves salicylate toxicity by alkalinizing the urine, which traps salicylate in its ionized form and enhances renal excretion. This process, called urinary alkalinization, is the mainstay of treatment in moderate toxicity when the patient is stable. A 44-year-old woman comes to the physician because of muscle weakness,"
+  },
+  {
+    "id": "renal-mcq-49",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? In the setting of salicylate (aspirin) toxicity, sodium bicarbonate is administered to both correct the underlying acidosis and increase the renal elimination of the drug.",
+    "choices": [
+      "Enhanced binding to albumin in systemic circulation",
+      "Increased conversion to inactive hepatic metabolites",
+      "Increased excretion through urinary alkalinization",
+      "Redistribution of drug into fat stores to reduce plasma levels"
+    ],
+    "correct_answer": "Increased excretion through urinary alkalinization",
+    "teaching_point": "Sodium bicarbonate improves salicylate toxicity by alkalinizing the urine, which traps salicylate in its ionized form and enhances renal excretion. This process, called urinary alkalinization, is the mainstay of treatment in moderate toxicity when the patient is stable. A 44-year-old woman comes to the physician because of muscle weakness,",
+    "trap_to_avoid": "Do not confuse Increased excretion through urinary alkalinization with Enhanced binding to albumin in systemic circulation"
+  },
+  {
+    "id": "renal-recall-50",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? The diagnosis is familial hyperaldosteronism, which is due to gene mutations resulting in adrenal cortical zona glomerulosa hyperplasia.",
+    "answer": "Zona glomerulosa hyperplasia",
+    "explanation": "Hyperaldosteronism in multiple family members is usually due to familial hyperaldosteronism, which is due to gene mutations causing zona glomerulosa hyperplasia. 51.1"
+  },
+  {
+    "id": "renal-mcq-50",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? The diagnosis is familial hyperaldosteronism, which is due to gene mutations resulting in adrenal cortical zona glomerulosa hyperplasia.",
+    "choices": [
+      "Addison disease",
+      "Conn syndrome",
+      "Fibromuscular dysplasia",
+      "Renal artery stenosis due to atheromatous plaque",
+      "Zona glomerulosa hyperplasia"
+    ],
+    "correct_answer": "Zona glomerulosa hyperplasia",
+    "teaching_point": "Hyperaldosteronism in multiple family members is usually due to familial hyperaldosteronism, which is due to gene mutations causing zona glomerulosa hyperplasia. 51.1",
+    "trap_to_avoid": "Do not confuse Zona glomerulosa hyperplasia with Addison disease"
+  },
+  {
+    "id": "renal-recall-51",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient presents with classic signs of a pulmonary embolism (PE) in the context of recent surgery, immobility, unilateral leg pain, and sudden-onset dyspnea.",
+    "answer": "\u2191 pH, Normal HCO \u2083 \u207b , \u2193 CO \u2082",
+    "explanation": "Pulmonary embolism causes acute respiratory alkalosis due to hyperventilation, with low CO\u2082, elevated pH, and normal bicarbonate. A 12-year-old boy is brought to the emergency department by his coach after"
+  },
+  {
+    "id": "renal-mcq-51",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? This patient presents with classic signs of a pulmonary embolism (PE) in the context of recent surgery, immobility, unilateral leg pain, and sudden-onset dyspnea.",
+    "choices": [
+      "\u2193 pH, \u2193 HCO \u2083 \u207b , \u2191 CO \u2082",
+      "\u2193 pH, \u2191 HCO \u2083 \u207b , \u2191 CO \u2082",
+      "\u2191 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082",
+      "\u2191 pH, Normal HCO \u2083 \u207b , \u2193 CO \u2082",
+      "Normal pH, \u2191 HCO \u2083 \u207b , \u2191 CO \u2082"
+    ],
+    "correct_answer": "\u2191 pH, Normal HCO \u2083 \u207b , \u2193 CO \u2082",
+    "teaching_point": "Pulmonary embolism causes acute respiratory alkalosis due to hyperventilation, with low CO\u2082, elevated pH, and normal bicarbonate. A 12-year-old boy is brought to the emergency department by his coach after",
+    "trap_to_avoid": "Do not confuse \u2191 pH, Normal HCO \u2083 \u207b , \u2193 CO \u2082 with \u2193 pH, \u2193 HCO \u2083 \u207b , \u2191 CO \u2082"
+  },
+  {
+    "id": "renal-recall-52",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient's symptoms are classic for an acute asthma exacerbation, a condition in which airway narrowing due to inflammation, bronchospasm, and mucus plugging leads to impaired oxygenation.",
+    "answer": "\u2191 pH, \u2194 HCO \u2083 \u207b , \u2193 CO \u2082",
+    "explanation": "Acute asthma exacerbation causes respiratory alkalosis due to hyperventilation, which results in elevated pH, low CO\u2082, and normal bicarbonate. Renal compensation does not occur immediately, so HCO\u2083\u207b remains unchanged in early disease. A 9-year-old boy is brought to the emergency department by his mother due to"
+  },
+  {
+    "id": "renal-mcq-52",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? This patient's symptoms are classic for an acute asthma exacerbation, a condition in which airway narrowing due to inflammation, bronchospasm, and mucus plugging leads to impaired oxygenation.",
+    "choices": [
+      "\u2193 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082",
+      "\u2193 pH, \u2191 HCO \u2083 \u207b , \u2191 CO \u2082",
+      "\u2191 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082",
+      "\u2191 pH, \u2194 HCO \u2083 \u207b , \u2193 CO \u2082",
+      "\u2191 pH, \u2191 HCO \u2083 \u207b , \u2193 CO \u2082"
+    ],
+    "correct_answer": "\u2191 pH, \u2194 HCO \u2083 \u207b , \u2193 CO \u2082",
+    "teaching_point": "Acute asthma exacerbation causes respiratory alkalosis due to hyperventilation, which results in elevated pH, low CO\u2082, and normal bicarbonate. Renal compensation does not occur immediately, so HCO\u2083\u207b remains unchanged in early disease. A 9-year-old boy is brought to the emergency department by his mother due to",
+    "trap_to_avoid": "Do not confuse \u2191 pH, \u2194 HCO \u2083 \u207b , \u2193 CO \u2082 with \u2193 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082"
+  },
+  {
+    "id": "renal-recall-53",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? Early in a severe asthma exacerbation, patients mount a compensatory response of increased respiratory rate, which leads to CO\u2082 washout and results in acute respiratory alkalosis (\u2191 pH, \u2193 PaCO\u2082, normal HCO\u2083\u207b).",
+    "answer": "Respiratory muscle fatigue causing hypoventilation",
+    "explanation": "Rising PaCO\u2082 and falling pH in asthma reflect respiratory muscle fatigue and hypoventilation, not worsening lung mechanics alone. This transition marks a critical turning point that may require immediate intubation. 54.1"
+  },
+  {
+    "id": "renal-mcq-53",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? Early in a severe asthma exacerbation, patients mount a compensatory response of increased respiratory rate, which leads to CO\u2082 washout and results in acute respiratory alkalosis (\u2191 pH, \u2193 PaCO\u2082, normal HCO\u2083\u207b).",
+    "choices": [
+      "Airway remodeling due to chronic inflammation",
+      "Alveolar overdistension from dynamic hyperinflation",
+      "Impaired CO \u2082 diffusion across alveolar membranes",
+      "Respiratory muscle fatigue causing hypoventilation",
+      "V/Q mismatch from intrapulmonary shunting"
+    ],
+    "correct_answer": "Respiratory muscle fatigue causing hypoventilation",
+    "teaching_point": "Rising PaCO\u2082 and falling pH in asthma reflect respiratory muscle fatigue and hypoventilation, not worsening lung mechanics alone. This transition marks a critical turning point that may require immediate intubation. 54.1",
+    "trap_to_avoid": "Do not confuse Respiratory muscle fatigue causing hypoventilation with Airway remodeling due to chronic inflammation"
+  },
+  {
+    "id": "renal-recall-54",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient\u2019s presentation is consistent with a classic panic attack marked by acute hyperventilation, which causes a drop in CO\u2082 levels (hypocapnia).",
+    "answer": "\u2191 pH, \u2194 HCO \u2083 \u207b , \u2193 CO \u2082 , \u2193 cerebral perfusion",
+    "explanation": "Panic-induced hyperventilation leads to acute respiratory alkalosis, with low CO\u2082, unchanged HCO\u2083\u207b, elevated pH, and decreased cerebral perfusion that can result in fainting. CO\u2082 is a major determinant of brain blood flow, and changes in ventilation significantly impact cerebral hemodynamics. A 72-year-old man is brought to the emergency department by his wife because of"
+  },
+  {
+    "id": "renal-mcq-54",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? This patient\u2019s presentation is consistent with a classic panic attack marked by acute hyperventilation, which causes a drop in CO\u2082 levels (hypocapnia).",
+    "choices": [
+      "\u2191 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082 , \u2191 cerebral perfusion",
+      "\u2191 pH, \u2191 HCO \u2083 \u207b , \u2193 CO \u2082 , \u2193 cerebral perfusion",
+      "\u2191 pH, \u2194 HCO \u2083 \u207b , \u2193 CO \u2082 , \u2193 cerebral perfusion",
+      "\u2193 pH, \u2194 HCO \u2083 \u207b , \u2191 CO \u2082 , \u2193 cerebral perfusion",
+      "\u2193 pH, \u2193 HCO \u2083 \u207b , \u2191 CO \u2082 , \u2191 cerebral perfusion"
+    ],
+    "correct_answer": "\u2191 pH, \u2194 HCO \u2083 \u207b , \u2193 CO \u2082 , \u2193 cerebral perfusion",
+    "teaching_point": "Panic-induced hyperventilation leads to acute respiratory alkalosis, with low CO\u2082, unchanged HCO\u2083\u207b, elevated pH, and decreased cerebral perfusion that can result in fainting. CO\u2082 is a major determinant of brain blood flow, and changes in ventilation significantly impact cerebral hemodynamics. A 72-year-old man is brought to the emergency department by his wife because of",
+    "trap_to_avoid": "Do not confuse \u2191 pH, \u2194 HCO \u2083 \u207b , \u2193 CO \u2082 , \u2193 cerebral perfusion with \u2191 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082 , \u2191 cerebral perfusion"
+  },
+  {
+    "id": "renal-recall-55",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient has an acute exacerbation of COPD, which is often triggered by a viral or bacterial respiratory infection.",
+    "answer": "\u2193 pH, \u2191 HCO \u2083 \u207b , \u2191 CO \u2082",
+    "explanation": "Patients with acute exacerbations of COPD often develop acute on chronic respiratory acidosis. Despite rapid breathing, they cannot exhale CO\u2082 due to poor alveolar function, resulting in \u2193 pH, \u2191 CO\u2082, and \u2191 HCO\u2083\u207b. A 68-year-old man with a 30-year smoking history is brought to the emergency"
+  },
+  {
+    "id": "renal-mcq-55",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? This patient has an acute exacerbation of COPD, which is often triggered by a viral or bacterial respiratory infection.",
+    "choices": [
+      "\u2193 pH, \u2193 HCO \u2083 \u207b , \u2191 CO \u2082",
+      "\u2193 pH, \u2191 HCO \u2083 \u207b , \u2191 CO \u2082",
+      "\u2191 pH, \u2193 HCO \u2083 \u207b , \u2193 CO \u2082",
+      "\u2191 pH, \u2191 HCO \u2083 \u207b , \u2191 CO \u2082",
+      "\u2191 pH, \u2191 HCO \u2083 \u207b , \u2193 CO \u2082"
+    ],
+    "correct_answer": "\u2193 pH, \u2191 HCO \u2083 \u207b , \u2191 CO \u2082",
+    "teaching_point": "Patients with acute exacerbations of COPD often develop acute on chronic respiratory acidosis. Despite rapid breathing, they cannot exhale CO\u2082 due to poor alveolar function, resulting in \u2193 pH, \u2191 CO\u2082, and \u2191 HCO\u2083\u207b. A 68-year-old man with a 30-year smoking history is brought to the emergency",
+    "trap_to_avoid": "Do not confuse \u2193 pH, \u2191 HCO \u2083 \u207b , \u2191 CO \u2082 with \u2193 pH, \u2193 HCO \u2083 \u207b , \u2191 CO \u2082"
+  },
+  {
+    "id": "renal-recall-56",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? Patients with severe chronic obstructive pulmonary disease (COPD) often have a long-standing reduction in alveolar surface area and impaired airflow due to both emphysema and chronic bronchitis.",
+    "answer": "Chronic respiratory acidosis and acute respiratory acidosis",
+    "explanation": "A patient with advanced COPD can develop acute on chronic respiratory failure, reflected on USMLE as \u201cchronic respiratory acidosis and acute respiratory acidosis.\u201d The key pattern is low pH, high CO\u2082, and elevated HCO\u2083\u207b, signaling acute decompensation on top of chronic CO\u2082 retention. 57.1"
+  },
+  {
+    "id": "renal-mcq-56",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? Patients with severe chronic obstructive pulmonary disease (COPD) often have a long-standing reduction in alveolar surface area and impaired airflow due to both emphysema and chronic bronchitis.",
+    "choices": [
+      "Chronic metabolic alkalosis",
+      "Chronic respiratory alkalosis and acute metabolic alkalosis",
+      "Chronic respiratory acidosis and acute respiratory acidosis",
+      "Metabolic acidosis with respiratory compensation",
+      "Respiratory alkalosis with metabolic compensation"
+    ],
+    "correct_answer": "Chronic respiratory acidosis and acute respiratory acidosis",
+    "teaching_point": "A patient with advanced COPD can develop acute on chronic respiratory failure, reflected on USMLE as \u201cchronic respiratory acidosis and acute respiratory acidosis.\u201d The key pattern is low pH, high CO\u2082, and elevated HCO\u2083\u207b, signaling acute decompensation on top of chronic CO\u2082 retention. 57.1",
+    "trap_to_avoid": "Do not confuse Chronic respiratory acidosis and acute respiratory acidosis with Chronic metabolic alkalosis"
+  },
+  {
+    "id": "renal-recall-57",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This elderly man with severe COPD presents with signs of carbon dioxide retention, hypoventilation, and altered mental status, all of which point to acute-on-chronic respiratory failure.",
+    "answer": "Chronic respiratory acidosis and acute respiratory acidosis",
+    "explanation": "COPD exacerbations are acute-on-chronic respiratory acidosis, which the USMLE can cumbersomely write as \u201cchronic respiratory acidosis and acute respiratory acidosis.\u201d A 60-year-old woman is recovering in the hospital following a right-sided hip"
+  },
+  {
+    "id": "renal-mcq-57",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? This elderly man with severe COPD presents with signs of carbon dioxide retention, hypoventilation, and altered mental status, all of which point to acute-on-chronic respiratory failure.",
+    "choices": [
+      "Chronic metabolic acidosis with partial respiratory compensation",
+      "Chronic respiratory acidosis with partial renal compensation",
+      "Chronic respiratory acidosis and acute respiratory acidosis",
+      "Metabolic alkalosis with respiratory compensation",
+      "Respiratory alkalosis with partial renal compensation"
+    ],
+    "correct_answer": "Chronic respiratory acidosis and acute respiratory acidosis",
+    "teaching_point": "COPD exacerbations are acute-on-chronic respiratory acidosis, which the USMLE can cumbersomely write as \u201cchronic respiratory acidosis and acute respiratory acidosis.\u201d A 60-year-old woman is recovering in the hospital following a right-sided hip",
+    "trap_to_avoid": "Do not confuse Chronic respiratory acidosis and acute respiratory acidosis with Chronic metabolic acidosis with partial respiratory compensation"
+  },
+  {
+    "id": "renal-recall-58",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient is experiencing hypoventilation due to opioid-induced respiratory depression, a well-known complication of morphine and other mu-opioid receptor agonists.",
+    "answer": "\u2191 CO \u2082 , \u2194 A\u2013a gradient",
+    "explanation": "Opioid-induced hypoventilation causes elevated CO\u2082 levels and decreased oxygen due to reduced ventilation. Because alveolar and arterial oxygen drop together, the A\u2013a gradient remains normal. A 44-year-old man is transferred to the ICU following a generalized tonic-clonic"
+  },
+  {
+    "id": "renal-mcq-58",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? This patient is experiencing hypoventilation due to opioid-induced respiratory depression, a well-known complication of morphine and other mu-opioid receptor agonists.",
+    "choices": [
+      "\u2191 CO \u2082 , \u2191 A\u2013a gradient",
+      "\u2193 CO \u2082 , \u2194 A\u2013a gradient",
+      "\u2193 CO \u2082 , \u2191 A\u2013a gradient",
+      "\u2191 CO \u2082 , \u2194 A\u2013a gradient",
+      "\u2194 CO \u2082 , \u2191 A\u2013a gradient"
+    ],
+    "correct_answer": "\u2191 CO \u2082 , \u2194 A\u2013a gradient",
+    "teaching_point": "Opioid-induced hypoventilation causes elevated CO\u2082 levels and decreased oxygen due to reduced ventilation. Because alveolar and arterial oxygen drop together, the A\u2013a gradient remains normal. A 44-year-old man is transferred to the ICU following a generalized tonic-clonic",
+    "trap_to_avoid": "Do not confuse \u2191 CO \u2082 , \u2194 A\u2013a gradient with \u2191 CO \u2082 , \u2191 A\u2013a gradient"
+  },
+  {
+    "id": "renal-recall-59",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient is experiencing hypoventilation secondary to neuromuscular blockade, which results in carbon dioxide retention and mild hypoxemia.",
+    "answer": "Normal alveolar-arteriolar oxygen gradient",
+    "explanation": "Hypoventilation from neuromuscular blockade leads to hypoxemia and hypercapnia, but gas exchange is intact, so the alveolar-arteriolar oxygen gradient remains normal. A normal A\u2013a gradient in hypoxemia suggests a ventilatory rather than a diffusion or perfusion problem. 60.1"
+  },
+  {
+    "id": "renal-mcq-59",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? This patient is experiencing hypoventilation secondary to neuromuscular blockade, which results in carbon dioxide retention and mild hypoxemia.",
+    "choices": [
+      "Diffusion impairment",
+      "Intracardiac shunt",
+      "Normal alveolar-arteriolar oxygen gradient",
+      "Pulmonary arteriovenous malformation",
+      "Ventilation-perfusion mismatch"
+    ],
+    "correct_answer": "Normal alveolar-arteriolar oxygen gradient",
+    "teaching_point": "Hypoventilation from neuromuscular blockade leads to hypoxemia and hypercapnia, but gas exchange is intact, so the alveolar-arteriolar oxygen gradient remains normal. A normal A\u2013a gradient in hypoxemia suggests a ventilatory rather than a diffusion or perfusion problem. 60.1",
+    "trap_to_avoid": "Do not confuse Normal alveolar-arteriolar oxygen gradient with Diffusion impairment"
+  },
+  {
+    "id": "renal-recall-60",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient presents with respiratory muscle weakness due to Guillain-Barr\u00e9 syndrome (GBS), a demyelinating polyneuropathy often triggered by infections such as Campylobacter jejuni.",
+    "answer": "Non-elevation of the A\u2013a gradient",
+    "explanation": "Hypoventilation due to neuromuscular weakness causes hypoxemia with a normal A\u2013a gradient, since both alveolar and arterial oxygen drop together. Conditions that impair oxygen diffusion or perfusion, by contrast, result in an elevated A\u2013a gradient. A 40-year-old woman presents to the emergency department with sudden-onset"
+  },
+  {
+    "id": "renal-mcq-60",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? This patient presents with respiratory muscle weakness due to Guillain-Barr\u00e9 syndrome (GBS), a demyelinating polyneuropathy often triggered by infections such as Campylobacter jejuni.",
+    "choices": [
+      "Decreased diffusing capacity for carbon monoxide (DLCO)",
+      "Elevated right heart pressures on echocardiography",
+      "High alveolar-arteriolar oxygen gradient",
+      "Non-elevation of the A\u2013a gradient",
+      "Oxygenation defect unresponsive to supplemental O \u2082"
+    ],
+    "correct_answer": "Non-elevation of the A\u2013a gradient",
+    "teaching_point": "Hypoventilation due to neuromuscular weakness causes hypoxemia with a normal A\u2013a gradient, since both alveolar and arterial oxygen drop together. Conditions that impair oxygen diffusion or perfusion, by contrast, result in an elevated A\u2013a gradient. A 40-year-old woman presents to the emergency department with sudden-onset",
+    "trap_to_avoid": "Do not confuse Non-elevation of the A\u2013a gradient with Decreased diffusing capacity for carbon monoxide (DLCO)"
+  },
+  {
+    "id": "renal-recall-61",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient presents with classic features of acute pulmonary embolism (PE) \u2014 sudden-onset dyspnea and tachycardia in a middle-aged woman with significant risk factors for venous thromboembolism, including tobacco use, estrogen-containing oral contraceptives, and recent prolonged immobility during air travel.",
+    "answer": "\u2191 pH, \u2193 PaCO \u2082 , \u2194 HCO \u2083 \u207b , \u2191 V/Q",
+    "explanation": "Pulmonary embolism causes acute ventilation-perfusion mismatch with high V/Q due to impaired perfusion. The result is respiratory alkalosis from hyperventilation, with increased pH, decreased CO\u2082, and normal bicarbonate due to lack of metabolic compensation. A 67-year-old man presents with sudden-onset, crushing substernal chest pain that"
+  },
+  {
+    "id": "renal-mcq-61",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? This patient presents with classic features of acute pulmonary embolism (PE) \u2014 sudden-onset dyspnea and tachycardia in a middle-aged woman with significant risk factors for venous thromboembolism, including tobacco use, estrogen-containing oral contraceptives, and recent prolonged immobility during air travel.",
+    "choices": [
+      "\u2193 pH, \u2193 PaCO \u2082 , \u2193 HCO \u2083 \u207b , \u2191 V/Q",
+      "\u2191 pH, \u2193 PaCO \u2082 , \u2194 HCO \u2083 \u207b , \u2191 V/Q",
+      "\u2191 pH, \u2193 PaCO \u2082 , \u2193 HCO \u2083 \u207b , \u2193 V/Q",
+      "\u2194 pH, \u2194 PaCO \u2082 , \u2194 HCO \u2083 \u207b , \u2193 V/Q",
+      "\u2194 pH, \u2191 PaCO \u2082 , \u2191 HCO \u2083 \u207b , \u2191 V/Q"
+    ],
+    "correct_answer": "\u2191 pH, \u2193 PaCO \u2082 , \u2194 HCO \u2083 \u207b , \u2191 V/Q",
+    "teaching_point": "Pulmonary embolism causes acute ventilation-perfusion mismatch with high V/Q due to impaired perfusion. The result is respiratory alkalosis from hyperventilation, with increased pH, decreased CO\u2082, and normal bicarbonate due to lack of metabolic compensation. A 67-year-old man presents with sudden-onset, crushing substernal chest pain that",
+    "trap_to_avoid": "Do not confuse \u2191 pH, \u2193 PaCO \u2082 , \u2194 HCO \u2083 \u207b , \u2191 V/Q with \u2193 pH, \u2193 PaCO \u2082 , \u2193 HCO \u2083 \u207b , \u2191 V/Q"
+  },
+  {
+    "id": "renal-recall-62",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? This patient presents with signs and symptoms of acute anterior ST-elevation myocardial infarction (STEMI) complicated by cardiogenic shock, as evidenced by hypotension (BP 85/50 mm Hg), tachycardia, and pulmonary crackles.",
+    "answer": "\u2193 CO \u2082 , \u2193 pH, \u2193 HCO \u2083 \u207b , \u2191 SVR, \u2191 PCWP, \u2193 CO",
+    "explanation": "In cardiogenic shock due to acute MI, expect metabolic acidosis with respiratory compensation, elevated SVR and PCWP, and low cardiac output. The correct arrow pattern is: \u2193 CO\u2082, \u2193 pH, \u2193 HCO\u2083\u207b, \u2191 SVR, \u2191 PCWP, \u2193 CO. 63.1 A. \u2191 pCO2; \u2194 HCO3; \u2191 pH"
+  },
+  {
+    "id": "renal-mcq-62",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? This patient presents with signs and symptoms of acute anterior ST-elevation myocardial infarction (STEMI) complicated by cardiogenic shock, as evidenced by hypotension (BP 85/50 mm Hg), tachycardia, and pulmonary crackles.",
+    "choices": [
+      "\u2191 CO \u2082 , \u2193 pH, \u2191 HCO \u2083 \u207b , \u2193 SVR, \u2193 PCWP, \u2191 CO",
+      "\u2193 CO \u2082 , \u2193 pH, \u2193 HCO \u2083 \u207b , \u2191 SVR, \u2191 PCWP, \u2193 CO",
+      "\u2193 CO \u2082 , \u2191 pH, \u2191 HCO \u2083 \u207b , \u2193 SVR, \u2191 PCWP, \u2191 CO",
+      "\u2191 CO \u2082 , \u2191 pH, \u2193 HCO \u2083 \u207b , \u2191 SVR, \u2193 PCWP, \u2193 CO",
+      "\u2193 CO \u2082 , \u2193 pH, \u2191 HCO \u2083 \u207b , \u2191 SVR, \u2191 PCWP, \u2193 CO"
+    ],
+    "correct_answer": "\u2193 CO \u2082 , \u2193 pH, \u2193 HCO \u2083 \u207b , \u2191 SVR, \u2191 PCWP, \u2193 CO",
+    "teaching_point": "In cardiogenic shock due to acute MI, expect metabolic acidosis with respiratory compensation, elevated SVR and PCWP, and low cardiac output. The correct arrow pattern is: \u2193 CO\u2082, \u2193 pH, \u2193 HCO\u2083\u207b, \u2191 SVR, \u2191 PCWP, \u2193 CO. 63.1 A. \u2191 pCO2; \u2194 HCO3; \u2191 pH",
+    "trap_to_avoid": "Do not confuse \u2193 CO \u2082 , \u2193 pH, \u2193 HCO \u2083 \u207b , \u2191 SVR, \u2191 PCWP, \u2193 CO with \u2191 CO \u2082 , \u2193 pH, \u2191 HCO \u2083 \u207b , \u2193 SVR, \u2193 PCWP, \u2191 CO"
+  },
+  {
+    "id": "renal-recall-63",
+    "type": "short_answer",
+    "topic": "Acid/base disorders",
+    "prompt": "Based on this pattern, what is the best diagnosis/mechanism/answer? CO2 is low, not high, in an acute asthma attack (oh wow).",
+    "answer": "\u2193 pCO2; \u2193 HCO3; \u2191 pH",
+    "explanation": "Acute asthma attack is a respiratory alkalosis, with high pH, low CO2, and normal bicarb. -"
+  },
+  {
+    "id": "renal-mcq-63",
+    "type": "mcq",
+    "topic": "Acid/base disorders",
+    "prompt": "Which answer best matches this board-style clue? CO2 is low, not high, in an acute asthma attack (oh wow).",
+    "choices": [
+      "\u2191 pCO2; \u2191 HCO3; \u2191 pH",
+      "\u2191 pCO2; \u2191 HCO3; \u2193 pH",
+      "\u2193 pCO2; \u2194 HCO3; \u2191 pH",
+      "\u2193 pCO2; \u2194 HCO3; \u2193 pH",
+      "\u2193 pCO2; \u2193 HCO3; \u2191 pH"
+    ],
+    "correct_answer": "\u2193 pCO2; \u2193 HCO3; \u2191 pH",
+    "teaching_point": "Acute asthma attack is a respiratory alkalosis, with high pH, low CO2, and normal bicarb. -",
+    "trap_to_avoid": "Do not confuse \u2193 pCO2; \u2193 HCO3; \u2191 pH with \u2191 pCO2; \u2191 HCO3; \u2191 pH"
+  }
+]
