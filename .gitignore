@@ -19,7 +19,9 @@ build/
 # logs / runtime data
 *.log
 admin-notifications.json
-data/
+/data/
+!frontend/src/data/
+!frontend/src/data/**
 
 # OS
 .DS_Store
