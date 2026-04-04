@@ -1,4 +1,4 @@
-import mskData from "../data/msk/MSK_full_dataset.json";
+import mskData from "../data/msk/msk_full_dataset.json";
 import pharmaData from "../data/pharma/Pharma_full_dataset.json";
 import neuroData from "../data/neuro/Neuro_full_dataset.json";
 
