@@ -1,0 +1,22 @@
+# MSK High-Yield Rules
+
+- Posterior hip dislocation = shortened, internally rotated limb; anterior = externally rotated/abducted limb.
+- SCFE = adolescent hip/knee pain with limited internal rotation; Legg-Calvé-Perthes = younger child with avascular necrosis and femoral head flattening.
+- Snuffbox tenderness after FOOSH is a scaphoid fracture until proven otherwise, even if initial radiographs are normal.
+- Meniscal tears cause locking/catching and joint-line tenderness; collateral ligament injuries follow valgus/varus stress.
+- Dashboard injury to the tibia suggests PCL injury; noncontact pivot with pop and hemarthrosis suggests ACL tear.
+- Supracondylar humerus fractures in children threaten the brachial artery and median nerve.
+- Median nerve compression at the carpal tunnel causes nocturnal paresthesias in the thumb, index, and middle fingers with thenar weakness.
+- Ulnar neuropathy causes interosseous weakness, hypothenar wasting, and sensory loss in the medial 1.5 digits.
+- Lateral epicondylitis = pain with resisted wrist extension; medial epicondylitis = pain with resisted wrist flexion.
+- De Quervain tenosynovitis causes radial wrist pain with a positive Finkelstein maneuver, especially postpartum.
+- Osgood-Schlatter disease is traction apophysitis of the tibial tubercle in active adolescents.
+- Plantar fasciitis causes heel pain worst with the first steps in the morning.
+- RA causes prolonged morning stiffness and symmetric MCP/PIP disease; OA causes activity pain, brief stiffness, and crepitus.
+- Gout is acute crystal-induced monoarthritis; diagnosis is confirmed by needle-shaped, negatively birefringent monosodium urate crystals.
+- Paget disease causes increased bone turnover, elevated alkaline phosphatase, and skull enlargement/hearing loss.
+- Ewing sarcoma = diaphyseal small round blue cell tumor with onion-skin periosteal reaction; osteosarcoma = malignant osteoid around the knee; chondrosarcoma = malignant cartilage tumor in older adults.
+- Langerhans cell histiocytosis presents with lytic lesions and Birbeck granules.
+- Ganglion cysts are benign dorsal wrist masses that often resolve spontaneously.
+- Dupuytren contracture is palmar fascial fibrosis causing fixed flexion contractures.
+- Nursemaid’s elbow is radial head subluxation after axial traction on a pronated, extended arm; reduce with supination-flexion or hyperpronation.

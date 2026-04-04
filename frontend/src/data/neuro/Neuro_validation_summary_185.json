@@ -1,0 +1,37 @@
+{
+  "count": 185,
+  "qid_min": 1,
+  "qid_max": 185,
+  "all_answer_letters_exist_in_options": true,
+  "all_answer_texts_populated": true,
+  "all_stems_nonempty": true,
+  "question_images_used": 0,
+  "question_images_note": "All question_images left empty to avoid guessing figure associations.",
+  "label_only_option_questions": [
+    27,
+    47,
+    66,
+    76,
+    82,
+    85,
+    88,
+    89,
+    101,
+    108,
+    129,
+    131,
+    133,
+    137,
+    140,
+    141,
+    154,
+    172,
+    178
+  ],
+  "notes": [
+    "Dataset rebuilt from six uploaded Neuro PDFs.",
+    "Count verified from source numbering: 1.1 through 185.1.",
+    "Some anatomy/image-label questions use option texts like A/B/C rather than descriptive labels; these were preserved as source-faithful.",
+    "No question_images were assigned in this pass."
+  ]
+}

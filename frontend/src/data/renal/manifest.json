@@ -1,0 +1,44 @@
+[
+  {
+    "sequence": 1,
+    "question_number": 1,
+    "image_path": "images/renal_q001.png",
+    "source_pdf": "renal .pdf",
+    "source_page": 1
+  },
+  {
+    "sequence": 2,
+    "question_number": 6,
+    "image_path": "images/renal_q002.png",
+    "source_pdf": "renal .pdf",
+    "source_page": 3
+  },
+  {
+    "sequence": 3,
+    "question_number": 14,
+    "image_path": "images/renal_q003.png",
+    "source_pdf": "renal .pdf",
+    "source_page": 6
+  },
+  {
+    "sequence": 4,
+    "question_number": 16,
+    "image_path": "images/renal_q004.png",
+    "source_pdf": "renal .pdf",
+    "source_page": 7
+  },
+  {
+    "sequence": 5,
+    "question_number": 18,
+    "image_path": "images/renal_q005.png",
+    "source_pdf": "renal .pdf",
+    "source_page": 8
+  },
+  {
+    "sequence": 6,
+    "question_number": 24,
+    "image_path": "images/renal_q006.png",
+    "source_pdf": "renal .pdf",
+    "source_page": 10
+  }
+]

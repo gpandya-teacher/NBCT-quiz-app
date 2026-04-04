@@ -17,6 +17,7 @@ export default function QuestionCard({
   totalQuestions,
 }) {
   const isExamTone = tone === "exam";
+  const choices = question.choices || question.options || [];
 
   return (
     <section className="border border-slate-300 bg-white">
@@ -26,60 +27,63 @@ export default function QuestionCard({
             <span className="font-semibold text-slate-800">
               Item {questionNumber} of {totalQuestions}
             </span>
-            <span className="text-slate-500">Topic: {question.topicTag.replaceAll("_", " ")}</span>
+            <span className="text-slate-500">
+              Topic: {(question.topicTag || question.topic || "General").replaceAll("_", " ")}
+            </span>
           </div>
           <span className="font-medium uppercase tracking-[0.18em] text-slate-500">
-            {question.difficultyTag}
+            {question.difficultyTag || "STANDARD"}
           </span>
         </div>
       </div>
 
       <div className="px-5 py-6 sm:px-7">
         <h2 className="text-xl font-semibold leading-8 text-slate-900 sm:text-2xl">
-          {question.question}
+          {question.question || question.stem}
         </h2>
 
         <div className="mt-6 space-y-3">
-        {question.choices.map((choice, index) => {
-          const isSelected = selectedChoiceId === choice.id;
-          const isChoiceCorrect = correctChoiceId === choice.id;
-          const displayLabel = String.fromCharCode(65 + index);
-          let choiceClassName = "";
+          {choices.map((choice, index) => {
+            const choiceValue = choice.id || choice.key;
+            const isSelected = selectedChoiceId === choiceValue;
+            const isChoiceCorrect = correctChoiceId === choiceValue;
+            const displayLabel = choice.key || String.fromCharCode(65 + index);
+            let choiceClassName = "";
 
-          if (showFeedback) {
-            if (isChoiceCorrect) {
+            if (showFeedback) {
+              if (isChoiceCorrect) {
+                choiceClassName =
+                  "border-emerald-600 bg-emerald-600 text-white";
+              } else if (isSelected && !isCorrect) {
+                choiceClassName = "border-rose-600 bg-rose-600 text-white";
+              } else {
+                choiceClassName = "border-slate-200 bg-white text-ink";
+              }
+            } else if (isSelected) {
+              choiceClassName = "border-pine bg-pine text-white";
+            } else if (isExamTone) {
               choiceClassName =
-                "border-emerald-600 bg-emerald-600 text-white";
-            } else if (isSelected && !isCorrect) {
-              choiceClassName = "border-rose-600 bg-rose-600 text-white";
+                "border-slate-300 bg-[#fffefb] text-ink hover:border-slate-500";
             } else {
-              choiceClassName = "border-slate-200 bg-white text-ink";
+              choiceClassName =
+                "border-slate-200 bg-white text-ink hover:border-clay hover:bg-sand/70";
             }
-          } else if (isSelected) {
-            choiceClassName = "border-pine bg-pine text-white";
-          } else if (isExamTone) {
-            choiceClassName =
-              "border-slate-300 bg-[#fffefb] text-ink hover:border-slate-500";
-          } else {
-            choiceClassName =
-              "border-slate-200 bg-white text-ink hover:border-clay hover:bg-sand/70";
-          }
 
-          return (
-            <button
-              key={choice.id}
-              type="button"
-              onClick={() => onSelect(choice.id)}
-              disabled={disableSelection}
-              className={`w-full border px-4 py-4 text-left transition disabled:cursor-not-allowed ${choiceClassName}`}
-            >
-              <span className="mr-4 inline-flex h-8 w-8 items-center justify-center border border-current text-sm font-bold">
-                {displayLabel}
-              </span>
-              <span className="align-middle leading-7">{choice.text}</span>
-            </button>
-          );
-        })}
+            return (
+              <button
+                key={choiceValue}
+                type="button"
+                onClick={() => onSelect(choiceValue)}
+                disabled={disableSelection}
+                className={`w-full border px-4 py-4 text-left transition disabled:cursor-not-allowed ${choiceClassName}`}
+              >
+                <span className="mr-4 inline-flex h-8 w-8 items-center justify-center border border-current text-sm font-bold">
+                  {displayLabel}
+                </span>
+                <span className="align-middle leading-7">{choice.text}</span>
+              </button>
+            );
+          })}
         </div>
 
         {showFeedback && feedbackMessage ? (

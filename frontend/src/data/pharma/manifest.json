@@ -1,0 +1,415 @@
+[
+  {
+    "sequence": 1,
+    "question_number": 9,
+    "image_path": "images/pharma_q001.png",
+    "source_pdf": "pharma 1 - 30.pdf",
+    "source_page": 2
+  },
+  {
+    "sequence": 2,
+    "question_number": 6,
+    "image_path": "images/pharma_q002.png",
+    "source_pdf": "pharma 1 - 30.pdf",
+    "source_page": 2
+  },
+  {
+    "sequence": 3,
+    "question_number": 12,
+    "image_path": "images/pharma_q003.png",
+    "source_pdf": "pharma 1 - 30.pdf",
+    "source_page": 3
+  },
+  {
+    "sequence": 4,
+    "question_number": 13,
+    "image_path": "images/pharma_q004.png",
+    "source_pdf": "pharma 1 - 30.pdf",
+    "source_page": 4
+  },
+  {
+    "sequence": 5,
+    "question_number": 18,
+    "image_path": "images/pharma_q005.png",
+    "source_pdf": "pharma 1 - 30.pdf",
+    "source_page": 5
+  },
+  {
+    "sequence": 6,
+    "question_number": 31,
+    "image_path": "images/pharma_q006.png",
+    "source_pdf": "pharma 1 - 30.pdf",
+    "source_page": 8
+  },
+  {
+    "sequence": 7,
+    "question_number": 43,
+    "image_path": "images/pharma_q007.png",
+    "source_pdf": "pharma 1 - 30.pdf",
+    "source_page": 11
+  },
+  {
+    "sequence": 8,
+    "question_number": 59,
+    "image_path": "images/pharma_q008.png",
+    "source_pdf": "pharma 1 - 30.pdf",
+    "source_page": 15
+  },
+  {
+    "sequence": 9,
+    "question_number": 65,
+    "image_path": "images/pharma_q009.png",
+    "source_pdf": "pharma 1 - 30.pdf",
+    "source_page": 16
+  },
+  {
+    "sequence": 10,
+    "question_number": 73,
+    "image_path": "images/pharma_q010.png",
+    "source_pdf": "pharma 1 - 30.pdf",
+    "source_page": 18
+  },
+  {
+    "sequence": 11,
+    "question_number": 72,
+    "image_path": "images/pharma_q011.png",
+    "source_pdf": "pharma 1 - 30.pdf",
+    "source_page": 18
+  },
+  {
+    "sequence": 12,
+    "question_number": 75,
+    "image_path": "images/pharma_q012.png",
+    "source_pdf": "pharma 1 - 30.pdf",
+    "source_page": 19
+  },
+  {
+    "sequence": 13,
+    "question_number": 90,
+    "image_path": "images/pharma_q013.png",
+    "source_pdf": "pharma 1 - 30.pdf",
+    "source_page": 22
+  },
+  {
+    "sequence": 14,
+    "question_number": 107,
+    "image_path": "images/pharma_q014.png",
+    "source_pdf": "pharma 1 - 30.pdf",
+    "source_page": 26
+  },
+  {
+    "sequence": 15,
+    "question_number": 106,
+    "image_path": "images/pharma_q015.png",
+    "source_pdf": "pharma 1 - 30.pdf",
+    "source_page": 26
+  },
+  {
+    "sequence": 16,
+    "question_number": 121,
+    "image_path": "images/pharma_q016.png",
+    "source_pdf": "pharma 1 - 30.pdf",
+    "source_page": 30
+  },
+  {
+    "sequence": 17,
+    "question_number": 125,
+    "image_path": "images/pharma_q017.png",
+    "source_pdf": "pharma 31 - 60.pdf",
+    "source_page": 1
+  },
+  {
+    "sequence": 18,
+    "question_number": 124,
+    "image_path": "images/pharma_q018.png",
+    "source_pdf": "pharma 31 - 60.pdf",
+    "source_page": 1
+  },
+  {
+    "sequence": 19,
+    "question_number": 139,
+    "image_path": "images/pharma_q019.png",
+    "source_pdf": "pharma 31 - 60.pdf",
+    "source_page": 4
+  },
+  {
+    "sequence": 20,
+    "question_number": 146,
+    "image_path": "images/pharma_q020.png",
+    "source_pdf": "pharma 31 - 60.pdf",
+    "source_page": 6
+  },
+  {
+    "sequence": 21,
+    "question_number": 149,
+    "image_path": "images/pharma_q021.png",
+    "source_pdf": "pharma 31 - 60.pdf",
+    "source_page": 7
+  },
+  {
+    "sequence": 22,
+    "question_number": 150,
+    "image_path": "images/pharma_q022.png",
+    "source_pdf": "pharma 31 - 60.pdf",
+    "source_page": 8
+  },
+  {
+    "sequence": 23,
+    "question_number": 154,
+    "image_path": "images/pharma_q023.png",
+    "source_pdf": "pharma 31 - 60.pdf",
+    "source_page": 9
+  },
+  {
+    "sequence": 24,
+    "question_number": 160,
+    "image_path": "images/pharma_q024.png",
+    "source_pdf": "pharma 31 - 60.pdf",
+    "source_page": 10
+  },
+  {
+    "sequence": 25,
+    "question_number": 159,
+    "image_path": "images/pharma_q025.png",
+    "source_pdf": "pharma 31 - 60.pdf",
+    "source_page": 10
+  },
+  {
+    "sequence": 26,
+    "question_number": 171,
+    "image_path": "images/pharma_q026.png",
+    "source_pdf": "pharma 31 - 60.pdf",
+    "source_page": 13
+  },
+  {
+    "sequence": 27,
+    "question_number": 176,
+    "image_path": "images/pharma_q027.png",
+    "source_pdf": "pharma 31 - 60.pdf",
+    "source_page": 14
+  },
+  {
+    "sequence": 28,
+    "question_number": 192,
+    "image_path": "images/pharma_q028.png",
+    "source_pdf": "pharma 31 - 60.pdf",
+    "source_page": 17
+  },
+  {
+    "sequence": 29,
+    "question_number": 194,
+    "image_path": "images/pharma_q029.png",
+    "source_pdf": "pharma 31 - 60.pdf",
+    "source_page": 18
+  },
+  {
+    "sequence": 30,
+    "question_number": 203,
+    "image_path": "images/pharma_q030.png",
+    "source_pdf": "pharma 31 - 60.pdf",
+    "source_page": 21
+  },
+  {
+    "sequence": 31,
+    "question_number": 207,
+    "image_path": "images/pharma_q031.png",
+    "source_pdf": "pharma 31 - 60.pdf",
+    "source_page": 22
+  },
+  {
+    "sequence": 32,
+    "question_number": 211,
+    "image_path": "images/pharma_q032.png",
+    "source_pdf": "pharma 31 - 60.pdf",
+    "source_page": 23
+  },
+  {
+    "sequence": 33,
+    "question_number": 210,
+    "image_path": "images/pharma_q033.png",
+    "source_pdf": "pharma 31 - 60.pdf",
+    "source_page": 23
+  },
+  {
+    "sequence": 34,
+    "question_number": 216,
+    "image_path": "images/pharma_q034.png",
+    "source_pdf": "pharma 31 - 60.pdf",
+    "source_page": 25
+  },
+  {
+    "sequence": 35,
+    "question_number": 220,
+    "image_path": "images/pharma_q035.png",
+    "source_pdf": "pharma 31 - 60.pdf",
+    "source_page": 26
+  },
+  {
+    "sequence": 36,
+    "question_number": 225,
+    "image_path": "images/pharma_q036.png",
+    "source_pdf": "pharma 31 - 60.pdf",
+    "source_page": 28
+  },
+  {
+    "sequence": 37,
+    "question_number": 227,
+    "image_path": "images/pharma_q037.png",
+    "source_pdf": "pharma 31 - 60.pdf",
+    "source_page": 29
+  },
+  {
+    "sequence": 38,
+    "question_number": 242,
+    "image_path": "images/pharma_q038.png",
+    "source_pdf": "pharma 61 - 30.pdf",
+    "source_page": 2
+  },
+  {
+    "sequence": 39,
+    "question_number": 238,
+    "image_path": "images/pharma_q039.png",
+    "source_pdf": "pharma 61 - 30.pdf",
+    "source_page": 2
+  },
+  {
+    "sequence": 40,
+    "question_number": 248,
+    "image_path": "images/pharma_q040.png",
+    "source_pdf": "pharma 61 - 30.pdf",
+    "source_page": 4
+  },
+  {
+    "sequence": 41,
+    "question_number": 251,
+    "image_path": "images/pharma_q041.png",
+    "source_pdf": "pharma 61 - 30.pdf",
+    "source_page": 5
+  },
+  {
+    "sequence": 42,
+    "question_number": 257,
+    "image_path": "images/pharma_q042.png",
+    "source_pdf": "pharma 61 - 30.pdf",
+    "source_page": 6
+  },
+  {
+    "sequence": 43,
+    "question_number": 262,
+    "image_path": "images/pharma_q043.png",
+    "source_pdf": "pharma 61 - 30.pdf",
+    "source_page": 7
+  },
+  {
+    "sequence": 44,
+    "question_number": 260,
+    "image_path": "images/pharma_q044.png",
+    "source_pdf": "pharma 61 - 30.pdf",
+    "source_page": 7
+  },
+  {
+    "sequence": 45,
+    "question_number": 259,
+    "image_path": "images/pharma_q045.png",
+    "source_pdf": "pharma 61 - 30.pdf",
+    "source_page": 7
+  },
+  {
+    "sequence": 46,
+    "question_number": 290,
+    "image_path": "images/pharma_q046.png",
+    "source_pdf": "pharma 61 - 30.pdf",
+    "source_page": 14
+  },
+  {
+    "sequence": 47,
+    "question_number": 301,
+    "image_path": "images/pharma_q047.png",
+    "source_pdf": "pharma 61 - 30.pdf",
+    "source_page": 17
+  },
+  {
+    "sequence": 48,
+    "question_number": 300,
+    "image_path": "images/pharma_q048.png",
+    "source_pdf": "pharma 61 - 30.pdf",
+    "source_page": 17
+  },
+  {
+    "sequence": 49,
+    "question_number": 307,
+    "image_path": "images/pharma_q049.png",
+    "source_pdf": "pharma 61 - 30.pdf",
+    "source_page": 19
+  },
+  {
+    "sequence": 50,
+    "question_number": 310,
+    "image_path": "images/pharma_q050.png",
+    "source_pdf": "pharma 61 - 30.pdf",
+    "source_page": 20
+  },
+  {
+    "sequence": 51,
+    "question_number": 314,
+    "image_path": "images/pharma_q051.png",
+    "source_pdf": "pharma 61 - 30.pdf",
+    "source_page": 21
+  },
+  {
+    "sequence": 52,
+    "question_number": 315,
+    "image_path": "images/pharma_q052.png",
+    "source_pdf": "pharma 61 - 30.pdf",
+    "source_page": 22
+  },
+  {
+    "sequence": 53,
+    "question_number": 328,
+    "image_path": "images/pharma_q053.png",
+    "source_pdf": "pharma 61 - 30.pdf",
+    "source_page": 25
+  },
+  {
+    "sequence": 54,
+    "question_number": 333,
+    "image_path": "images/pharma_q054.png",
+    "source_pdf": "pharma 61 - 30.pdf",
+    "source_page": 26
+  },
+  {
+    "sequence": 55,
+    "question_number": 335,
+    "image_path": "images/pharma_q055.png",
+    "source_pdf": "pharma 61 - 30.pdf",
+    "source_page": 27
+  },
+  {
+    "sequence": 56,
+    "question_number": 368,
+    "image_path": "images/pharma_q056.png",
+    "source_pdf": "pharma 91 - 113.pdf",
+    "source_page": 8
+  },
+  {
+    "sequence": 57,
+    "question_number": 385,
+    "image_path": "images/pharma_q057.png",
+    "source_pdf": "pharma 91 - 113.pdf",
+    "source_page": 14
+  },
+  {
+    "sequence": 58,
+    "question_number": 397,
+    "image_path": "images/pharma_q058.png",
+    "source_pdf": "pharma 91 - 113.pdf",
+    "source_page": 18
+  },
+  {
+    "sequence": 59,
+    "question_number": 399,
+    "image_path": "images/pharma_q059.png",
+    "source_pdf": "pharma 91 - 113.pdf",
+    "source_page": 19
+  }
+]

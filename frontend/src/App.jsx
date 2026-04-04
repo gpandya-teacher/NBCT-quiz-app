@@ -12,6 +12,10 @@ import WrittenPromptMode from "./components/WrittenPromptMode";
 import { fetchApi } from "./lib/api";
 
 const RenalModule = lazy(() => import("./features/renal/RenalModule"));
+const PharmaModule = lazy(() => import("./features/pharma/PharmaModule"));
+const MSKModule = lazy(() => import("./features/msk/MSKModule"));
+const NeuroModule = lazy(() => import("./features/neuro/NeuroModule"));
+const GITModule = lazy(() => import("./features/git/GITModule"));
 
 const AUTH_TOKEN_KEY = "nbct-auth-token";
 const ANON_ID_KEY = "nbct-anon-id";
@@ -50,6 +54,34 @@ const modeConfig = {
     eyebrow: "Study Module",
     description:
       "Browse renal questions by topic, review generated prompts, and study rules, traps, guides, and flashcards.",
+  },
+  pharma: {
+    id: "pharma",
+    title: "Pharma",
+    eyebrow: "Study Module",
+    description:
+      "Study pharmacology questions, rules, generated prompts, traps, guides, and flashcards in one module.",
+  },
+  msk: {
+    id: "msk",
+    title: "MSK",
+    eyebrow: "Study Module",
+    description:
+      "Review musculoskeletal questions, generated bank items, study rules, traps, and flashcards.",
+  },
+  neuro: {
+    id: "neuro",
+    title: "Neuro",
+    eyebrow: "Study Module",
+    description:
+      "Explore neuro questions, high-yield rules, trap recognition, study guides, and flashcards.",
+  },
+  git: {
+    id: "git",
+    title: "GIT",
+    eyebrow: "Study Module",
+    description:
+      "Work through validated GI MCQs with question images, explanations, trap review, and flashcards.",
   },
 };
 
@@ -590,6 +622,38 @@ export default function App() {
     return (
       <Suspense fallback={null}>
         <RenalModule onBack={() => setActiveMode(null)} />
+      </Suspense>
+    );
+  }
+
+  if (activeMode === "pharma") {
+    return (
+      <Suspense fallback={null}>
+        <PharmaModule onBack={() => setActiveMode(null)} />
+      </Suspense>
+    );
+  }
+
+  if (activeMode === "msk") {
+    return (
+      <Suspense fallback={null}>
+        <MSKModule onBack={() => setActiveMode(null)} />
+      </Suspense>
+    );
+  }
+
+  if (activeMode === "neuro") {
+    return (
+      <Suspense fallback={null}>
+        <NeuroModule onBack={() => setActiveMode(null)} />
+      </Suspense>
+    );
+  }
+
+  if (activeMode === "git") {
+    return (
+      <Suspense fallback={null}>
+        <GITModule onBack={() => setActiveMode(null)} />
       </Suspense>
     );
   }

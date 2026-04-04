@@ -1,0 +1,20 @@
+{
+  "subject": "git",
+  "total_questions": 97,
+  "files": [
+    "git_dataset.json",
+    "git_generated_question_bank.json",
+    "git_anki_import.tsv",
+    "git_high_yield_rules.md",
+    "git_trap_recognition.csv",
+    "git_redeem.txt",
+    "git_manifest.json",
+    "git_validation_report.json",
+    "git_flagged_ambiguities.json"
+  ],
+  "image_count": 28,
+  "source_pdfs": [
+    "GIT 1 - 26.pdf",
+    "GIT 27-53.pdf"
+  ]
+}

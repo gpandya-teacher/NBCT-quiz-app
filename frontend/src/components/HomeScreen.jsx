@@ -97,6 +97,7 @@ export default function HomeScreen({
               <p className="mt-3">Multiple choice study and exam simulation</p>
               <p className="mt-2">Written response drafting and feedback</p>
               <p className="mt-2">Renal study module with topic browsing and review tools</p>
+              <p className="mt-2">Pharma, MSK, Neuro, and GIT modules with the same study workflow</p>
               {authBypassed ? (
                 <p className="mt-3 border-t border-slate-200 pt-3 text-[13px]">
                   Authentication is temporarily bypassed, so users can open practice

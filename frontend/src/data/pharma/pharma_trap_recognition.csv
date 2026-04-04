@@ -1,0 +1,353 @@
+qid,topic,correct_answer,common_trap
+1,General,D. Inhibits microtubule polymerization during M phase,Image-driven/localization trap
+2,General,B. Colchicine,Image-driven/localization trap
+3,General,D. Fenofibrate,Image-driven/localization trap
+4,General,B. Fibric acid derivatives,Image-driven/localization trap
+5,General,D. Inhibition of HMG-CoA reductase,Image-driven/localization trap
+6,General,A. Recombinant α-galactosidase,Image-driven/localization trap
+7,General,B. ↑ Adenylate cyclase activity and ↑ cyclic AMP,Image-driven/localization trap
+8,General,D. Niacin,Image-driven/localization trap
+9,General,B. Begin all-trans retinoic acid (ATRA) therapy,Image-driven/localization trap
+10,General,B. Gastric mucosal erosion,Image-driven/localization trap
+11,General,D. Prednisone therapy,Image-driven/localization trap
+12,General,C. Immune reconstitution inflammatory syndrome,Image-driven/localization trap
+13,General,E. Medication side effect,Image-driven/localization trap
+14,General,"D. Stimulates nicotinic acetylcholine receptors, causing persistent depolarization",Image-driven/localization trap
+15,General,C. P-450-mediated interaction,Image-driven/localization trap
+16,General,C. Enhanced action of the agonist at β-adrenergic receptors,Image-driven/localization trap
+17,General,A. Amiodarone,Image-driven/localization trap
+18,General,D. Parathion,Image-driven/localization trap
+19,General,C. Cardiomyopathy,Image-driven/localization trap
+20,General,C. Hydrochlorothiazide,Image-driven/localization trap
+21,General,A. Adenosine,Image-driven/localization trap
+22,General,A. Continue breastfeeding and start dicloxacillin,Image-driven/localization trap
+23,General,D. Serotonin syndrome,Image-driven/localization trap
+24,General,E. Verapamil,Image-driven/localization trap
+25,General,C. Enoxaparin,Image-driven/localization trap
+26,General,B. Drug-induced phototoxic reaction,Image-driven/localization trap
+27,General,D. Penicillin,Image-driven/localization trap
+28,General,D. Peroxisome proliferator-activated receptors,Image-driven/localization trap
+29,General,D. GABA-B receptor agonist,Image-driven/localization trap
+30,General,C. Muscarinic receptor agonist,Image-driven/localization trap
+31,General,D. Muscarinic receptor agonist,Image-driven/localization trap
+32,General,B. Increases circulating von Willebrand factor levels,Image-driven/localization trap
+33,General,C. Pioglitazone,Image-driven/localization trap
+34,General,C. Administer protamine sulfate,Image-driven/localization trap
+35,General,"B. Binds GnRH receptors and causes continuous stimulation, leading to receptor downregulation",Image-driven/localization trap
+36,General,B. Ketorolac,Image-driven/localization trap
+37,General,B. Discontinue the indomethacin,Image-driven/localization trap
+38,General,D. Indirect inhibition of factor Xa via antithrombin binding,Image-driven/localization trap
+39,General,"A. Irreversible inhibition of COX-1 in platelets, preventing thromboxane A₂ synthesis",Image-driven/localization trap
+40,General,A. Activates peroxisome proliferator-activated receptor alpha (PPAR-α),Image-driven/localization trap
+41,General,C. Inhibits mammalian target of rapamycin (mTOR) signaling pathway,Image-driven/localization trap
+42,General,E. Phenylephrine,Image-driven/localization trap
+43,General,D. MPTP-induced loss of dopaminergic neurons,Image-driven/localization trap
+44,General,D. Indirect inhibition of factor Xa via antithrombin binding,Image-driven/localization trap
+45,General,B. Acidification; ammonium,Image-driven/localization trap
+46,General,D. Induction of cytochrome P450 enzymes,Image-driven/localization trap
+47,General,B. Cytosol,Image-driven/localization trap
+48,General,B. Desmopressin administration,Image-driven/localization trap
+49,General,C. Prednisone,Image-driven/localization trap
+50,General,D. Elaboration of a new penicillin-binding protein,Image-driven/localization trap
+51,General,C. Mycolic acid synthesis inhibitor; vitamin B6 deficiency,Image-driven/localization trap
+52,General,B. Begin intravenous fluid resuscitation,Image-driven/localization trap
+53,General,C. Metronidazole and IV normal saline,Image-driven/localization trap
+54,General,C. Fetal urine production,Image-driven/localization trap
+55,General,C. Antibody binding the heparin-platelet factor 4 complex,Image-driven/localization trap
+56,General,B. Direct red cell toxicity due to ribavirin-induced oxidative stress,Image-driven/localization trap
+57,General,B. Maternal androgen exposure during pregnancy,Image-driven/localization trap
+58,General,B. Didanosine,Image-driven/localization trap
+59,General,B. Chronic alveolar inflammation with fibroblast proliferation and collagen deposition,Image-driven/localization trap
+60,General,E. Increased cholinergic activity,Image-driven/localization trap
+61,General,A. Breast,Image-driven/localization trap
+62,General,C. Exogenous supplement use,Image-driven/localization trap
+63,General,A. Amoxicillin,Image-driven/localization trap
+64,General,A. High-potency topical corticosteroids,Image-driven/localization trap
+65,General,A. Calcium disodium EDTA,Image-driven/localization trap
+66,General,D. Osteoid osteoma,Image-driven/localization trap
+67,General,C. Begin IV esmolol followed by nitroprusside,Image-driven/localization trap
+68,General,C. Stimulates α- and β-adrenoreceptors,Image-driven/localization trap
+69,General,B. Development of pulmonary fibrosis,Image-driven/localization trap
+70,General,A. Central-acting COX inhibitor,Image-driven/localization trap
+71,General,B. Inhibit 5-alpha reductase,Image-driven/localization trap
+72,General,D. Oxybutynin therapy,Image-driven/localization trap
+73,General,D. Mirabegron therapy,Image-driven/localization trap
+74,General,B. Eplerenone,Image-driven/localization trap
+75,General,C. Inhibition of monoamine oxidase,Image-driven/localization trap
+76,General,A. Binds the 30S ribosomal subunit and inhibits initiation and translocation,Image-driven/localization trap
+77,General,C. Discontinue the metoclopramide,Image-driven/localization trap
+78,General,D. Propranolol,Image-driven/localization trap
+79,General,B. Administer N-acetylcysteine,Image-driven/localization trap
+80,General,B. Glyburide,Image-driven/localization trap
+81,General,A. Decreased leukocyte motility and infiltration into the joint,Image-driven/localization trap
+82,General,C. Inhibiting protease activity to prevent cleavage of viral polyproteins,Image-driven/localization trap
+83,General,A. Atropine,Image-driven/localization trap
+84,General,B. Inhibits adenosine diphosphate (ADP) P2Y₁₂ receptor on platelets,Image-driven/localization trap
+85,General,A. Direct agonist at muscarinic acetylcholine receptors,Image-driven/localization trap
+86,General,B. Directly inhibits cholesterol absorption at the brush border of enterocytes,Image-driven/localization trap
+87,General,C. Disrupts DNA by generating free radicals,Image-driven/localization trap
+88,General,C. Primary metabolic acidosis with primary respiratory alkalosis,Image-driven/localization trap
+89,General,B. Hyperstabilization of polymerized microtubules,Image-driven/localization trap
+90,General,E. Prevents enterohepatic reabsorption of bile acids,Image-driven/localization trap
+91,General,D. Prostaglandin-mediated vasodilation,Image-driven/localization trap
+92,General,B. β-lactamase production,Image-driven/localization trap
+93,General,E. Trichomonas vaginalis Submit,Image-driven/localization trap
+94,General,A. Binds ergosterol and forms membrane pores,Image-driven/localization trap
+95,General,C. Genetic defect in the skeletal muscle ryanodine receptor,Image-driven/localization trap
+96,General,A. Agranulocytosis,Image-driven/localization trap
+97,General,C. Impairment of hepatic mitochondrial β-oxidation,Image-driven/localization trap
+98,General,E. Urinary 5-hydroxyindoleacetic acid,Image-driven/localization trap
+99,General,C. Allergic interstitial nephropathy,Image-driven/localization trap
+100,General,"B. ↓ Amino acids, ↓ Bicarbonate, ↓ Glucose, ↓ Phosphate",Image-driven/localization trap
+101,General,A. Aplasia cutis,Image-driven/localization trap
+102,General,D. Serotonin syndrome,Image-driven/localization trap
+103,General,D. Opioid,Image-driven/localization trap
+104,General,B. Cocaine,Image-driven/localization trap
+105,General,E. Intravenous heparin,Image-driven/localization trap
+106,General,A. Allopurinol initiation,Image-driven/localization trap
+107,General,B. Ceftriaxone,Image-driven/localization trap
+108,General,D. Penicillamine,Image-driven/localization trap
+109,General,E. Sertraline,Image-driven/localization trap
+110,General,C. Azithromycin,Image-driven/localization trap
+111,General,A. Agranulocytosis,Image-driven/localization trap
+112,General,C. Direct thrombin inhibition,Image-driven/localization trap
+113,General,"D. ↑ Serum osmolality, ↑ ADH",Image-driven/localization trap
+114,General,B. Endothelin receptor antagonist,Image-driven/localization trap
+115,General,C. Irreversible inhibition of H/K ATPase,Image-driven/localization trap
+116,General,D. Inhibition of prostaglandin synthesis in the endometrium,Image-driven/localization trap
+117,General,B. Binds the 50S ribosomal subunit and inhibits translocation,Image-driven/localization trap
+118,General,B. Chlordiazepoxide,Image-driven/localization trap
+119,General,B. Estrogen-mediated upregulation of hepatic synthesis of clotting factors,Image-driven/localization trap
+120,General,B. Binding to β-tubulin to inhibit microtubule polymerization,Image-driven/localization trap
+121,General,A. Abciximab,Image-driven/localization trap
+122,General,E. Inhibition of 50S subunit via blockade of translocation during protein synthesis,Image-driven/localization trap
+123,General,B. Assess how much food he is eating during these occasions,Image-driven/localization trap
+124,General,D. Preexisting clotting factors must first be cleared,Image-driven/localization trap
+125,General,D. Mefloquine,Image-driven/localization trap
+126,General,D. Extended-spectrum β-lactamase production,Image-driven/localization trap
+127,General,C. Hyperbaric oxygen therapy,Image-driven/localization trap
+128,General,C. Ensure adequate hydration with isotonic fluids,Image-driven/localization trap
+129,General,C. Targets BCR-ABL tyrosine kinase,Image-driven/localization trap
+130,General,D. Pediatric viral illness,Image-driven/localization trap
+131,General,"C. Impaired activation of clotting factors II, VII, IX, and X",Image-driven/localization trap
+132,General,B. Oral acyclovir,Image-driven/localization trap
+133,General,B. Neutropenia,Image-driven/localization trap
+134,General,E. Mutated penicillin-binding protein,Image-driven/localization trap
+135,General,B. Prescribe oral metronidazole,Image-driven/localization trap
+136,General,A. Ethambutol,Image-driven/localization trap
+137,General,A. A,Image-driven/localization trap
+138,General,B. B,Image-driven/localization trap
+139,General,C. Gentamicin,Image-driven/localization trap
+140,General,C. PDE-5 inhibitors,Image-driven/localization trap
+141,General,D. Preferential dilation of precapillary arterioles over postcapillary venules,Image-driven/localization trap
+142,General,C. Anti-histone antibodies,Image-driven/localization trap
+143,General,A. Corticosteroid myopathy,Image-driven/localization trap
+144,General,C. Pulmonary fibrosis,Image-driven/localization trap
+145,General,E. Verapamil,Image-driven/localization trap
+146,General,B. Diffuse interstitial fibrosis with lymphocytic infiltration,Image-driven/localization trap
+147,General,A. Add inhaled fluticasone to his regimen,Image-driven/localization trap
+148,General,D. Penicillin,Image-driven/localization trap
+149,General,B. Coronary vasoconstriction,Image-driven/localization trap
+150,General,D. ,Image-driven/localization trap
+151,General,C. Impaired glomerular perfusion from loss of angiotensin II-mediated efferent vasoconstriction,Image-driven/localization trap
+152,General,C. Doxorubicin,Image-driven/localization trap
+153,General,C. Atropine,Image-driven/localization trap
+154,General,B. Administer intravenous atropine,Image-driven/localization trap
+155,General,D. Inhibits xanthine oxidase,Image-driven/localization trap
+156,General,E. Upregulating LDL receptors on hepatocytes,Image-driven/localization trap
+157,General,B. Blocks muscarinic receptors to reduce detrusor overactivity,Image-driven/localization trap
+158,General,E. Selectively blocks leukotriene receptors,Image-driven/localization trap
+159,General,B. Cilostazol,Image-driven/localization trap
+160,General,B. Oral diazepam,Image-driven/localization trap
+161,General,B. Antagonist at NMDA receptors,Image-driven/localization trap
+162,General,E. Substance P,Image-driven/localization trap
+163,General,E. Prevention of smooth muscle cell proliferation within the intima,Image-driven/localization trap
+164,General,B. Decreased cholesterol secretion into bile,Image-driven/localization trap
+165,General,B. Decreased urinary calcium,Image-driven/localization trap
+166,General,A. Adverse effect of medication,Image-driven/localization trap
+167,General,A. aPTT,Image-driven/localization trap
+168,General,A. Less affected by disruptions in gut bacterial flora,Image-driven/localization trap
+169,General,A. Gluconeogenesis,Image-driven/localization trap
+170,General,C. Fibrate,Image-driven/localization trap
+171,General,C. Disruption of oxidative phosphorylation and fatty acid β-oxidation,Image-driven/localization trap
+172,General,D. Stimulation of alpha-1 receptors increases systemic vascular tone,Image-driven/localization trap
+173,General,A. Glucagon-mediated increase in cAMP,Image-driven/localization trap
+174,General,C. Macrolide antibiotic,Image-driven/localization trap
+175,General,C. Invasive bacterial pneumonia,Image-driven/localization trap
+176,General,D. Ketamine,Image-driven/localization trap
+177,General,D. The trough level is insufficient to maintain bactericidal activity against this organism,Image-driven/localization trap
+178,General,C. First-order kinetics are observed,Image-driven/localization trap
+179,General,D. Inhibits endothelin-1 receptors,Image-driven/localization trap
+180,General,D. Pulmonary fibrosis due to rheumatoid arthritis,Image-driven/localization trap
+181,General,C. Valproic acid-induced hepatotoxicity,Image-driven/localization trap
+182,General,B. Acute tubular necrosis,Image-driven/localization trap
+183,General,E. Toxic epidermal necrolysis,Image-driven/localization trap
+184,General,D. Epinephrine intramuscular injection,Image-driven/localization trap
+185,General,A. Alendronate,Image-driven/localization trap
+186,General,A. Acetaminophen,Image-driven/localization trap
+187,General,A. Adverse effect of medication,Image-driven/localization trap
+188,General,B. Methimazole,Image-driven/localization trap
+189,General,D. Trimethoprim-sulfamethoxazole,Image-driven/localization trap
+190,General,D. Monoamine oxidase,Image-driven/localization trap
+191,General,D. Pulmonary fibrosis,Image-driven/localization trap
+192,General,C. H₁ antagonism,Image-driven/localization trap
+193,General,B. Granulocyte colony-stimulating factor,Image-driven/localization trap
+194,General,B. Increases the refractory period of the atrioventricular (AV) node,Image-driven/localization trap
+195,General,E. Terazosin,Image-driven/localization trap
+196,General,A. Add finasteride to current therapy,Image-driven/localization trap
+197,General,D. Phosphodiesterase-3 inhibitor,Image-driven/localization trap
+198,General,A. Activates antithrombin III,Image-driven/localization trap
+199,General,D. Oculogyric crisis,Image-driven/localization trap
+200,General,B. Ethambutol,Image-driven/localization trap
+201,General,A. Aldosterone receptor antagonist,Image-driven/localization trap
+202,General,B. Inhibitor of acetylcholinesterase,Image-driven/localization trap
+203,General,E. Apical Na⁺/K⁺/2Cl⁻ cotransporter in the thick ascending limb,Image-driven/localization trap
+204,General,D. Inhibits DNA synthesis,Image-driven/localization trap
+205,General,C. Administer intravenous naloxone,Image-driven/localization trap
+206,General,D. Inhibition of RNA-dependent DNA polymerase by causing chain termination,Image-driven/localization trap
+207,General,B. Direct inhibition of factor Xa,Image-driven/localization trap
+208,General,B. Inhibits conversion of arachidonic acid to thromboxane A₂,Image-driven/localization trap
+209,General,E. Theophylline toxicity,Image-driven/localization trap
+210,General,B. Oral fluconazole,Image-driven/localization trap
+211,General,"A. ↑ pH, ↔ HCO₃⁻, ↓ CO₂",Image-driven/localization trap
+212,General,C. Binding of RNA polymerase to promoter regions,Image-driven/localization trap
+213,General,B. Inhibition of cytochrome P450 enzymes,Image-driven/localization trap
+214,General,B. Infectious mononucleosis,Image-driven/localization trap
+215,General,A. Erythropoietin therapy,Image-driven/localization trap
+216,General,D. Inhibits synaptobrevin,Image-driven/localization trap
+217,General,C. Mupirocin,Image-driven/localization trap
+218,General,C. Begin azithromycin empirically,Image-driven/localization trap
+219,General,C. Squalene epoxidase,Image-driven/localization trap
+220,General,E. Oral metronidazole,Image-driven/localization trap
+221,General,D. Doxorubicin,Image-driven/localization trap
+222,General,B. Administer cyproheptadine,Image-driven/localization trap
+223,General,A. Adverse effect of fluoroquinolone,Image-driven/localization trap
+224,General,B. Carbamazepine,Image-driven/localization trap
+225,General,A. Isoniazid,Image-driven/localization trap
+226,General,D. Pramipexole,Image-driven/localization trap
+227,General,D. Medication adverse effect,Image-driven/localization trap
+228,General,A. Donepezil,Image-driven/localization trap
+229,General,B. Dapsone,Image-driven/localization trap
+230,General,C. Methylene blue,Image-driven/localization trap
+231,General,E. Selegiline,Image-driven/localization trap
+232,General,E. Upregulating low-density lipoprotein receptors on hepatocytes,Image-driven/localization trap
+233,General,E. Inhibits vitamin K epoxide reductase,Image-driven/localization trap
+234,General,B. Allopurinol,Image-driven/localization trap
+235,General,B. Anticholinergic delirium,Image-driven/localization trap
+236,General,D. Interferes with vitamin K-dependent carboxylation of clotting factors,Image-driven/localization trap
+237,General,A. Antithrombin III,Image-driven/localization trap
+238,General,B. Bethanechol therapy,Image-driven/localization trap
+239,General,D. Pelvic floor muscle exercises,Image-driven/localization trap
+240,General,A. Add salmeterol to her current regimen,Image-driven/localization trap
+241,General,D. Meloxicam,Image-driven/localization trap
+242,General,B. Anticholinergic delirium,Image-driven/localization trap
+243,General,B. Antagonist at cholinergic receptors,Image-driven/localization trap
+244,General,F. Semaglutide,Image-driven/localization trap
+245,General,D. Dopamine-2 (D2) receptor agonism,Image-driven/localization trap
+246,General,A. Activation of nuclear gene transcription,Image-driven/localization trap
+247,General,C. Granuloma maintenance,Image-driven/localization trap
+248,General,D. Inhibition of acetylcholinesterase enzyme activity,Image-driven/localization trap
+249,General,A. Diazepam,Image-driven/localization trap
+250,General,"C. Binds 50S ribosomal subunit, 23S rRNA",Image-driven/localization trap
+251,General,E. Prothrombin time,Image-driven/localization trap
+252,General,D. Increased cAMP,Image-driven/localization trap
+253,General,D. Phenytoin-induced folate deficiency,Image-driven/localization trap
+254,General,D. Neisseria gonorrhoea,Image-driven/localization trap
+255,General,A. Amikacin,Image-driven/localization trap
+256,General,D. Loss of proximal tubular epithelial cells,Image-driven/localization trap
+257,General,C. Metronidazole,Image-driven/localization trap
+258,General,"A. Bone marrow, gut mucosa, and hair follicles",Image-driven/localization trap
+259,General,C. Drug Y is a competitive antagonist of Drug X,Image-driven/localization trap
+260,General,D. Inhibits peripheral dopa decarboxylase,Image-driven/localization trap
+261,General,C. Competitively antagonizes nicotinic acetylcholine receptors at the motor endplate,Image-driven/localization trap
+262,General,B. Roflumilast (PDE-4 inhibitor),Image-driven/localization trap
+263,General,B. Adverse effect of medication,Image-driven/localization trap
+264,General,A. Cytochrome P450 enzymes induction that gives rise to a hepatotoxic metabolite of acetaminophen,Image-driven/localization trap
+265,General,B. Cytokine-mediated effects facilitated by medication,Image-driven/localization trap
+266,General,C. Neutropenic fever,Image-driven/localization trap
+267,General,D. Inhibits dihydrofolate reductase,Image-driven/localization trap
+268,General,B. Decreased myocardial wall stress through venodilation,Image-driven/localization trap
+269,General,C. Wearing gloves,Image-driven/localization trap
+270,General,B. Inhibition of ADP P2Y12 receptor on platelets,Image-driven/localization trap
+271,General,C. Converts plasminogen to plasmin,Image-driven/localization trap
+272,General,B. Inhibits 5-lipoxygenase enzyme activity,Image-driven/localization trap
+273,General,A. Binds the 30S ribosomal subunit and prevents aminoacyl-tRNA attachment,Image-driven/localization trap
+274,General,B. Diclofenac,Image-driven/localization trap
+275,General,B. Aspirin,Image-driven/localization trap
+276,General,B. Diazepam,Image-driven/localization trap
+277,General,B. Bradykinin and substance P accumulation in the respiratory tract,Image-driven/localization trap
+278,General,"A. Directly inhibits factor IIa activity, preventing conversion of fibrinogen to fibrin",Image-driven/localization trap
+279,General,D. Targets latent exoerythrocytic forms in the liver,Image-driven/localization trap
+280,General,B. Delirium tremens,Image-driven/localization trap
+281,General,A. Amphetamine intoxication,Image-driven/localization trap
+282,General Principles,D. Ischemic necrosis due to impaired microvascular perfusion,Image-driven/localization trap
+283,General Principles,E. Inhibits reuptake of serotonin,Image-driven/localization trap
+284,General Principles,C. Increased cGMP,Image-driven/localization trap
+285,General Principles,E. Somatostatin Physiol ogy (Mechanisms of action),Image-driven/localization trap
+286,General Principles,A. Agonism of beta-2 adrenergic receptors,Image-driven/localization trap
+287,General Principles,C. Inhibits thyroid peroxidase and 5'-deiodinase,Image-driven/localization trap
+288,General Principles,D. Inhibits angiotensin-converting enzyme to reduce efferent arteriole resistance,Image-driven/localization trap
+289,General Principles,"C. ↑ Renin, ↑ Angiotensin I, ↓ Angiotensin II, ↓ Aldosterone",Image-driven/localization trap
+290,General Principles,"E. ↑ renin, ↑ angiotensin I, ↑ angiotensin II, ↑ aldosterone, ↑ K⁺ Physiol ogy (Mechanisms of action)",Image-driven/localization trap
+291,General Principles,"B. ↑ Renin, ↑ Angiotensin I, ↓ Angiotensin II, ↓ Aldosterone",Image-driven/localization trap
+292,General Principles,"C. ↑ Renin, ↑ Angiotensin I, ↑ Angiotensin II, ↓ Aldosterone",Image-driven/localization trap
+293,General Principles,"C. ↑ Renin, ↑ Angiotensin I, ↑ Angiotensin II, ↑ Aldosterone, ↑ K⁺",Image-driven/localization trap
+294,General Principles,"E. ↓ Serum Ca²⁺, ↑ Serum PO₄³⁻, ↓ Urinary Ca²⁺, ↓ PTH Physiol ogy (Mechanisms of action)",Image-driven/localization trap
+295,General Principles,C. Blocks endothelin-1 receptors,Image-driven/localization trap
+296,General Principles,D. Inhibition of HMG-CoA reductase,Image-driven/localization trap
+297,General Principles,"C. ↓ LH, ↓ intra-testicular testosterone",Image-driven/localization trap
+298,General Principles,B. Agonism at dopamine D2 receptors in the anterior pituitary,Image-driven/localization trap
+299,General Principles,C. Enhances renal calcium reabsorption by increasing activity of the basolateral Na⁺/Ca²⁺ exchanger in the distal tubule,Image-driven/localization trap
+300,General Principles,C. Increased distal potassium secretion due to enhanced aldosterone effect,Image-driven/localization trap
+301,General Principles,"D. ↑ Urinary bicarbonate, ↑ urine pH, ↑ urinary volume",Image-driven/localization trap
+302,General Principles,A. Administer acetazolamide,Image-driven/localization trap
+303,General Principles,C. Progesterone withdrawal causes spiral artery constriction and endometrial necrosis,Image-driven/localization trap
+304,General Principles,"A. ↑ Ejection fraction, ↑ heart rate, ↑ renal efferent arteriolar diameter, ↓ systemic vascular resistance",Image-driven/localization trap
+305,General Principles,"C. ↓ Cardiac output, ↑ LV end-diastolic volume, ↑ systemic vascular resistance",Image-driven/localization trap
+306,General Principles,"C. ↓ Cardiac output, ↑ heart rate, ↓ venous return",Image-driven/localization trap
+307,General Principles,"A. ↓ Venous return, ↑ heart rate, ↓ cardiac output",Image-driven/localization trap
+308,General Principles,"B. ↓ systemic vascular resistance, ↑ heart rate, ↑ left ventricular ejection fraction",Image-driven/localization trap
+309,General Principles,D. Reassure the patient and continue nifedipine,Image-driven/localization trap
+310,General Principles,E. Reduced constriction of systemic arterioles Physiol ogy (Mechanisms of action),Image-driven/localization trap
+311,General Principles,C. Increased heart rate,Image-driven/localization trap
+312,General Principles,C. Decreased systemic vascular resistance,Image-driven/localization trap
+313,General Principles,C. Binds estrogen receptors in the hypothalamus and blocks negative feedback signaling,Image-driven/localization trap
+314,General Principles,B. Prevents breakdown of cGMP,Image-driven/localization trap
+315,General Principles,E. Saxagliptin,Image-driven/localization trap
+316,General Principles,C. Norepinephrine,Image-driven/localization trap
+317,General Principles,A. Arachidonic acid,Image-driven/localization trap
+318,General Principles,D. Increased urine flow,Image-driven/localization trap
+319,General Principles,D. Inducing osteoclast apoptosis,Image-driven/localization trap
+320,General Principles,C. Na⁺/Cl⁻ symporter,Image-driven/localization trap
+321,General Principles,A. Capillary permeability,Image-driven/localization trap
+322,General Principles,A. Anti-cholinergic,Image-driven/localization trap
+323,General Principles,A. Bromocriptine therapy,Image-driven/localization trap
+324,General Principles,C. Pseudocholinesterase,Image-driven/localization trap
+325,General Principles,"A. ↓ TSH, ↑ T3, ↓ T4, ↓ 131I uptake",Image-driven/localization trap
+326,General Principles,"A. ↓ TSH, ↑ T3, ↑ T4, ↓ 131I uptake",Image-driven/localization trap
+327,General Principles,C. Dilated canaliculi with bile plugs,Image-driven/localization trap
+328,General Principles,A. Acute kidney injury,Image-driven/localization trap
+329,General Principles,D. NSAID-induced hypoperfusion,Image-driven/localization trap
+330,General Principles,B. Adrenal suppression from long-term corticosteroid use,Image-driven/localization trap
+331,General Principles,C. Endometrial hyperplasia,Image-driven/localization trap
+332,General Principles,"A. ↓ ACTH, ↓ cortisol",Image-driven/localization trap
+333,General Principles,"C. ↔ PCT, ↓ JGA, ↓ MCD",Image-driven/localization trap
+334,General Principles,"D. ↓ ACTH, ↓ Cortisol",Image-driven/localization trap
+335,General Principles,"C. ↔ PCT, ↓ JGA, ↓ MCD",Image-driven/localization trap
+336,General Principles,C. ↔ Urine volume; ↔ urine osmolality,Image-driven/localization trap
+337,General Principles,"A. ↑ ADH, ↑ serum osmolality",Image-driven/localization trap
+338,General Principles,D. Unopposed estrogen stimulation,Image-driven/localization trap
+339,General Principles,B. Fetal renal hemodynamics,Image-driven/localization trap
+340,General Principles,D. ,Image-driven/localization trap
+341,General Principles,C. Begin lisinopril therapy,Image-driven/localization trap
+342,General Principles,A. Discontinue lisinopril and start losartan,Image-driven/localization trap
+343,General Principles,"A. ↓ serum Na⁺, ↓ serum osmolality, ↑ urine osmolality, ↑ urine specific gravity",Image-driven/localization trap
+344,General Principles,A. Administer intravenous octreotide,Image-driven/localization trap
+345,General Principles,B. Bosentan,Image-driven/localization trap
+346,General Principles,B. Carbamazepine,Image-driven/localization trap
+347,General Principles,C. Increased heart rate,Image-driven/localization trap
+348,General Principles,D. Oxymetazoline,Image-driven/localization trap
+349,General Principles,C. Check serum iron and ferritin,Image-driven/localization trap
+350,General Principles,D. Raphe nuclei,Image-driven/localization trap
+351,General Principles,D. Intentional ingestion of thyroid hormone supplements,Image-driven/localization trap
+352,General Principles,D. Protein C deficiency,Image-driven/localization trap

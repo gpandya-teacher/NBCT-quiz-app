@@ -1,0 +1,39 @@
+[
+  {
+    "qid": 11,
+    "type": "option_normalization",
+    "removed_options": [
+      "Gallstone ileus"
+    ]
+  },
+  {
+    "qid": 43,
+    "type": "option_normalization",
+    "removed_options": [
+      "Excessive production of intestinal prostaglandins"
+    ]
+  },
+  {
+    "qid": 58,
+    "type": "option_normalization",
+    "removed_options": [
+      "Inferior mesenteric vein"
+    ]
+  },
+  {
+    "qid": 63,
+    "type": "option_normalization",
+    "removed_options": [
+      "Lateral to superior epigastric artery; inferior to inguinal ligament",
+      "Lateral to superior epigastric artery; superior to inguinal ligament",
+      "Medial to inferior epigastric artery; both superior and inferior to inguinal ligament",
+      "Medial to superior epigastric artery; inferior to inguinal ligament",
+      "Medial to superior epigastric artery; both superior and inferior to inguinal ligament"
+    ]
+  },
+  {
+    "qid": 54,
+    "type": "image_missing",
+    "reason": "No embedded image block found on source page"
+  }
+]

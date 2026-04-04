@@ -1,0 +1,25 @@
+{
+  "target_question_count": 81,
+  "rebuilt_question_count": 81,
+  "source_files": [
+    "MSK 1 - 20.pdf",
+    "MSK 21 - 40.pdf"
+  ],
+  "answer_letter_present_for_all": true,
+  "answer_text_mapped_for_all": true,
+  "ambiguity_count": 2,
+  "ambiguous_qids": [
+    {
+      "qid": 19,
+      "issues": [
+        "incomplete_options_parse"
+      ]
+    },
+    {
+      "qid": 55,
+      "issues": [
+        "incomplete_options_parse"
+      ]
+    }
+  ]
+}

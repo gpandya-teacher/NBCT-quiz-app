@@ -1,0 +1,1640 @@
+[
+  {
+    "id": "neuro_001_r1",
+    "source_id": "neuro_001",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 58.1? Choice B: The oculomotor nerve innervates most extraocular muscles, the levator palpebrae superioris, and carries parasympathetic fibers for pupillary constriction and accommodation. Damage results in ptosis, \"down and o",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_001_r2",
+    "source_id": "neuro_001",
+    "type": "trap",
+    "prompt": "Identify the key trap in 58.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_002_r1",
+    "source_id": "neuro_002",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 59.1? A. Inferior oblique B. Inferior rectus C. Lateral rectus D. Medial rectus E. Superior oblique Wrong answer explanations: Choice A: Inferior oblique elevates the eye in the adducted position and is innervated by CN III. D",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_002_r2",
+    "source_id": "neuro_002",
+    "type": "trap",
+    "prompt": "Identify the key trap in 59.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_003_r1",
+    "source_id": "neuro_003",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 60.1? experimental group? Choice C: The dorsal motor nucleus of the vagus (DMV) provides parasympathetic output to various organs, including the heart, lungs, and GI tract. Lesions here could impair vagal tone, leading to redu",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_003_r2",
+    "source_id": "neuro_003",
+    "type": "trap",
+    "prompt": "Identify the key trap in 60.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_004_r1",
+    "source_id": "neuro_004",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 61.1? A. C8 B. L1 C. T4 D. T10 E. T12 Wrong answer explanations: Choice A: C8 innervates the medial forearm and the ring and little fingers. Sensory loss at this level would not involve the chest or torso and would not explain",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_004_r2",
+    "source_id": "neuro_004",
+    "type": "trap",
+    "prompt": "Identify the key trap in 61.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_005_r1",
+    "source_id": "neuro_005",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 63.1? likely affected in this patient? Choice B: The internal capsule contains ascending and descending white matter tracts, including corticospinal and corticobulbar fibers. Lesions here typically cause pure motor deficits, s",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_005_r2",
+    "source_id": "neuro_005",
+    "type": "trap",
+    "prompt": "Identify the key trap in 63.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_006_r1",
+    "source_id": "neuro_006",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 66.1? Choice C: The radial nerve innervates the extensor muscles of the forearm and wrist and is most commonly injured in midshaft humerus fractures. It presents with wrist drop, finger extension weakness, and sensory loss ove",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_006_r2",
+    "source_id": "neuro_006",
+    "type": "trap",
+    "prompt": "Identify the key trap in 66.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_007_r1",
+    "source_id": "neuro_007",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 68.1? most likely responsible for transmitting the pain in this experiment? splanchnic nerve is visceral, poorly localized, and often accompanied by autonomic symptoms such as nausea or diaphoresis. In contrast, the experiment",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_007_r2",
+    "source_id": "neuro_007",
+    "type": "trap",
+    "prompt": "Identify the key trap in 68.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_008_r1",
+    "source_id": "neuro_008",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 70.1? Choice A: Cerebellar tremor, a type of intention tremor, is seen in cerebellar disease and worsens as the limb nears a target (e.g., during finger-to-nose testing), similar to essential tremors. However, cerebellar tremo",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_008_r2",
+    "source_id": "neuro_008",
+    "type": "trap",
+    "prompt": "Identify the key trap in 70.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_009_r1",
+    "source_id": "neuro_009",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 71.1? A. Femoral nerve B. Inferior gluteal nerve C. Obturator nerve Trendelenburg gait. D. Sciatic nerve E. Superior gluteal nerve Wrong answer explanations: Choice A: The femoral nerve innervates the anterior thigh muscles, i",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_009_r2",
+    "source_id": "neuro_009",
+    "type": "trap",
+    "prompt": "Identify the key trap in 71.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_010_r1",
+    "source_id": "neuro_010",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 72.1? Choice C: This leads to non-communicating hydrocephalus, often in the setting of Chiari malformations, and presents with headache, ataxia, and brainstem signs, not the NPH triad. Choice D: This blocks CSF flow from the t",
+    "category": "Neurodegenerative"
+  },
+  {
+    "id": "neuro_010_r2",
+    "source_id": "neuro_010",
+    "type": "trap",
+    "prompt": "Identify the key trap in 72.1 and how to avoid it.",
+    "category": "Neurodegenerative"
+  },
+  {
+    "id": "neuro_011_r1",
+    "source_id": "neuro_011",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 73.1? Choice A: Bacterial infection of the lumbar spine (vertebral osteomyelitis or discitis) typically presents with persistent back pain, fever, and elevated inflammatory markers in patients with risk factors like IV drug us",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_011_r2",
+    "source_id": "neuro_011",
+    "type": "trap",
+    "prompt": "Identify the key trap in 73.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_012_r1",
+    "source_id": "neuro_012",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 74.1? A. Demyelination of the left medial longitudinal fasciculus B. Demyelination of the right medial longitudinal fasciculus C. Lesion of the left abducens nerve (CN VI) MLF syndrome is pathognonomic for multiple sclerosis (",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_012_r2",
+    "source_id": "neuro_012",
+    "type": "trap",
+    "prompt": "Identify the key trap in 74.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_013_r1",
+    "source_id": "neuro_013",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 78.1? A. Anterior cerebral artery B. Left middle cerebral artery C. Left posterior cerebral artery D. Right anterior choroidal artery E. Right posterior cerebral artery F. Superior cerebellar artery G. Vertebral artery H. Wate",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_013_r2",
+    "source_id": "neuro_013",
+    "type": "trap",
+    "prompt": "Identify the key trap in 78.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_014_r1",
+    "source_id": "neuro_014",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 79.1? Choice E: The corneal reflex is a brainstem-mediated cranial nerve reflex involving the ophthalmic branch of CN V (afferent) and CN VII (efferent). This reflex is not influenced by UMN lesions in the frontal cortex and w",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_014_r2",
+    "source_id": "neuro_014",
+    "type": "trap",
+    "prompt": "Identify the key trap in 79.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_015_r1",
+    "source_id": "neuro_015",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 80.1? and no sensory or motor abnormalities. Early-onset Alzheimer can also be seen in Down syndrome. High Yield USMLE Audio Answer: A. Alpha-synuclein deposition [anki:play:a:0] B Autoimmune demyelination of central nervous s",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_015_r2",
+    "source_id": "neuro_015",
+    "type": "trap",
+    "prompt": "Identify the key trap in 80.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_016_r1",
+    "source_id": "neuro_016",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 81.1? A. Broca area B. Inferior parietal lobule (angular gyrus) C. Left anterior temporal lobe D. Left caudate nucleus E. Left dorsolateral prefrontal cortex F. Posterior superior temporal gyrus G. Right parietal lobe H. Suppl",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_016_r2",
+    "source_id": "neuro_016",
+    "type": "trap",
+    "prompt": "Identify the key trap in 81.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_017_r1",
+    "source_id": "neuro_017",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 82.1? Which letter on the sagittal brain cross-section most likely corresponds to the site of her injury? A. A Choice A = thalamus; B = midbrain; C = pons; D = medulla; E = cerebellar vermis; F = right cerebellar hemisphere. B",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_017_r2",
+    "source_id": "neuro_017",
+    "type": "trap",
+    "prompt": "Identify the key trap in 82.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_018_r1",
+    "source_id": "neuro_018",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 83.1? Which of the following is the most likely diagnosis? A. Cerebral toxoplasmosis B. Cryptococcal meningoencephalitis C. Herpes simplex virus encephalitis Left-sided ring enhancing lesion. D. Primary CNS lymphoma Wrong answ",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_018_r2",
+    "source_id": "neuro_018",
+    "type": "trap",
+    "prompt": "Identify the key trap in 83.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_019_r1",
+    "source_id": "neuro_019",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 88.1? Where on the diagram is the most appropriate location for surgical entry into the patient's spinal canal? Choice A = transverse process; B = pedicle; C = vertebral body; D = facet joints; E = lamina; F = spinous process.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_019_r2",
+    "source_id": "neuro_019",
+    "type": "trap",
+    "prompt": "Identify the key trap in 88.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_020_r1",
+    "source_id": "neuro_020",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 1.1? A. Aqueductal stenosis B. Cerebellar tonsillar herniation C. Choroid plexus papilloma D. Colloid cyst of the foramen of Monro E. Ependymoma of the fourth ventricle F. Meningioma compressing the cerebral aqueduct G. Pinea",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_020_r2",
+    "source_id": "neuro_020",
+    "type": "trap",
+    "prompt": "Identify the key trap in 1.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_021_r1",
+    "source_id": "neuro_021",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 3.1? patient\u2019s symptoms? A. C5 B. C6 C. C7 D. C8 E. T1 Wrong answer explanations: Choice A: C5 innervates the deltoid and biceps, with sensory distribution over the lateral upper arm. C5 radiculopathy causes weakness in shoul",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_021_r2",
+    "source_id": "neuro_021",
+    "type": "trap",
+    "prompt": "Identify the key trap in 3.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_022_r1",
+    "source_id": "neuro_022",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 7.1? B.Median nerve at carpal tunnel C.Median nerve at supracondylar region D.Radial nerve in spiral groove E.Recurrent branch of median nerve F.Ulnar nerve at cubital tunnel G.Ulnar nerve at Guyon canal H.Upper subscapular n",
+    "category": "Peripheral / NMJ"
+  },
+  {
+    "id": "neuro_022_r2",
+    "source_id": "neuro_022",
+    "type": "trap",
+    "prompt": "Identify the key trap in 7.1 and how to avoid it.",
+    "category": "Peripheral / NMJ"
+  },
+  {
+    "id": "neuro_023_r1",
+    "source_id": "neuro_023",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 8.1? Choice B: The median nerve (C5\u2013T1) travels with the brachial artery in the arm, passes between the pronator teres heads, and enters the hand via the carpal tunnel. It supplies motor innervation to most forearm flexors an",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_023_r2",
+    "source_id": "neuro_023",
+    "type": "trap",
+    "prompt": "Identify the key trap in 8.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_024_r1",
+    "source_id": "neuro_024",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 9.1? inhibitors may be used off-label in LEMS, their benefit is limited due to the presynaptic nature of the disorder. The key feature in LEMS is impaired ACh release, not breakdown. Choice D: Upregulation of ACh receptors oc",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_024_r2",
+    "source_id": "neuro_024",
+    "type": "trap",
+    "prompt": "Identify the key trap in 9.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_025_r1",
+    "source_id": "neuro_025",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 11.1? A. Anterior hypothalamus B. Arcuate nucleus C. Lateral hypothalamus D. Posterior hypothalamus E. Suprachiasmatic nucleus Wrong answer explanations: Choice B: (Arcuate nucleus): Involved in appetite regulation and neuroen",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_025_r2",
+    "source_id": "neuro_025",
+    "type": "trap",
+    "prompt": "Identify the key trap in 11.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_026_r1",
+    "source_id": "neuro_026",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 12.1? long-term memory for pre-ischemia tasks. Postmortem Choice B: The caudate nucleus is part of the basal ganglia and is involved in motor planning, procedural learning, and some aspects of behavioral control. Lesions in th",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_026_r2",
+    "source_id": "neuro_026",
+    "type": "trap",
+    "prompt": "Identify the key trap in 12.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_027_r1",
+    "source_id": "neuro_027",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 14.1? A. Left cerebellar hemisphere B. Left cerebellar vermis C. Right cerebellar hemisphere D. Right cerebellar vermis E. Right thalamus Wrong answer explanations: Choice A: (Left cerebellar hemisphere): Would produce left-si",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_027_r2",
+    "source_id": "neuro_027",
+    "type": "trap",
+    "prompt": "Identify the key trap in 14.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_028_r1",
+    "source_id": "neuro_028",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 16.1? https://t.me/ankiqbank https://t.me/ankiqbank https://t.me/ankiqbank A 36-year-old woman comes to clinic reporting persistent difficulty lifting her right arm overhead several weeks after hospitalization for a severe lun",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_028_r2",
+    "source_id": "neuro_028",
+    "type": "trap",
+    "prompt": "Identify the key trap in 16.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_029_r1",
+    "source_id": "neuro_029",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 17.1? Choice B: Germinomas are midline tumors that can arise in the pineal or suprasellar region, but they are more common in adolescent males and often cause precocious puberty (if hCG-secreting) or Parinaud syndrome (if pine",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_029_r2",
+    "source_id": "neuro_029",
+    "type": "trap",
+    "prompt": "Identify the key trap in 17.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_030_r1",
+    "source_id": "neuro_030",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 18.1? A. Left ciliary ganglion B. Left oculomotor nerve C. Left optic tract D. Right Edinger-Westphal nucleus E. Right optic nerve F. Visual cortex Wrong answer explanations: Choice A: The ciliary ganglion relays parasympathet",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_030_r2",
+    "source_id": "neuro_030",
+    "type": "trap",
+    "prompt": "Identify the key trap in 18.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_031_r1",
+    "source_id": "neuro_031",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 19.1? Pathophysiologically, strabismus arises from either an imbalance in extraocular muscle strength, abnormal cranial nerve function (commonly CN III, IV, or VI), or congenital defects in ocular muscle anatomy. The clinical ",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_031_r2",
+    "source_id": "neuro_031",
+    "type": "trap",
+    "prompt": "Identify the key trap in 19.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_032_r1",
+    "source_id": "neuro_032",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 20.1? Choice B: Rupture of bridging cortical veins leads to subdural hematoma, commonly seen in elderly patients following minor trauma or in shaken infants. Subdural hematoma presents as a crescent-shaped bleed on CT and feat",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_032_r2",
+    "source_id": "neuro_032",
+    "type": "trap",
+    "prompt": "Identify the key trap in 20.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_033_r1",
+    "source_id": "neuro_033",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 21.1? A. Left caudate nucleus B. Left globus pallidus C. Left subthalamic nucleus D. Right caudate nucleus E. Right subthalamic nucleus Wrong answer explanations: Choice A: (Left caudate nucleus): Caudate lesions are seen in H",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_033_r2",
+    "source_id": "neuro_033",
+    "type": "trap",
+    "prompt": "Identify the key trap in 21.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_034_r1",
+    "source_id": "neuro_034",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 22.1? https://t.me/ankiqbank https://t.me/ankiqbank https://t.me/ankiqbank A 19-year-old man is brought to the emergency department after a high-speed motor vehicle accident. He was unrestrained and suffered significant head t",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_034_r2",
+    "source_id": "neuro_034",
+    "type": "trap",
+    "prompt": "Identify the key trap in 22.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_035_r1",
+    "source_id": "neuro_035",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 156.1? A. Choice C: The obturator nerve innervates the medial thigh muscles, including the adductors, and contributes to hip adduction. Injury typically presents with instability while walking, particularly when the legs are to",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_035_r2",
+    "source_id": "neuro_035",
+    "type": "trap",
+    "prompt": "Identify the key trap in 156.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_036_r1",
+    "source_id": "neuro_036",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 158.1? A. Axonal demyelination of facial motor fibers Trigeminal neuralgia pathophysiology. B. Compression of the geniculate ganglion by tumor Common precipitating factors include light touch to the face, chewing, talking, toot",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_036_r2",
+    "source_id": "neuro_036",
+    "type": "trap",
+    "prompt": "Identify the key trap in 158.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_037_r1",
+    "source_id": "neuro_037",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 163.1? fine tactile discrimination rather than persistent, severe neuropathic pain. Choice C: Lesions of the left thalamus would produce sensory deficits and poststroke pain on the right side of the body. However, this patient\u2019",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_037_r2",
+    "source_id": "neuro_037",
+    "type": "trap",
+    "prompt": "Identify the key trap in 163.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_038_r1",
+    "source_id": "neuro_038",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 165.1? miosis may be seen in cluster headache due to transient sympathetic dysfunction, Horner syndrome itself does not present with severe headache in discrete clusters, nor does it cause tearing, nasal congestion, or restless",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_038_r2",
+    "source_id": "neuro_038",
+    "type": "trap",
+    "prompt": "Identify the key trap in 165.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_039_r1",
+    "source_id": "neuro_039",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 168.1? Lesion A: CN III (oculomotor) lesion \u2192 eye deviates down and out. Lesion B: CN IV (trochlear) lesion \u2192 upward deviation, head tilts toward unaffected side. A. Abducens nerve Lesion C: CN VI (abducens) lesion \u2192 eye turns ",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_039_r2",
+    "source_id": "neuro_039",
+    "type": "trap",
+    "prompt": "Identify the key trap in 168.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_040_r1",
+    "source_id": "neuro_040",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 169.1? A. Annulus fibrosus B. Anterior longitudinal ligament C. Dura mater D. Interspinous ligament E. Ligamentum flavum F. Pia mater G. Posterior longitudinal ligament H. Supraspinous ligament Wrong answer explanations: Choice",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_040_r2",
+    "source_id": "neuro_040",
+    "type": "trap",
+    "prompt": "Identify the key trap in 169.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_041_r1",
+    "source_id": "neuro_041",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 170.1? A. Infarction of corticobulbar fibers in the left internal capsule B Mass lesion compressing the facial nerve branches within the . parotid gland C Inflammatory demyelination of the right facial nerve distal to the . fac",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_041_r2",
+    "source_id": "neuro_041",
+    "type": "trap",
+    "prompt": "Identify the key trap in 170.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_042_r1",
+    "source_id": "neuro_042",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 171.1? A. Bilateral infarction of the anterior spinal arteries B. Compression of the lumbosacral nerve roots Conus medullaris and Cauda equina. C. Demyelination of central motor pathways D. Ischemic injury of the conus medullar",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_042_r2",
+    "source_id": "neuro_042",
+    "type": "trap",
+    "prompt": "Identify the key trap in 171.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_043_r1",
+    "source_id": "neuro_043",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 173.1? A. Left lateral medulla B. Left medial medulla C. Right lateral medulla D. Right medial medulla E. Right pons Wrong answer explanations: Choice A: Left lateral medulla would produce Wallenberg syndrome, involving CNs IX ",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_043_r2",
+    "source_id": "neuro_043",
+    "type": "trap",
+    "prompt": "Identify the key trap in 173.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_044_r1",
+    "source_id": "neuro_044",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 174.1? loss or selective hand muscle atrophy. Choice C: Lesion of the anterior horn cells at lumbar levels would cause flaccid paralysis, atrophy, and fasciculations in the lower extremities, not in the hands. Anterior horn cel",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_044_r2",
+    "source_id": "neuro_044",
+    "type": "trap",
+    "prompt": "Identify the key trap in 174.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_045_r1",
+    "source_id": "neuro_045",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 175.1? Which of the following is the most likely diagnosis? A. Basilar skull fracture B. Concussion C. Epidural hematoma D. Ischemic stroke E. Subdural hematoma Epidural hematoma. Choice D: While stroke can cause confusion and ",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_045_r2",
+    "source_id": "neuro_045",
+    "type": "trap",
+    "prompt": "Identify the key trap in 175.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_046_r1",
+    "source_id": "neuro_046",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 176.1? A. Abducens nerve (VI) B. Facial nerve (VII) C. Oculomotor nerve (III) D. Trigeminal nerve, ophthalmic branch (V1) E. Trochlear nerve (IV) Wrong answer explanations: Choice B: Facial nerve (VII) controls the muscles of f",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_046_r2",
+    "source_id": "neuro_046",
+    "type": "trap",
+    "prompt": "Identify the key trap in 176.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_047_r1",
+    "source_id": "neuro_047",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 177.1? Choice D: Pituitary tumors affect vision via bitemporal hemianopia (optic chiasm compression), not vertical gaze palsy. Choice E: Temporal lobe masses can cause seizures, visual field defects (pie-in-the-sky), or memory ",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_047_r2",
+    "source_id": "neuro_047",
+    "type": "trap",
+    "prompt": "Identify the key trap in 177.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_048_r1",
+    "source_id": "neuro_048",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 179.1? Choice B: The deep peroneal nerve innervates muscles responsible for dorsiflexion (anterior compartment), such as tibialis anterior, and provides sensory innervation only to the first web space. An injury to this nerve w",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_048_r2",
+    "source_id": "neuro_048",
+    "type": "trap",
+    "prompt": "Identify the key trap in 179.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_049_r1",
+    "source_id": "neuro_049",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 180.1? A. Axillary nerve injury commonly injured with supracondylar or distal humerus fractures, or compressed in carpal tunnel syndrome, which leads to nocturnal paresthesias and thenar atrophy. However, the median nerve does ",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_049_r2",
+    "source_id": "neuro_049",
+    "type": "trap",
+    "prompt": "Identify the key trap in 180.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_050_r1",
+    "source_id": "neuro_050",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 24.1? A. L1\u2013L2 B. L3\u2013L4 C. L4\u2013L5 D. L5\u2013S1 E. S1\u2013S2 Wrong answer explanations: Choice A: L1\u2013L2 contributes to hip flexion and provides sensory innervation to the inguinal region and upper thigh. Lesions at this level may cause ",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_050_r2",
+    "source_id": "neuro_050",
+    "type": "trap",
+    "prompt": "Identify the key trap in 24.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_051_r1",
+    "source_id": "neuro_051",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 26.1? Pathophysiologically, IIH is thought to result from impaired CSF absorption at the arachnoid villi, leading to increased ICP. Risk factors include obesity, female sex, and, less commonly, use of medications such as vitam",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_051_r2",
+    "source_id": "neuro_051",
+    "type": "trap",
+    "prompt": "Identify the key trap in 26.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_052_r1",
+    "source_id": "neuro_052",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 29.1? trigeminovascular system activation and the release of vasoactive neuropeptides, leading to sterile neurogenic inflammation. Migraine headaches lack the scalp tenderness, jaw claudication, and constitutional features see",
+    "category": "Headache"
+  },
+  {
+    "id": "neuro_052_r2",
+    "source_id": "neuro_052",
+    "type": "trap",
+    "prompt": "Identify the key trap in 29.1 and how to avoid it.",
+    "category": "Headache"
+  },
+  {
+    "id": "neuro_053_r1",
+    "source_id": "neuro_053",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 30.1? retroperitoneal hematoma, pelvic surgery, and diabetic neuropathy. In this case, the patient's weakness involves foot movement and posterior leg sensation, which are not features of femoral neuropathy. Femoral nerve inju",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_053_r2",
+    "source_id": "neuro_053",
+    "type": "trap",
+    "prompt": "Identify the key trap in 30.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_054_r1",
+    "source_id": "neuro_054",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 32.1? A. Left lateral pons B. Left medial pons C. Right lateral pons D. Right medial pons E. Right midbrain Wrong answer explanations: Choice A: (Left lateral pons): Would produce facial weakness, hearing loss, and facial sens",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_054_r2",
+    "source_id": "neuro_054",
+    "type": "trap",
+    "prompt": "Identify the key trap in 32.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_055_r1",
+    "source_id": "neuro_055",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 33.1? A. Accessory nerve B. Axillary nerve C. Dorsal scapular nerve D. Long thoracic nerve E. Lower subscapular nerve Wrong answer explanations: F. Musculocutaneous nerve Choice A: Injury to the spinal accessory nerve impairs ",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_055_r2",
+    "source_id": "neuro_055",
+    "type": "trap",
+    "prompt": "Identify the key trap in 33.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_056_r1",
+    "source_id": "neuro_056",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 34.1? Axillary nerve Choice C: The median nerve is responsible for forearm pronation, wrist flexion, and thumb opposition, and it supplies sensation to the lateral palm and fingers. Injuries to this nerve typically manifest wi",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_056_r2",
+    "source_id": "neuro_056",
+    "type": "trap",
+    "prompt": "Identify the key trap in 34.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_057_r1",
+    "source_id": "neuro_057",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 36.1? pathology. In this case, the patient\u2019s gag reflex is intact, swallowing is normal, and he has no sensory complaints of the posterior tongue or throat. A. Facial nerve Choice C: The hypoglossal nerve is a pure motor nerve",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_057_r2",
+    "source_id": "neuro_057",
+    "type": "trap",
+    "prompt": "Identify the key trap in 36.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_058_r1",
+    "source_id": "neuro_058",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 37.1? trihexyphenidyl are used in Parkinson disease to reduce tremor, highlighting the delicate balance between dopaminergic and cholinergic tone in the basal ganglia. In this vignette, however, the resting tremor, bradykinesi",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_058_r2",
+    "source_id": "neuro_058",
+    "type": "trap",
+    "prompt": "Identify the key trap in 37.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_059_r1",
+    "source_id": "neuro_059",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 38.1? A. Common peroneal (fibular) nerve B. Femoral nerve C. Obturator nerve D. Saphenous nerve E. Sural nerve Lower limb nerves. Wrong answer explanations: Choice A: The common peroneal nerve provides motor innervation to the",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_059_r2",
+    "source_id": "neuro_059",
+    "type": "trap",
+    "prompt": "Identify the key trap in 38.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_060_r1",
+    "source_id": "neuro_060",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 39.1? Choice C: The parotid gland receives parasympathetic innervation from the glossopharyngeal nerve (cranial nerve IX) via the otic ganglion. Although the facial nerve passes through the parotid gland, it does not supply pa",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_060_r2",
+    "source_id": "neuro_060",
+    "type": "trap",
+    "prompt": "Identify the key trap in 39.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_061_r1",
+    "source_id": "neuro_061",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 40.1? A. Bilateral compression of the cauda equina nerve roots B. Compression of the terminal portion of the spinal cord at L1 Conus medullaris vs Cauda equina. C. Demyelination of the thoracic dorsal columns Wrong answer expl",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_061_r2",
+    "source_id": "neuro_061",
+    "type": "trap",
+    "prompt": "Identify the key trap in 40.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_062_r1",
+    "source_id": "neuro_062",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 41.1? A. Left angular gyrus B. Left caudate nucleus C. Left inferior frontal gyrus D. Left posterior superior temporal gyrus E. Right frontal lobe F. Right parietal lobe G. Right temporal pole Wrong answer explanations: H. Sup",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_062_r2",
+    "source_id": "neuro_062",
+    "type": "trap",
+    "prompt": "Identify the key trap in 41.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_063_r1",
+    "source_id": "neuro_063",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 42.1? wider shoes, and take NSAIDs as needed. Which of the following nerves is most likely Choice B: Deep peroneal nerve injury results in loss of dorsiflexion and toe extension, often producing foot drop, and numbness confine",
+    "category": "Cranial Nerves"
+  },
+  {
+    "id": "neuro_063_r2",
+    "source_id": "neuro_063",
+    "type": "trap",
+    "prompt": "Identify the key trap in 42.1 and how to avoid it.",
+    "category": "Cranial Nerves"
+  },
+  {
+    "id": "neuro_064_r1",
+    "source_id": "neuro_064",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 43.1? in peripheral nerves. Which of the following best explains the impaired action Choice B: Axon degeneration means the nerve fiber itself is physically breaking down, often after severe or long-lasting injury. This leads t",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_064_r2",
+    "source_id": "neuro_064",
+    "type": "trap",
+    "prompt": "Identify the key trap in 43.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_065_r1",
+    "source_id": "neuro_065",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 44.1? A. Cortical demyelination B. Degeneration of the substantia nigra C. Loss of spinothalamic fibers at the spinal cord level D. Post-stroke central thalamic dysfunction E. Subthalamic nucleus infarction Wrong answer explan",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_065_r2",
+    "source_id": "neuro_065",
+    "type": "trap",
+    "prompt": "Identify the key trap in 44.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_066_r1",
+    "source_id": "neuro_066",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 46.1? A. Anterior thigh B. Groin C. Medial thigh D. Perineum E. Shoulder Dermatomal distribution. Wrong answer explanations: Choice A: Referred pain to the anterior thigh maps to L2\u2013L4 dermatomes via the femoral nerve, classic",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_066_r2",
+    "source_id": "neuro_066",
+    "type": "trap",
+    "prompt": "Identify the key trap in 46.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_067_r1",
+    "source_id": "neuro_067",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 47.1? Based on this presentation, which labeled structure is the most likely site of pathology? A. A B. B C. C D. D Choice A = hippocampus; B = crus cerebri; C = ventral medial nucleus of thalamus; D = substantia nigra; E = su",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_067_r2",
+    "source_id": "neuro_067",
+    "type": "trap",
+    "prompt": "Identify the key trap in 47.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_068_r1",
+    "source_id": "neuro_068",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 48.1? A. Left internal capsule B. Left primary motor cortex C. Left subthalamic nucleus D. Left thalamus (VPL/VPM nuclei) E. Right thalamus (VPL/VPM nuclei) Wrong answer explanations: Choice A: (Left internal capsule): Would c",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_068_r2",
+    "source_id": "neuro_068",
+    "type": "trap",
+    "prompt": "Identify the key trap in 48.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_069_r1",
+    "source_id": "neuro_069",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 49.1? A. Abduction of the upper extremity B. Adduction of the upper extremity Dermatomal distributions. C5 and C6 nerve roots also supply the suprascapular nerve (supraspinatus and infraspinatus), musculocutaneous nerve (bicep",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_069_r2",
+    "source_id": "neuro_069",
+    "type": "trap",
+    "prompt": "Identify the key trap in 49.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_070_r1",
+    "source_id": "neuro_070",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 50.1? A. Crus cerebri B. Medial lemniscus C. Red nucleus D. Substantia nigra E. Subthalamic nucleus Wrong answer explanations: Choice B: Medial lemniscus: Lesions cause contralateral loss of proprioception and vibration, but n",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_070_r2",
+    "source_id": "neuro_070",
+    "type": "trap",
+    "prompt": "Identify the key trap in 50.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_071_r1",
+    "source_id": "neuro_071",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 51.1? Femoral nerve D. Obturator nerve E. Superficial peroneal nerve F. Saphenous nerve G. Sciatic nerve at the pelvis H. Tibial Wrong answer explanations: Choice B: This branch innervates the anterior compartment (dorsiflexor",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_071_r2",
+    "source_id": "neuro_071",
+    "type": "trap",
+    "prompt": "Identify the key trap in 51.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_072_r1",
+    "source_id": "neuro_072",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 52.1? patient's motor deficit is in dorsiflexion, which is unrelated to L2 function. In addition, the pain radiates much farther down the leg than would be expected in L2 injury. The findings clearly point away from proximal r",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_072_r2",
+    "source_id": "neuro_072",
+    "type": "trap",
+    "prompt": "Identify the key trap in 52.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_073_r1",
+    "source_id": "neuro_073",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 53.1? A Compression of peripheral branches of CN VII within the parotid . gland B Demyelination of trigeminal nerve fibers at the root entry zone . near the pons C Granulomatous inflammation of extracranial arteries supplying ",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_073_r2",
+    "source_id": "neuro_073",
+    "type": "trap",
+    "prompt": "Identify the key trap in 53.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_074_r1",
+    "source_id": "neuro_074",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 54.1? Choice C: Multiple sclerosis (MS) can cause a wide range of neurologic deficits in young women, including optic neuritis, diplopia, and paresthesias. However, optic neuritis in MS is typically unilateral, painful with ey",
+    "category": "Neurodegenerative"
+  },
+  {
+    "id": "neuro_074_r2",
+    "source_id": "neuro_074",
+    "type": "trap",
+    "prompt": "Identify the key trap in 54.1 and how to avoid it.",
+    "category": "Neurodegenerative"
+  },
+  {
+    "id": "neuro_075_r1",
+    "source_id": "neuro_075",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 55.1? . the basal forebrain B. Demyelination of the corticospinal tracts C. Disruption of GABAergic projections to the thalamus D. Excessive stimulation of the subthalamic nucleus E Inhibition of the direct pathway and activat",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_075_r2",
+    "source_id": "neuro_075",
+    "type": "trap",
+    "prompt": "Identify the key trap in 55.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_076_r1",
+    "source_id": "neuro_076",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 89.1? Then the next question is whether it's anterior or posterior to the central sulcus. The answer is anterior because the primary motor cortex is anterior and the primary sensory cortex is posterior. If you get a neuroanato",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_076_r2",
+    "source_id": "neuro_076",
+    "type": "trap",
+    "prompt": "Identify the key trap in 89.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_077_r1",
+    "source_id": "neuro_077",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 90.1? A. Axillary nerve B. Deep branch of radial nerve (posterior interosseous nerve) C. Median nerve D. Musculocutaneous nerve E. Radial nerve in the spiral groove of humerus F. Recurrent branch of median nerve G. Superficial",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_077_r2",
+    "source_id": "neuro_077",
+    "type": "trap",
+    "prompt": "Identify the key trap in 90.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_078_r1",
+    "source_id": "neuro_078",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 91.1? https://t.me/ankiqbank https://t.me/ankiqbank https://t.me/ankiqbank A 29-year-old man presents to the emergency department after falling onto his outstretched arm during a recreational soccer match. He reports pain and ",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_078_r2",
+    "source_id": "neuro_078",
+    "type": "trap",
+    "prompt": "Identify the key trap in 91.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_079_r1",
+    "source_id": "neuro_079",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 94.1? A. Aqueductal stenosis B. Arnold-Chiari I malformation Wrong answer explanations: C. Arnold-Chiari II malformation Choice A: Aqueductal stenosis causes non-communicating hydrocephalus with enlargement of the lateral and ",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_079_r2",
+    "source_id": "neuro_079",
+    "type": "trap",
+    "prompt": "Identify the key trap in 94.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_080_r1",
+    "source_id": "neuro_080",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 97.1? Which of the following best describes the underlying pathophysiology of this patient\u2019s condition? A. Antibody-mediated destruction of acetylcholine receptors at the neuromuscular junction B. Antibody-mediated destruction",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_080_r2",
+    "source_id": "neuro_080",
+    "type": "trap",
+    "prompt": "Identify the key trap in 97.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_081_r1",
+    "source_id": "neuro_081",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 99.1? Choice B: L3 root involvement causes symptoms in the mid-anterior thigh, with weakness in knee extension and possibly reduced patellar reflex. It does not affect plantarflexion or the sensory territory of the posterior l",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_081_r2",
+    "source_id": "neuro_081",
+    "type": "trap",
+    "prompt": "Identify the key trap in 99.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_082_r1",
+    "source_id": "neuro_082",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 102.1? A. Anosmia on the affected side B. Hyperacusis on the affected side C. Loss of gag reflex on the affected side D. Loss of taste sensation on the posterior third of the tongue E. Ptosis with impaired pupillary constrictio",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_082_r2",
+    "source_id": "neuro_082",
+    "type": "trap",
+    "prompt": "Identify the key trap in 102.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_083_r1",
+    "source_id": "neuro_083",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 103.1? most likely affected? A. L1 B. T4 C. T8 D. T10 E. T12 Wrong answer explanations: Choice A: L1 corresponds to the inguinal region, which is below the umbilicus. While L1 involvement may contribute to motor findings or loc",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_083_r2",
+    "source_id": "neuro_083",
+    "type": "trap",
+    "prompt": "Identify the key trap in 103.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_084_r1",
+    "source_id": "neuro_084",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 104.1? Choice D: While these tracts mediate voluntary motor control, medullary lesions usually cause contralateral weakness, not the complete paralysis seen in locked-in syndrome. Also, the MRI here localizes to the pons, not t",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_084_r2",
+    "source_id": "neuro_084",
+    "type": "trap",
+    "prompt": "Identify the key trap in 104.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_085_r1",
+    "source_id": "neuro_085",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 105.1? A. Left lateral medulla B. Left medial medulla C. Left pons D. Right lateral medulla E. Right medial medulla Wrong answer explanations: Choice A: lateral medulla gives cranial nerve IX/X findings (hoarseness, dysphagia),",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_085_r2",
+    "source_id": "neuro_085",
+    "type": "trap",
+    "prompt": "Identify the key trap in 105.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_086_r1",
+    "source_id": "neuro_086",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 106.1? A. Cribriform plate B. Foramen magnum C. Foramen ovale D. Foramen rotundum E. Jugular foramen Wrong answer explanations: Choice A: The cribriform plate of the ethmoid bone transmits the olfactory nerve (CN I), responsibl",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_086_r2",
+    "source_id": "neuro_086",
+    "type": "trap",
+    "prompt": "Identify the key trap in 106.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_087_r1",
+    "source_id": "neuro_087",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 107.1? Femoral nerve D. Obturator nerve E. Superficial peroneal nerve F. Saphenous nerve G. Sciatic nerve at the pelvis H. Tibial Wrong answer explanations: Choice A: This nerve controls dorsiflexion and eversion via its deep a",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_087_r2",
+    "source_id": "neuro_087",
+    "type": "trap",
+    "prompt": "Identify the key trap in 107.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_088_r1",
+    "source_id": "neuro_088",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 108.1? Choice B: The axillary nerve innervates the deltoid muscle and provides sensation to the lateral upper arm. It is commonly injured in shoulder trauma and presents with impaired abduction of the arm (15\u201390\u00b0) and flattenin",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_088_r2",
+    "source_id": "neuro_088",
+    "type": "trap",
+    "prompt": "Identify the key trap in 108.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_089_r1",
+    "source_id": "neuro_089",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 110.1? often increased in MS, unlike the reduced reflexes seen in GBS. The diagnosis is based on MRI findings of CNS lesions disseminated in time and space. Choice D: Myasthenia gravis is an autoimmune disorder targeting the ac",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_089_r2",
+    "source_id": "neuro_089",
+    "type": "trap",
+    "prompt": "Identify the key trap in 110.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_090_r1",
+    "source_id": "neuro_090",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 112.1? Choices A, B and C: Detrusor underactivity, outlet obstruction, and overflow incontinence all cause impaired bladder emptying, but their mechanisms and presentations differ from this patient\u2019s case. Detrusor underactivit",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_090_r2",
+    "source_id": "neuro_090",
+    "type": "trap",
+    "prompt": "Identify the key trap in 112.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_091_r1",
+    "source_id": "neuro_091",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 115.1? https://t.me/ankiqbank https://t.me/ankiqbank https://t.me/ankiqbank A 59-year-old man with a history of poorly controlled hypertension is brought to the emergency department after collapsing at work. Coworkers report th",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_091_r2",
+    "source_id": "neuro_091",
+    "type": "trap",
+    "prompt": "Identify the key trap in 115.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_092_r1",
+    "source_id": "neuro_092",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 116.1? High Yield USMLE Audio Answer: A. Fibular nerve (common) [anki:play:a:0] B. Fibular nerve (deep) Cut to the chase Audio Answer: C. Fibular nerve (superficial) [anki:play:a:1] D. Sural nerve E. Tibial nerve Bottom line: T",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_092_r2",
+    "source_id": "neuro_092",
+    "type": "trap",
+    "prompt": "Identify the key trap in 116.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_093_r1",
+    "source_id": "neuro_093",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 117.1? High Yield USMLE Audio Answer: A. Broca aphasia [anki:play:a:0] B. Hemineglect C. Hemiballismus Cut to the chase Audio Answer: D. Homonomyous hemianopsia [anki:play:a:1] E. Wernicke aphasia Bottom line: PCA infarcts can ",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_093_r2",
+    "source_id": "neuro_093",
+    "type": "trap",
+    "prompt": "Identify the key trap in 117.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_094_r1",
+    "source_id": "neuro_094",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 118.1? Choice C: Saphenous nerve is a pure sensory branch of the femoral nerve that supplies the medial leg and ankle. It does not innervate any muscles and has no role in motor function. Injury to the saphenous nerve might cau",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_094_r2",
+    "source_id": "neuro_094",
+    "type": "trap",
+    "prompt": "Identify the key trap in 118.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_095_r1",
+    "source_id": "neuro_095",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 120.1? A. Abducens nucleus B. Cerebellar peduncle C. Edinger\u2013Westphal nucleus D. Medial longitudinal fasciculus E. Oculomotor nerve (CN III) F. Paramedian pontine reticular formation (PPRF) G. Pineal gland H. Superior colliculu",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_095_r2",
+    "source_id": "neuro_095",
+    "type": "trap",
+    "prompt": "Identify the key trap in 120.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_096_r1",
+    "source_id": "neuro_096",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 121.1? normal. Visual field testing reveals loss of the outer halves of both visual fields in Choice C: Idiopathic intracranial hypertension (IIH) is most common in obese adolescent or adult women, presenting with headaches, pa",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_096_r2",
+    "source_id": "neuro_096",
+    "type": "trap",
+    "prompt": "Identify the key trap in 121.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_097_r1",
+    "source_id": "neuro_097",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 122.1? A. Central retinal artery occlusion B. Guillain-Barr\u00e9 syndrome C. Internuclear ophthalmoplegia D. Myasthenia gravis E. Optic neuritis Wrong answer explanations: Choice A: Central retinal artery occlusion (CRAO) presents ",
+    "category": "Peripheral / NMJ"
+  },
+  {
+    "id": "neuro_097_r2",
+    "source_id": "neuro_097",
+    "type": "trap",
+    "prompt": "Identify the key trap in 122.1 and how to avoid it.",
+    "category": "Peripheral / NMJ"
+  },
+  {
+    "id": "neuro_098_r1",
+    "source_id": "neuro_098",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 124.1? A. Excessive alcohol consumption B. History of spinal trauma C. Past diagnosis of renal carcinoma D. Prior episode of rheumatic fever E. Recent vegetarian dietary changes Syringomyelia - Cape-like lesion. Wrong answer ex",
+    "category": "Headache"
+  },
+  {
+    "id": "neuro_098_r2",
+    "source_id": "neuro_098",
+    "type": "trap",
+    "prompt": "Identify the key trap in 124.1 and how to avoid it.",
+    "category": "Headache"
+  },
+  {
+    "id": "neuro_099_r1",
+    "source_id": "neuro_099",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 125.1? Choice B: Ataxia-telangiectasia is a progressive neurodegenerative disorder with cerebellar atrophy, oculocutaneous telangiectasias, and immunodeficiency. Onset is usually in early childhood with progressive ataxia, but ",
+    "category": "Demyelinating disease"
+  },
+  {
+    "id": "neuro_099_r2",
+    "source_id": "neuro_099",
+    "type": "trap",
+    "prompt": "Identify the key trap in 125.1 and how to avoid it.",
+    "category": "Demyelinating disease"
+  },
+  {
+    "id": "neuro_100_r1",
+    "source_id": "neuro_100",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 126.1? A. L2 B. L3 C. L4 D. L5 E. S1 F. S2 G. S3 H. S4 Wrong answer explanations: Choice A: This root innervates the hip flexors (iliopsoas) and supplies sensation to the upper anterior thigh. It does not contribute to the Achi",
+    "category": "Neurodegenerative"
+  },
+  {
+    "id": "neuro_100_r2",
+    "source_id": "neuro_100",
+    "type": "trap",
+    "prompt": "Identify the key trap in 126.1 and how to avoid it.",
+    "category": "Neurodegenerative"
+  },
+  {
+    "id": "neuro_101_r1",
+    "source_id": "neuro_101",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 127.1? Choice B: Huntington disease is an autosomal dominant neurodegenerative disorder caused by a trinucleotide (CAG) repeat expansion in the HTT gene on chromosome 4. It presents with a triad of progressive choreiform moveme",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_101_r2",
+    "source_id": "neuro_101",
+    "type": "trap",
+    "prompt": "Identify the key trap in 127.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_102_r1",
+    "source_id": "neuro_102",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 128.1? broad-spectrum antibiotics and hemodynamic support, with cooling measures only for secondary hyperthermia. Choice B: Hyponatremia from sodium depletion may occur in endurance athletes due to excessive hypotonic fluid int",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_102_r2",
+    "source_id": "neuro_102",
+    "type": "trap",
+    "prompt": "Identify the key trap in 128.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_103_r1",
+    "source_id": "neuro_103",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 130.1? Choice B: Idiopathic intracranial hypertension (pseudotumor cerebri) refers to elevated intracranial pressure without a structural lesion, often seen in young obese women or associated with triggers like OCPs, hypervitam",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_103_r2",
+    "source_id": "neuro_103",
+    "type": "trap",
+    "prompt": "Identify the key trap in 130.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_104_r1",
+    "source_id": "neuro_104",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 131.1? Wrong answer explanations: Choice A: The frontal lobe contains regions critical for motor control, speech, behavior, and executive function. Lesions here can cause impaired voluntary movement, including weakness, apraxia",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_104_r2",
+    "source_id": "neuro_104",
+    "type": "trap",
+    "prompt": "Identify the key trap in 131.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_105_r1",
+    "source_id": "neuro_105",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 132.1? Impairment of which of the following is the most likely underlying pathophysiologic mechanism? Left hilar mass, likely SCLC given the clinical picture of LEMS. Wrong answer explanations: Choice A: Acetylcholinesterase ac",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_105_r2",
+    "source_id": "neuro_105",
+    "type": "trap",
+    "prompt": "Identify the key trap in 132.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_106_r1",
+    "source_id": "neuro_106",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 134.1? Which of the following best explains the pathophysiology underlying this patient's presentation? A crescent-shaped hyperdensity, typical of subdural hematoma. Wrong answer explanations: Choice A: Bleeding into the pituit",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_106_r2",
+    "source_id": "neuro_106",
+    "type": "trap",
+    "prompt": "Identify the key trap in 134.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_107_r1",
+    "source_id": "neuro_107",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 137.1? Which labeled structure is most likely affected? A. A B. B Choice A = Optic nerve; B = medial orbital gyrus; C = parietal lobe; D = midbrain; E= cerebellar vermis; F = Occipital pole (of occipital lobe). C. C Wrong answe",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_107_r2",
+    "source_id": "neuro_107",
+    "type": "trap",
+    "prompt": "Identify the key trap in 137.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_108_r1",
+    "source_id": "neuro_108",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 138.1? A. Glossopharyngeal nerve (CN IX) B. Hypoglossal nerve (CN XII) C. Spinal accessory nerve (CN XI) D. Trigeminal nerve (CN V) E. Vagus nerve (CN X) Wrong answer explanations: Choice A: CN IX mediates the afferent limb of ",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_108_r2",
+    "source_id": "neuro_108",
+    "type": "trap",
+    "prompt": "Identify the key trap in 138.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_109_r1",
+    "source_id": "neuro_109",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 139.1? A. Left lateral pons B. Left medial pons C. Left midbrain D. Right lateral pons E. Right medial pons Wrong answer explanations: Choice A: (Left lateral pons): Lateral pontine infarcts involve facial weakness (CN VII), he",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_109_r2",
+    "source_id": "neuro_109",
+    "type": "trap",
+    "prompt": "Identify the key trap in 139.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_110_r1",
+    "source_id": "neuro_110",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 140.1? Wrong answer explanations: Choice A: The frontal lobe contains regions critical for motor control, speech, behavior, and executive function. Lesions here can cause impaired voluntary movement, including weakness, apraxia",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_110_r2",
+    "source_id": "neuro_110",
+    "type": "trap",
+    "prompt": "Identify the key trap in 140.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_111_r1",
+    "source_id": "neuro_111",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 141.1? Where on the following MRI is the location of this patient\u2019s pathology? A. A B. B C. C D. D Choice A = anterior horn of lateral ventricle; B = caudate nucleus; C = internal capsule; D = putamen; E = third ventricle; F = ",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_111_r2",
+    "source_id": "neuro_111",
+    "type": "trap",
+    "prompt": "Identify the key trap in 141.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_112_r1",
+    "source_id": "neuro_112",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 144.1? A. C5\u2013C6 nerve root injury affecting upper trunk of brachial plexus B. C8\u2013T1 nerve root injury affecting lower trunk of brachial plexus C. Injury to long thoracic nerve innervating serratus anterior Wrong answer explanat",
+    "category": "Peripheral / NMJ"
+  },
+  {
+    "id": "neuro_112_r2",
+    "source_id": "neuro_112",
+    "type": "trap",
+    "prompt": "Identify the key trap in 144.1 and how to avoid it.",
+    "category": "Peripheral / NMJ"
+  },
+  {
+    "id": "neuro_113_r1",
+    "source_id": "neuro_113",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 146.1? present, and capillary refill is normal. The rest of the physical exam is unremarkable. Choice C: Saphenous nerve is a purely sensory branch of the femoral nerve that supplies the medial leg and ankle. It has no motor fu",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_113_r2",
+    "source_id": "neuro_113",
+    "type": "trap",
+    "prompt": "Identify the key trap in 146.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_114_r1",
+    "source_id": "neuro_114",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 148.1? Which of the following is the most significant risk factor in this patient? A. Aging B. Chronic alcohol use Crescent-shape seen with subdural hematoma. C. Coagulopathy Choice B: Chronic alcohol use contributes to subdura",
+    "category": "Peripheral / NMJ"
+  },
+  {
+    "id": "neuro_114_r2",
+    "source_id": "neuro_114",
+    "type": "trap",
+    "prompt": "Identify the key trap in 148.1 and how to avoid it.",
+    "category": "Peripheral / NMJ"
+  },
+  {
+    "id": "neuro_115_r1",
+    "source_id": "neuro_115",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 149.1? anatomical location is too proximal to be affected by a midshaft humerus fracture. Choice B: Median nerve injury typically occurs with supracondylar fractures in children, elbow dislocations, or penetrating trauma near t",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_115_r2",
+    "source_id": "neuro_115",
+    "type": "trap",
+    "prompt": "Identify the key trap in 149.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_116_r1",
+    "source_id": "neuro_116",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 151.1? Which of the following best describes the affected structure? A. Anterior cerebral artery B. Middle cerebral artery C. Posterior cerebral artery D. Posterior communicating artery E. Vertebral artery Wrong answer explanat",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_116_r2",
+    "source_id": "neuro_116",
+    "type": "trap",
+    "prompt": "Identify the key trap in 151.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_117_r1",
+    "source_id": "neuro_117",
+    "type": "review",
+    "prompt": "What is the highest-yield takeaway from 152.1? function is more consistent with GBS. Choice D: Multiple sclerosis is an idiopathic, autoimmune demyelinating disorder characterized by T-cell\u2013mediated destruction of oligodendrocytes and myelin-basic protein within the ",
+    "category": "Stroke / Localization"
+  },
+  {
+    "id": "neuro_117_r2",
+    "source_id": "neuro_117",
+    "type": "trap",
+    "prompt": "Identify the key trap in 152.1 and how to avoid it.",
+    "category": "Stroke / Localization"
+  }
+]

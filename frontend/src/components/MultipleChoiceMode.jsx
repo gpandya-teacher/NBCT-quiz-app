@@ -23,16 +23,65 @@ function formatTime(totalSeconds) {
   return `${minutes}:${seconds}`;
 }
 
+function getQuestionChoices(question) {
+  if (!question) return [];
+  return question.choices || question.options || [];
+}
+
+function getChoiceValue(choice) {
+  if (!choice) return null;
+  return choice.id || choice.key || null;
+}
+
+function getCorrectChoiceId(question) {
+  if (!question) return null;
+  return (
+    question.correctChoiceId ||
+    question.correctAnswer ||
+    question.answer_letter ||
+    null
+  );
+}
+
 function buildStudyFeedbackMessage(question, didAnswerCorrectly) {
-  const correctChoice = question.choices.find(
-    (choice) => choice.id === question.correctChoiceId,
+  const choices = getQuestionChoices(question);
+  const correctChoiceId = getCorrectChoiceId(question);
+
+  const correctChoice = choices.find(
+    (choice) => getChoiceValue(choice) === correctChoiceId,
   );
 
+  const answerText =
+    question?.correctText ||
+    question?.answerText ||
+    question?.answer_text ||
+    correctChoice?.text ||
+    "";
+
+  const explanation = question?.explanation || "";
+  const bottomLine = question?.bottomLine || question?.bottom_line || "";
+
+  const parts = [];
+
   if (didAnswerCorrectly) {
-    return "This response matches the keyed answer for this item.";
+    parts.push(
+      `Correct answer: ${correctChoiceId ?? ""}${answerText ? ` — ${answerText}` : ""}`,
+    );
+  } else {
+    parts.push(
+      `Correct answer: ${correctChoiceId ?? ""}${answerText ? ` — ${answerText}` : ""}`,
+    );
   }
 
-  return `The keyed response is ${correctChoice?.text ?? ""}.`;
+  if (explanation) {
+    parts.push(`Explanation: ${explanation}`);
+  }
+
+  if (bottomLine) {
+    parts.push(`Bottom line: ${bottomLine}`);
+  }
+
+  return parts.join("\n\n");
 }
 
 function renderChoiceLabel(index) {
@@ -62,8 +111,8 @@ function buildPassageSections(question, mode, currentIndex, totalQuestions, flag
     {
       heading: "Item Details",
       paragraphs: [
-        `Topic: ${question.topicTag.replaceAll("_", " ")}`,
-        `Difficulty: ${question.difficultyTag}`,
+        `Topic: ${(question.topicTag || question.topic || "General").replaceAll("_", " ")}`,
+        `Difficulty: ${question.difficultyTag || "STANDARD"}`,
         flagged ? "Status: Marked for review" : "Status: Not marked",
       ],
     },
@@ -260,7 +309,7 @@ export default function MultipleChoiceMode({
       return;
     }
 
-    const correctChoiceId = currentQuestion.correctChoiceId;
+    const correctChoiceId = getCorrectChoiceId(currentQuestion);
     const nextIsCorrect = choiceId === correctChoiceId;
     const nextFeedbackMessage = isStudyMode
       ? buildStudyFeedbackMessage(currentQuestion, nextIsCorrect)
@@ -325,8 +374,9 @@ export default function MultipleChoiceMode({
   }
 
   function getOptionVariant(choice) {
-    const isSelected = selectedAnswer === choice.id;
-    const isChoiceCorrect = currentQuestion?.correctChoiceId === choice.id;
+    const choiceValue = getChoiceValue(choice);
+    const isSelected = selectedAnswer === choiceValue;
+    const isChoiceCorrect = getCorrectChoiceId(currentQuestion) === choiceValue;
 
     if (showFeedback && isStudyMode) {
       if (isChoiceCorrect) {
@@ -364,8 +414,8 @@ export default function MultipleChoiceMode({
       }
     : { questionIds: [], byId: {} };
 
-  const selectedLabel = currentQuestion?.choices.findIndex(
-    (choice) => choice.id === selectedAnswer,
+  const selectedLabel = getQuestionChoices(currentQuestion).findIndex(
+    (choice) => getChoiceValue(choice) === selectedAnswer,
   );
 
   const topHeader = (
