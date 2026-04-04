@@ -1,6 +1,6 @@
 import mskData from "../data/msk/msk_full_dataset.json";
-import pharmaData from "../data/pharma/Pharma_full_dataset.json";
-import neuroData from "../data/neuro/Neuro_full_dataset.json";
+import pharmaData from "../data/pharma/pharma_full_dataset.json";
+import neuroData from "../data/neuro/neuro_full_dataset.json";
 
 /**
  * IMPORTANT:
